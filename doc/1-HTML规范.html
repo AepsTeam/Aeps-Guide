@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>优采企业版前端规范</title>
+    <meta name="keywords" content="documentation,dox" />
+    <meta name="description" content="Front-End Coding Guidelines." />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+	<script src="assets/aeps.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">开始</a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+            <li>
+              <a href="./1-HTML规范.html">1-HTML规范</a>
+            </li>
+          
+            <li>
+              <a href="./2-CSS规范.html">2-CSS规范</a>
+            </li>
+          
+            <li>
+              <a href="./3-图片规范.html">3-图片规范</a>
+            </li>
+          
+            <li>
+              <a href="./4-命名规范.html">4-命名规范</a>
+            </li>
+          
+            <li>
+              <a href="./5-项目规范.html">5-项目规范</a>
+            </li>
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>优采企业版前端规范</h1>
+        <p class="lead">
+          Front-End Coding Guidelines.
+        </p>
+      </div>
+    </header>
+
+<div class="container content">
+  <div class="row">
+  	<div class="col-md-3">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li class="level_3">
+    <a href="#index_DOCTYPE声明" title="DOCTYPE声明">
+      <i class="icon-chevron-right"></i>DOCTYPE声明
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_标签使用" title="标签使用">
+      <i class="icon-chevron-right"></i>标签使用
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_书写风格" title="书写风格">
+      <i class="icon-chevron-right"></i>书写风格
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_类型属性" title="类型属性">
+      <i class="icon-chevron-right"></i>类型属性
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_元素属性" title="元素属性">
+      <i class="icon-chevron-right"></i>元素属性
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_代码缩进" title="代码缩进">
+      <i class="icon-chevron-right"></i>代码缩进
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_代码嵌套" title="代码嵌套">
+      <i class="icon-chevron-right"></i>代码嵌套
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_注释规范" title="注释规范">
+      <i class="icon-chevron-right"></i>注释规范
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_文件模板" title="文件模板">
+      <i class="icon-chevron-right"></i>文件模板
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="col-md-9">
+      <section>
+        <h3>DOCTYPE声明</h3>
+<p><strong>HTML文件必须加上 DOCTYPE 声明</strong>，并统一使用 HTML5 的文档声明：</p><pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    ...
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3>标签使用</h3>
+<ul>
+<li>使用合适的语义化标签，避免大量<code>div</code>直接堆砌  </li>
+<li>页面嵌套避免不必要的容器层和标签，嵌套层级尽量不超过12级  </li>
+<li>标题层级不能错乱。内容区使用<code>h2~h5</code></li>
+</ul>
+<h3>书写风格</h3>
+<p>HTML标签名、类名、标签属性和大部分属性值统一用小写<br /><em>推荐</em>：</p><pre><code>&lt;div class=&quot;demo&quot;&gt;&lt;/div&gt;
+</code></pre><p><em>不推荐</em>：</p><pre><code>&lt;div class=&quot;DEMO&quot;&gt;&lt;/div&gt;
+&lt;DIV CLASS=&quot;DEMO&quot;&gt;&lt;/DIV&gt;
+</code></pre><h3>类型属性</h3>
+<p>不需要为 CSS、JS 指定类型属性，HTML5 中默认已包含<br /><em>推荐</em>：</p><pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;&quot; &gt;
+&lt;script src=&quot;&quot;&gt;&lt;/script&gt;
+</code></pre><p><em>不推荐</em>：</p><pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&quot; &gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;&quot; &gt;&lt;/script&gt;
+</code></pre><h3>元素属性</h3>
+<p>书写完整</p><p><em>推荐</em>：</p><pre><code>&lt;input type=&quot;text&quot;&gt;
+
+&lt;input type=&quot;radio&quot; name=&quot;name&quot; checked=&quot;checked&quot; &gt;
+</code></pre><p><em>不推荐</em>：</p><pre><code>&lt;input type=text&gt;    
+&lt;input type=&#39;text&#39;&gt;
+
+&lt;input type=&quot;radio&quot; name=&quot;name&quot; checked &gt;
+</code></pre><h3>代码缩进</h3>
+<p>统一使用四个空格进行代码缩进</p><pre><code>&lt;div class=&quot;grid&quot;&gt;
+    &lt;a href=&quot;#&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+</code></pre><h3>代码嵌套</h3>
+<p>元素嵌套规范，每个块状元素独立一行，内联元素可选</p><p><em>推荐</em>：</p><pre><code>&lt;div&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;    
+&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+</code></pre><p><em>不推荐</em>：</p><pre><code>&lt;div&gt;
+    &lt;h1&gt;&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;    
+&lt;p&gt; 
+    &lt;span&gt;&lt;/span&gt;
+    &lt;span&gt;&lt;/span&gt;
+&lt;/p&gt;
+</code></pre><p>段落元素与标题元素只能嵌套内联元素</p><p><em>推荐</em>：</p><pre><code>&lt;h1&gt;&lt;span&gt;&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/p&gt;
+</code></pre><p><em>不推荐</em>：</p><pre><code>&lt;h1&gt;&lt;div&gt;&lt;/div&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+</code></pre><h3>注释规范</h3>
+<p>为了提高代码的可读性和可维护性，对于必要的说明、复杂的模块需要进行注释。  </p><p><strong>单行注释</strong></p><p><em>推荐</em></p><pre><code>&lt;!-- 注释内容 --&gt;
+&lt;div&gt;...&lt;/div&gt;
+</code></pre><p><em>不推荐</em></p><pre><code>&lt;div&gt;...&lt;/div&gt;&lt;!-- 注释内容 --&gt;
+
+&lt;div&gt;&lt;!-- 注释内容 --&gt;
+...
+&lt;/div&gt;
+</code></pre><p><strong>模块注释</strong></p><p><em>推荐</em></p><pre><code>&lt;!-- 采购列表开始 --&gt;
+&lt;div class=&quot;order-form&quot;&gt;
+...
+&lt;/div&gt;
+&lt;!-- 采购列表结束 --&gt;
+
+&lt;!-- 采购列表开始 --&gt;
+&lt;div class=&quot;order-form&quot;&gt;
+...
+&lt;/div&gt;
+&lt;!-- 采购列表结束 --&gt;
+</code></pre><p><em>不推荐</em></p><pre><code>&lt;!-- S 采购列表 --&gt;
+&lt;div class=&quot;order-form&quot;&gt;
+...
+&lt;/div&gt;
+&lt;!-- E 采购列表 --&gt;
+&lt;!-- S 采购列表 --&gt;
+&lt;div class=&quot;order-form&quot;&gt;
+...
+&lt;/div&gt;
+&lt;!-- E 采购列表 --&gt;
+`
+</code></pre><p><strong>嵌套注释</strong><br />当模块注释内再出现模块注释的时候，为了突出主要模块，嵌套模块不再使用  </p><pre><code>&lt;!-- S 采购列表 --&gt;
+&lt;div class=&quot;order-form&quot;&gt;
+    &lt;div class=&quot;order-form-lst&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;!-- /order-form-lst --&gt;
+&lt;/div&gt;
+&lt;!-- E 采购列表 --&gt;
+</code></pre><h3>文件模板</h3>
+<p>HTML模版指的是团队使用的初始化HTML文件，里面会根据不同平台而采用不一样的设置，一般主要不同的设置就是 mata 标签的设置，以下是 PC 和移动端的 HTML 模版。</p><h4>HTML5标准模板</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;HTML5标准模版&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4>PC端</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;keywords&quot; content=&quot;your keywords&quot;&gt;
+&lt;meta name=&quot;description&quot; content=&quot;your description&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge,chrome=1&quot;&gt;
+
+&lt;title&gt;PC端HTML模版&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4>移动端</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no&quot; &gt;
+&lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot; &gt;
+&lt;title&gt;移动端HTML模版&lt;/title&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+  
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
+
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        var sidenav = $('.bs-docs-sidenav');
+        if (sidenav.height() < window.innerHeight) {
+          sidenav.affix({
+            offset: {
+              top: function () {
+                return $window.width() <= 980 ? 290 : 210
+              },
+              bottom: 200
+            }
+          });
+        } else {
+          sidenav.removeClass('affix');
+        }
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          // 总是设置id
+          node.attr("id", node.data('id') || "index_" + node.text());
+        });
+
+        $('.bs-docs-sidenav .accordion-marker').on('click', function(event) {
+          var current = $(event.currentTarget);
+          current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+      });
+    </script>
+  
+  </body>
+</html>
+

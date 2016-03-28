@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>优采企业版前端规范</title>
+    <meta name="keywords" content="documentation,dox" />
+    <meta name="description" content="Front-End Coding Guidelines." />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+	<script src="assets/aeps.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">开始</a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+            <li>
+              <a href="./1-HTML规范.html">1-HTML规范</a>
+            </li>
+          
+            <li>
+              <a href="./2-CSS规范.html">2-CSS规范</a>
+            </li>
+          
+            <li>
+              <a href="./3-图片规范.html">3-图片规范</a>
+            </li>
+          
+            <li>
+              <a href="./4-命名规范.html">4-命名规范</a>
+            </li>
+          
+            <li>
+              <a href="./5-项目规范.html">5-项目规范</a>
+            </li>
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>优采企业版前端规范</h1>
+        <p class="lead">
+          Front-End Coding Guidelines.
+        </p>
+      </div>
+    </header>
+
+<div class="container content">
+  <div class="row">
+  	<div class="col-md-3">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li class="level_3">
+    <a href="#index_编码规范" title="编码规范">
+      <i class="icon-chevron-right"></i>编码规范
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_团队约定" title="团队约定">
+      <i class="icon-chevron-right"></i>团队约定
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_代码风格" title="代码风格">
+      <i class="icon-chevron-right"></i>代码风格
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_代码大小写" title="代码大小写">
+      <i class="icon-chevron-right"></i>代码大小写
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_代码易读性" title="代码易读性">
+      <i class="icon-chevron-right"></i>代码易读性
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_属性值引号" title="属性值引号">
+      <i class="icon-chevron-right"></i>属性值引号
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_属性书写顺序" title="属性书写顺序">
+      <i class="icon-chevron-right"></i>属性书写顺序
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_CSS3浏览器私有前缀写法" title="CSS3浏览器私有前缀写法">
+      <i class="icon-chevron-right"></i>CSS3浏览器私有前缀写法
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_选择器" title="选择器">
+      <i class="icon-chevron-right"></i>选择器
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_CSS定义" title="CSS定义">
+      <i class="icon-chevron-right"></i>CSS定义
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_z-index取值" title="z-index取值">
+      <i class="icon-chevron-right"></i>z-index取值
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_字体定义" title="字体定义">
+      <i class="icon-chevron-right"></i>字体定义
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_浏览器hack" title="浏览器hack">
+      <i class="icon-chevron-right"></i>浏览器hack
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_注释规范" title="注释规范">
+      <i class="icon-chevron-right"></i>注释规范
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_重置样式" title="重置样式">
+      <i class="icon-chevron-right"></i>重置样式
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="col-md-9">
+      <section>
+        <h3>编码规范</h3>
+<p>CSS样式表是一个序列通用字符集，传输和存储过程中，这些字符必须由支持 US-ASCII（例如 UTF-8, ISO 8859-x, SHIFT JIS 等）字符编码方式编译 </p><h3>团队约定</h3>
+<ul>
+<li>样式文件必须写上 @charset 规则，并且一定要在样式文件的第一行首个字符位置开始写，编码名用 “UTF-8”</li>
+<li>字符 @charset “”; 都用小写字母，不能出现转义符，编码名允许大小混写</li>
+<li>考虑到在使用“UTF-8”编码情况下 BOM 对代码的污染和编码显示的问题，在可控范围下，坚决不使用 BOM。</li>
+</ul>
+<p><em>推荐</em></p><pre><code>@charset &quot;UTF-8&quot;;
+
+.grid{}
+</code></pre><p><em>不推荐</em></p><pre><code>/**
+ * @desc File Info
+ * @author Author Name
+ * @date 2015-10-10
+ */
+
+/* @charset规则不在文件首行首个字符开始 */
+@charset &quot;UTF-8&quot;;
+
+.grid{}
+</code></pre><pre><code>@CHARSET &quot;UTF-8&quot;;
+/* @charset规则没有用小写 */
+
+.grid{}
+</code></pre><pre><code>/* 无@charset规则 */
+.grid{}
+</code></pre><h3>代码风格</h3>
+<p>统一使用展开格式书写样式</p><pre><code>/* 推荐 */
+.box{
+    display: block;
+    width: 50px;
+}
+
+/* 不推荐 */
+.box{ display: block;width: 50px;}
+</code></pre><h3>代码大小写</h3>
+<p>样式选择器，属性名，属性值关键字全部使用小写字母书写</p><pre><code>/* 推荐 */
+.box{
+    display: block;
+}
+
+/* 不推荐 */
+.BOX{ DISPLAY: BLOCK;}
+</code></pre><h3>代码易读性</h3>
+<p>每个属性声明末尾都要加分号</p><pre><code>.box {
+    width: 100%;
+    height: 100%;
+}
+</code></pre><p>左括号与类名之间一个空格，冒号与属性值之间一个空格</p><pre><code>/* 推荐 */
+.box { 
+    width: 100%; 
+}
+
+/* 不推荐 */
+.box{ 
+    width:100%;
+}
+</code></pre><p>逗号分隔的取值，逗号之后一个空格</p><pre><code>/* 推荐 */
+.box {
+    box-shadow: 1px 1px 1px #333, 2px 2px 2px #ccc;
+}
+
+/* 不推荐 */
+.box {
+    box-shadow: 1px 1px 1px #333,2px 2px 2px #ccc;
+}
+</code></pre><p>为单个css选择器或新申明开启新行</p><pre><code>/* 推荐 */
+.box, 
+.box-hd, 
+.box-bd {
+    color: #ff0;
+}
+.nav{
+    color: #fff;
+}
+
+/* 不推荐 */
+.box,.box-hd,.box-bd {
+    color: #ff0;
+}.nav{
+    color: #fff;
+}
+</code></pre><p>属性值十六进制数值能用简写的尽量用简写</p><pre><code>/* 推荐 */
+.box {
+    color:#fff;
+}
+/* 不推荐 */
+.box {
+    color:#ffffff;
+}
+</code></pre><p>不要为<code>0</code>指定单位</p><pre><code>/* 推荐 */
+.box {
+    margin: 0 5px;
+}
+/* 不推荐 */
+.box {
+    margin: 0px 5px;
+}
+</code></pre><h3>属性值引号</h3>
+<p>css属性值需要用到引号时，统一使用单引号</p><pre><code>/* 推荐 */
+.box { 
+    font-family: &#39;Hiragino Sans GB&#39;;
+}
+
+/* 不推荐 */
+.box { 
+    font-family: &quot;Hiragino Sans GB&quot;;
+}
+</code></pre><h3>属性书写顺序</h3>
+<p>建议遵循以下顺序：</p><ol>
+<li>定位属性：position </li>
+<li>布局属性：display / float / clear / visibility / overflow</li>
+<li>自身属性：width / height / margin / padding / border / background</li>
+<li>文本属性：color / font / text-decoration / text-align / vertical-align / white- space / break-word</li>
+<li>其他属性（CSS3）：content / cursor / border-radius / box-shadow / text-shadow / background:linear-gradient …</li>
+</ol>
+<pre><code>.box {
+    /*定位属性*/
+    position: absolute;
+    top: 10px;
+    right: 0;
+
+    /*布局属性*/
+    display: block;
+    float: left;
+
+    /*自身属性*/ 
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    padding: 20px 0;
+
+    /*文本属性*/
+    font-family: Arial, &#39;Helvetica Neue&#39;, Helvetica, sans-serif;
+    color: #333;
+    background: rgba(0,0,0,.5);
+
+    /*其他属性*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+</code></pre><h3>CSS3浏览器私有前缀写法</h3>
+<p>CSS3 浏览器私有前缀在前，标准前缀在后</p><pre><code>.box {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+</code></pre><h3>选择器</h3>
+<ul>
+<li>禁止通用选择器 <code>*</code></li>
+<li>不使用 ID 选择器</li>
+<li>除<code>a</code>、<code>img</code>、<code>li</code>、<code>dt</code>、<code>dd</code>、<code>p</code>、<code>input</code>、<code>select</code>、<code>textarea</code>等具有明确语义或有明确父层结构的标签外，禁止直接将标签作为选择器，须添加class。</li>
+<li>选择器使用不超过4级</li>
+<li>使用高效选择器。非必要情况下，禁止在class前加标签名，如<code>div.main</code></li>
+</ul>
+<p><em>推荐</em></p><pre><code>.form{}
+.form li{}
+</code></pre><p><em>不推荐</em></p><pre><code>*{}
+#form{}
+.form div{}
+</code></pre><h3>CSS定义</h3>
+<ul>
+<li>样式定义遵循在一个标签上添加多个class的形式，但不宜过多，一般不超过4个为宜。</li>
+<li>禁止采用原子样式类堆积的形式，如：<pre><code>&lt;div class=&quot;red fwb f14 mb10 mt10&quot;&gt;
+  ...
+&lt;/div&gt;
+</code></pre></li>
+<li>原子样式类不作为常规样式定义类使用，只作为为一些元素添加区别性样式。</li>
+<li>禁止使用表达式</li>
+<li>禁止使用 <code>important</code></li>
+<li>字体定义禁止使用中文，使用英文或Unicode字符</li>
+</ul>
+<h3>z-index取值</h3>
+<ul>
+<li>0-9：相邻元素间的边缘遮盖等。</li>
+<li>10-99：元素周围附近的绝对定位元素，如模拟下拉框的下拉层。</li>
+<li>100-999：页面范围内的弹出层、遮罩层等。</li>
+</ul>
+<h3>字体定义</h3>
+<p>英文字体使用非衬线字体，默认为<code>arial</code>，中文字体默认为<code>simsun</code>。全局默认字体定义：</p><pre><code>body{
+    font-family: arial, sans-serif;
+}
+</code></pre><p>微软雅黑字体定义：</p><pre><code>.selector{
+    font-family: arial, &#39;Microsoft Yahei&#39;, sans-serif;
+}
+</code></pre><p>常用中文字体Unicode编码：</p><pre><code>Microsoft Yahei: \5FAE\8F6F\96C5\9ED1
+Simsun: \5B8B\4F53
+Simhei: \9ED1\4F53
+</code></pre><h3>浏览器hack</h3>
+<p>尽量避免使用hack。<br />IE下禁止使用<code>&gt;</code>、<code>+</code>等奇葩hack字符。正确hack写法如下：</p><pre><code>&lt;!-- IE6 --&gt;
+.selector{
+    _property: value;
+}
+&lt;!-- IE6/7 --&gt;
+.selector{
+    *property: value;
+}
+&lt;!-- IE --&gt;
+.selector{
+    property: value\9;
+}
+</code></pre><p>IE条件注释写法：</p><pre><code>&lt;!--[if IE 6]&gt;
+...
+&lt;![endif]--&gt;
+</code></pre><p>Firefox下hack写法：</p><pre><code>@-moz-document url-prefix(){
+    .selector{
+        ...
+    }
+}
+</code></pre><h3>注释规范</h3>
+<h4>文件信息注释</h4>
+<p>在样式文件编码声明 @charset 语句下面注明页面名称、作者、创建日期等信息</p><pre><code>@charset &quot;UTF-8&quot;;
+/**
+ * @desc File Info
+ * @author Author Name
+ * @date 2016-03-25
+ */
+</code></pre><h4>单行注释</h4>
+<p><em>推荐</em></p><pre><code>/* Comment Text */
+.box{}
+
+/* Comment Text */
+.box{}
+</code></pre><p><em>不推荐</em></p><pre><code>.box{
+    margin: 0 auto;/* Comment Text */
+}
+</code></pre><h4>模块注释</h4>
+<p><em>推荐</em></p><pre><code>/* Module A
+---------------------------------------------------------------- */
+.mod-a {}
+
+
+/* Module B
+---------------------------------------------------------------- */
+.mod-b {}
+</code></pre><p><em>不推荐</em></p><pre><code>/* Module A ---------------------------------------------------- */
+.mod-a {}
+/* Module B ---------------------------------------------------- */
+.mod-b {}
+</code></pre><h3>重置样式</h3>
+<h4>PC端</h4>
+<pre><code>html, body, div, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, ul, li, fieldset, form, label, input, legend, table, caption, tbody, tfoot, thead, tr, th, td, textarea, article, aside, audio, canvas, figure, footer, header, mark, menu, nav, section, time, video { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal }
+article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote { display: block; }
+ul, ol { list-style: none; }
+img { border: 0 none; vertical-align: top; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+strong, em, i { font-style: normal; font-weight: normal; }
+ins { text-decoration: underline; }
+del { text-decoration: line-through; }
+mark { background: none; }
+input::-ms-clear { display: none !important; }
+body { font: 12px/1.5 \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, &quot;Hiragino Sans GB&quot;, STHeiti, &quot;WenQuanYi Micro Hei&quot;, &quot;Droid Sans Fallback&quot;, SimSun, sans-serif; background: #fff; }
+a { text-decoration: none; color: #333; }
+a:hover { text-decoration: underline; }
+</code></pre><h4>移动端</h4>
+<pre><code>* { -webkit-tap-highlight-color: transparent; outline: 0; margin: 0; padding: 0; vertical-align: baseline; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; vertical-align: baseline; }
+img { border: 0 none; vertical-align: top; }
+i, em { font-style: normal; }
+ol, ul { list-style: none; }
+input, select, button, h1, h2, h3, h4, h5, h6 { font-size: 100%; font-family: inherit; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none; color: #666; }
+body { margin: 0 auto; min-width: 320px; max-width: 640px; height: 100%; font-size: 14px; font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial; line-height: 1.5; color: #666; -webkit-text-size-adjust: 100% !important; text-size-adjust: 100% !important; }
+input[type=&quot;text&quot;], textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+</code></pre>
+      </section>
+  
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
+
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        var sidenav = $('.bs-docs-sidenav');
+        if (sidenav.height() < window.innerHeight) {
+          sidenav.affix({
+            offset: {
+              top: function () {
+                return $window.width() <= 980 ? 290 : 210
+              },
+              bottom: 200
+            }
+          });
+        } else {
+          sidenav.removeClass('affix');
+        }
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          // 总是设置id
+          node.attr("id", node.data('id') || "index_" + node.text());
+        });
+
+        $('.bs-docs-sidenav .accordion-marker').on('click', function(event) {
+          var current = $(event.currentTarget);
+          current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+      });
+    </script>
+  
+  </body>
+</html>
+

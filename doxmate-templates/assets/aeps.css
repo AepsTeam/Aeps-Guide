@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+h2,
+h3,
+h4{
+    font-family: 'Microsoft Yahei';
+}
+h3{
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+blockquote{
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #eee;
+    border-left: 5px;
+}

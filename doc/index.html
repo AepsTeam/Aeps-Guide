@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>优采企业版前端规范</title>
+    <meta name="keywords" content="documentation,dox" />
+    <meta name="description" content="Front-End Coding Guidelines." />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+	<script src="assets/aeps.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">开始</a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+            <li>
+              <a href="./1-HTML规范.html">1-HTML规范</a>
+            </li>
+          
+            <li>
+              <a href="./2-CSS规范.html">2-CSS规范</a>
+            </li>
+          
+            <li>
+              <a href="./3-图片规范.html">3-图片规范</a>
+            </li>
+          
+            <li>
+              <a href="./4-命名规范.html">4-命名规范</a>
+            </li>
+          
+            <li>
+              <a href="./5-项目规范.html">5-项目规范</a>
+            </li>
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>优采企业版前端规范</h1>
+        <p class="lead">
+          Front-End Coding Guidelines.
+        </p>
+      </div>
+    </header>
+
+<div class="container content">
+  <div class="row">
+  	<div class="col-md-3">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li class="level_2">
+    <a href="#index_概述" title="概述">
+      <i class="icon-chevron-right"></i>概述
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_HTML规范" title="HTML规范">
+      <i class="icon-chevron-right"></i>HTML规范
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_CSS规范" title="CSS规范">
+      <i class="icon-chevron-right"></i>CSS规范
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_图片规范" title="图片规范">
+      <i class="icon-chevron-right"></i>图片规范
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_命名规范" title="命名规范">
+      <i class="icon-chevron-right"></i>命名规范
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="col-md-9">
+      <section>
+        <h2>概述</h2>
+<p>本规范结合日常业务需求以及团队在日常开发过程中总结提炼出的经验而制定。<br />旨在增强团队开发协作、提高代码质量和打造开发基石的编码规范，<br />以下规范是团队基本约定的内容，必须严格遵循。</p><h2>HTML规范</h2>
+<p>基于W3C等官方文档，并结合团队业务和开发过程中总结的规范约定，让页面HTML代码更具语义性。  </p><h2>CSS规范</h2>
+<p>统一规范团队 CSS 代码书写风格和使用 CSS 预编译语言语法风格，提供常用媒体查询语句和浏览器私有属性引用，并从业务层面统一规范常用模块的引用。</p><h2>图片规范</h2>
+<p>了解各种图片格式特性，根据特性制定图片规范，包括但不限于图片的质量约定、图片引入方式、图片合并处理等，旨在从图片层面优化页面性能。</p><h2>命名规范</h2>
+<p>从<code>目录</code> <code>图片</code> <code>HTML/CSS文件</code> <code>ClassName</code> 的命名等层面约定规范团队的命名习惯，增强团队代码的可读性。</p>
+      </section>
+  
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
+
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        var sidenav = $('.bs-docs-sidenav');
+        if (sidenav.height() < window.innerHeight) {
+          sidenav.affix({
+            offset: {
+              top: function () {
+                return $window.width() <= 980 ? 290 : 210
+              },
+              bottom: 200
+            }
+          });
+        } else {
+          sidenav.removeClass('affix');
+        }
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          // 总是设置id
+          node.attr("id", node.data('id') || "index_" + node.text());
+        });
+
+        $('.bs-docs-sidenav .accordion-marker').on('click', function(event) {
+          var current = $(event.currentTarget);
+          current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+      });
+    </script>
+  
+  </body>
+</html>
+
