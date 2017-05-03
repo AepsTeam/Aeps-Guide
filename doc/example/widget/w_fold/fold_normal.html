@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_table.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_fold.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="fold fold-normal">
+        <div class="fold-hd">
+            <h3>标题</h3>
+            <span class="fold-txt ml5">(此处放副标题)</span>
+        </div>
+        <div class="fold-bd" style="display: block;">
+            正文内容
+        </div>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('fold_normal');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/*
+* 平台审核信息
+* 2017-02-24
+*/
+.cn-audit-info {
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #edf4fa;
+  border: 1px solid #c7dbeb;
+  color: #333; }
+  .cn-audit-info .info-lst li {
+    position: relative;
+    padding-left: 86px;
+    line-height: 22px; }
+    .cn-audit-info .info-lst li label {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      position: absolute;
+      left: 0;
+      width: 86px; }
+    .cn-audit-info .info-lst li .audit-st {
+      color: #ed9853;
+      font-weight: bold; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_cn_audit_info.css.map */

@@ -1,0 +1,149 @@
+/*
+ * des audit state and option
+ */
+/* audit */
+.audit {
+  margin-bottom: 10px;
+  padding: 7px 10px 0 90px;
+  border: 5px solid #f0e5c9;
+  background-color: #fcf5e3; }
+
+.audit > li {
+  margin-bottom: 6px;
+  word-break: break-all;
+  color: #333;
+  zoom: 1; }
+  .audit > li:before, .audit > li:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .audit > li:after {
+    clear: both; }
+
+.audit-state {
+  font-weight: bold; }
+
+.audit-tit {
+  float: left;
+  margin-left: -70px;
+  color: #666;
+  font-weight: bold; }
+
+/* audit-meta */
+.audit-meta {
+  margin-right: 20px; }
+
+.audit-meta:after,
+.audit-meta ul:after {
+  content: '\0020';
+  display: table;
+  font-size: 0;
+  visibility: hidden;
+  clear: both; }
+
+.audit-meta .split {
+  margin: 0 5px;
+  line-height: 18px;
+  color: #dadada; }
+
+.audit-meta li {
+  float: left;
+  padding: 3px 0;
+  margin-right: 15px; }
+  .audit-meta li:first-child > .audit-meta-item:first-child {
+    margin-left: 0; }
+
+.audit-meta .audit-meta-item {
+  margin-left: 10px; }
+  .audit-meta .audit-meta-item .item-tit {
+    color: #999; }
+  .audit-meta .audit-meta-item b {
+    color: #333; }
+
+.audit-meta-bdr {
+  border-top: 1px dashed #ccc; }
+
+/* audit ope */
+.audit-ope {
+  margin-top: 20px;
+  padding: 10px 0;
+  border: 1px solid #f6d898;
+  background-color: #fefaef; }
+  .audit-ope .chose label {
+    margin-right: 20px; }
+  .audit-ope .field-ope {
+    padding-top: 0px; }
+
+.audit-fixed {
+  position: fixed;
+  bottom: 0px;
+  width: 1180px;
+  z-index: 199; }
+
+/* audit-stream */
+.audit-stream li {
+  position: relative; }
+  .audit-stream li:after {
+    position: absolute;
+    top: 4px;
+    right: -20px;
+    width: 16px;
+    height: 16px;
+    content: " ";
+    background: url(../../../../img/ui/icon-16.png) -80px -192px; }
+
+.audit-stream .last:after {
+  display: none; }
+
+/* audit-check */
+.audit-check {
+  position: relative; }
+  .audit-check .audit-flow {
+    position: relative;
+    top: 30px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    display: none; }
+  .audit-check .audit-check-tail {
+    position: absolute;
+    top: 0px;
+    right: 0; }
+    .audit-check .audit-check-tail .audit-switch {
+      font-size: 14px;
+      font-weight: bold; }
+      .audit-check .audit-check-tail .audit-switch:hover {
+        text-decoration: none; }
+      .audit-check .audit-check-tail .audit-switch b {
+        display: inline-block;
+        height: 0;
+        width: 0;
+        font-size: 0;
+        line-height: 0;
+        margin-left: 5px;
+        border-style: dashed;
+        border-color: transparent;
+        border-width: 4px;
+        border-top: 4px solid #666; }
+    .audit-check .audit-check-tail .on b {
+      border-top: none;
+      border-bottom: 4px solid #666;
+      margin-bottom: 3px; }
+    .audit-check .audit-check-tail .audit-switch.orange:link, .audit-check .audit-check-tail .audit-switch.orange:visited {
+      color: #ed9853; }
+    .audit-check .audit-check-tail .audit-switch.orange:hover {
+      color: #ed9853; }
+    .audit-check .audit-check-tail .audit-switch.green:link, .audit-check .audit-check-tail .audit-switch.green:visited {
+      color: #199900; }
+    .audit-check .audit-check-tail .audit-switch.green:hover {
+      color: #199900; }
+    .audit-check .audit-check-tail .audit-switch.red:link, .audit-check .audit-check-tail .audit-switch.red:visited {
+      color: #e04b43; }
+    .audit-check .audit-check-tail .audit-switch.red:hover {
+      color: #e04b43; }
+
+.audit-check-tab .audit-check-tail {
+  top: 5px; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_audit.css.map */

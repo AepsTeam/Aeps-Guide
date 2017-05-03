@@ -1,0 +1,159 @@
+.note {
+  margin: 1rem 0.5rem 0.5rem;
+  font-size: 0.5rem;
+  color: #999; }
+
+/* audit-form
+---------------------------------------------------- */
+.audit-form {
+  text-align: center; }
+  .audit-form .text-area {
+    width: 100%;
+    height: 9.5rem;
+    padding: 0.75rem 0.5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    resize: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+/* audit-path
+---------------------------------------------------- */
+.audit-path {
+  margin-bottom: 3rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .audit-path-hd {
+    height: 2.15rem;
+    line-height: 2.15rem;
+    margin: 0 0.5rem -1px;
+    border-bottom: 1px solid #ccc;
+    color: #666; }
+    .audit-path-hd:before, .audit-path-hd:after {
+      content: " ";
+      display: table;
+      height: 0;
+      visibility: hidden;
+      font-size: 0; }
+    .audit-path-hd:after {
+      clear: both; }
+    .audit-path-hd h3 {
+      float: left;
+      font-size: 0.7rem; }
+    .audit-path-hd .tail {
+      float: right;
+      font-size: 0.6rem;
+      color: #4d4d4d; }
+      .audit-path-hd .tail .icon {
+        vertical-align: middle;
+        -webkit-transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        transition: all ease 0.3s; }
+  .audit-path-bd {
+    position: relative; }
+    .audit-path-bd .audit-path-mod {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff; }
+      .audit-path-bd .audit-path-mod .audit-person {
+        padding: 0 0.5rem 0.625rem; }
+        .audit-path-bd .audit-path-mod .audit-person span {
+          display: inline-block;
+          height: 1.25rem;
+          line-height: 1.25rem;
+          padding: 0 0.625rem;
+          margin-right: 0.5rem;
+          margin-bottom: 0.5rem;
+          background-color: #f2f2f2;
+          border-radius: 4px;
+          text-align: center;
+          font-size: 0.6rem;
+          color: #666; }
+        .audit-path-bd .audit-path-mod .audit-person .select {
+          background-color: #dc3214;
+          color: #fff; }
+  .audit-path-lst {
+    padding: 0 0.5rem; }
+    .audit-path-lst > li {
+      width: 100%;
+      height: 2rem;
+      line-height: 2rem;
+      border-bottom: 1px solid #ccc;
+      font-size: 0.6rem;
+      overflow: hidden; }
+      .audit-path-lst > li:last-child {
+        border-bottom: none; }
+      .audit-path-lst > li .icon-check {
+        float: right;
+        color: #199900; }
+
+.audit-path-toggle .icon-arrow-top {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.audit-path-toggle .audit-path-bd {
+  display: none; }
+
+/* multi-audit
+---------------------------------------------------- */
+.multi-audit {
+  max-height: 15rem;
+  overflow-y: scroll; }
+  .multi-audit::-webkit-scrollbar {
+    display: none; }
+  .multi-audit li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ccc; }
+    .multi-audit li:last-child {
+      border-bottom: none; }
+  .multi-audit-hd {
+    font-size: 0.6rem; }
+    .multi-audit-hd:before, .multi-audit-hd:after {
+      content: " ";
+      display: table;
+      height: 0;
+      visibility: hidden;
+      font-size: 0; }
+    .multi-audit-hd:after {
+      clear: both; }
+    .multi-audit-hd .tit {
+      float: left;
+      color: #4d4d4d; }
+    .multi-audit-hd .time {
+      float: right;
+      color: #999;
+      -webkit-transform: scale(0.75);
+      -moz-transform: scale(0.75);
+      -ms-transform: scale(0.75);
+      -o-transform: scale(0.75);
+      transform: scale(0.75); }
+  .multi-audit-txt {
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+    color: #666;
+    padding-left: 3.5rem; }
+    .multi-audit-txt:before, .multi-audit-txt:after {
+      content: " ";
+      display: table;
+      height: 0;
+      visibility: hidden;
+      font-size: 0; }
+    .multi-audit-txt:after {
+      clear: both; }
+    .multi-audit-txt dt {
+      float: left;
+      width: 3.5rem;
+      margin-left: -3.5rem; }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/module/app_audit.css.map */

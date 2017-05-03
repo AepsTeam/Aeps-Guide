@@ -1,0 +1,133 @@
+/*
+ * des topbar
+ */
+.topbar {
+  border: 1px solid #d3e0e9;
+  padding: 9px;
+  background-color: #f2f7fa;
+  position: relative;
+  *zoom: 1; }
+
+.topbar:after {
+  display: block;
+  height: 0;
+  content: "\0020";
+  visibility: hidden;
+  font-size: 0;
+  clear: both; }
+
+.topbar .btn {
+  font-family: '\5B8B\4F53'; }
+
+.topbar .drop-lst {
+  width: 208px; }
+
+.topbar-row {
+  *zoom: 1;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+
+.topbar-row:after {
+  display: block;
+  height: 0;
+  content: "\0020";
+  visibility: hidden;
+  font-size: 0;
+  clear: both; }
+
+.topbar-row .keywordTip {
+  position: absolute; }
+
+.topbar-row .drop-lst {
+  left: 82px; }
+
+.topbar-row-last {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.topbar-row-tit, .topbar-row-bd {
+  float: left;
+  line-height: 2; }
+
+.topbar-row-tit {
+  margin: 0 5px; }
+
+.topbar-row-item {
+  float: left;
+  margin-right: 15px;
+  padding-left: 5px; }
+
+.topbar-lft,
+.topbar-mid {
+  float: left;
+  height: 26px;
+  line-height: 26px; }
+
+.topbar-lft {
+  padding-right: 10px;
+  border-right: 1px solid #d3e0e9; }
+
+.topbar select {
+  margin-right: 5px; }
+
+.topbar .choose-group {
+  margin: 0 20px; }
+
+.topbar .choose-group label {
+  display: inline-block;
+  margin-right: 10px; }
+
+.topbar-search {
+  display: inline-block;
+  letter-spacing: -2px;
+  *letter-spacing: normal;
+  word-spacing: -1px;
+  *display: inline; }
+
+.topbar-search .txt {
+  border-right: none;
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.topbar-search .topbar-search-btn {
+  width: 25px;
+  height: 26px;
+  margin-left: -4px;
+  background: url(../../../../img/back/topbar-search-btn.png) no-repeat;
+  letter-spacing: normal;
+  word-spacing: normal; }
+
+.topbar .search-result {
+  padding: 0 10px;
+  color: #666;
+  display: inline-block;
+  line-height: 26px; }
+
+.topbar .search-result strong {
+  padding: 0 3px; }
+
+.topbar .icon {
+  margin-right: 5px; }
+
+.topbar .selct-cate span {
+  margin-right: 5px;
+  _display: inline-block;
+  cursor: pointer; }
+
+.topbar .drop-lst li {
+  letter-spacing: 0; }
+
+.topbar-mid {
+  margin-left: 10px; }
+
+.topbar-mid label {
+  _display: inline-block; }
+
+/*----add by wyz for supplier js-bind-goods  pop--2015-01-15*/
+.topbar-catalog {
+  display: inline-block;
+  margin-left: 10px; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_topbar.css.map */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_button.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_filter.css">
+    <style type="text/css">
+        body{
+            font-size:12px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="filter filter-s">
+        <ul class="flt-row">
+            <li class="flt-item">
+                <label for="" class="flt-item-tit">关键字搜索</label>
+                <div class="flt-item-bd">
+                    <input type="text" class="txt txt-xl" placeholder="询价标题/物品名称">
+                </div>
+            </li>
+        </ul>
+        <div class="flt-collapse">
+            <ul class="flt-row">
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">合约单号</label>
+                    <div class="flt-item-bd">
+                        <input type="text" class="txt txt-xl">
+                    </div>
+                </li>
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">合约总额</label>
+                    <div class="flt-item-bd">
+                        <input type="text" class="txt txt-m">
+                        ~
+                        <input type="text" class="txt txt-m">
+                    </div>
+                </li>
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">合约类型</label>
+                    <div class="flt-item-bd">
+                        <select name="" id="" class="txt-m">
+                            <option value="">框架协议</option>
+                            <option value="">普通采购合同</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+            <ul class="flt-row">
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">添加人</label>
+                    <div class="flt-item-bd">
+                        <input type="text" class="txt txt-xl">
+                    </div>
+                </li>
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">添加时间</label>
+                    <div class="flt-item-bd">
+                        <input type="text" class="txt txt-m txt-date">
+                        ~
+                        <input type="text" class="txt txt-m txt-date">
+                    </div>
+                </li>
+                <li class="flt-item">
+                    <label for="" class="flt-item-tit">状态</label>
+                    <div class="flt-item-bd">
+                        <select name="" id="" class="txt-m">
+                            <option value="">全部</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <ul class="flt-row">
+            <!-- 展开时追加 flt-item-opened -->
+            <li class="flt-item flt-item-ope">
+                <button class="btn btn-small btn-main">搜索</button>
+                <a href="javascript:void(0)" class="flt-switch">更多搜索条件<b></b></a>
+            </li>
+        </ul>
+    </div>
+    <div class="filter-after">
+        搜索结果：<strong class="red">6</strong>条
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('filter_small');
+    </script>
+  </body>
+</html>

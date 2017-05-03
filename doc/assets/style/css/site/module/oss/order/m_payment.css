@@ -1,0 +1,24 @@
+.pop-payment {
+  width: 1000px; }
+
+.tb-add-res tfoot td {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  font-weight: bold; }
+
+.sheet tfoot .sum {
+  position: relative;
+  float: right; }
+  .sheet tfoot .sum .form-error {
+    width: 125px;
+    right: -55px; }
+
+.payment-done {
+  position: absolute;
+  right: 250px;
+  top: 55px; }
+
+.payment-st {
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/order/m_payment.css.map */

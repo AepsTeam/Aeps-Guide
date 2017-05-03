@@ -1,0 +1,8 @@
+.btn-main {
+  background-color: #f70;
+  background-image: -moz-linear-gradient(top, #f80 0, #ff6700 100%);
+  background-image: -webkit-linear-gradient(top, #f80 0, #ff6700 100%);
+  background-image: -o-linear-gradient(top, #f80 0, #ff6700 100%);
+  background-image: linear-gradient(to bottom, #f80 0, #ff6700 100%); }
+
+/*# sourceMappingURL=../../../../sourcemaps/site/module/oss/oss_refator_cn.css.map */

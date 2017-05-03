@@ -1,0 +1,34 @@
+/* pop-audit */
+.pop-audit {
+  width: 500px; }
+
+.form-wrap {
+  margin-bottom: 20px;
+  max-height: 350px;
+  overflow-y: scroll; }
+
+.form-lst-ver .choose-item {
+  margin-right: 10px; }
+
+.form-lst-ver .field {
+  padding: 0 0 0 10px; }
+
+.form-lst-ver .field-tit {
+  float: none;
+  display: block;
+  width: auto;
+  margin: 7px 0;
+  line-height: inherit;
+  text-align: left; }
+
+.form-lst-ver .field-tit a {
+  margin-left: 10px; }
+
+.form-lst-ver .field-bd {
+  padding-left: 18px;
+  overflow: visible; }
+
+.form-lst-ver .form-error {
+  margin-bottom: 10px; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_pop_audit.css.map */

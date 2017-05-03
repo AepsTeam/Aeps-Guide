@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_button.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/module/oss/oss_common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_topbar.css">
+    <style type="text/css">
+	    body{
+            height:auto;
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+        <div class="topbar-row">
+                    <span class="topbar-row-item">关键字搜索：
+                        <input type="text" class="txt txt-xxl mr10" placeholder="询价标题/物品名称">
+                    </span>
+                    <span class="topbar-row-item">来源：
+                        <select name="" id="" class="mr10">
+                            <option value="">全部</option>
+                            <option value="">自主添加</option>
+                            <option value="">门户注册</option>
+                            <option value="">百卓采购网</option>
+                        </select>
+                    </span>
+            <button class="btn btn-small btn-main">搜索</button>
+        </div>
+        <div class="topbar-row topbar-row-last">
+            <div class="topbar-row-tit">通过标签筛选：</div>
+            <div class="topbar-row-bd label-group">
+                <label class="selected">电脑主机<i class="icon icon-select"></i></label>
+                <label class="">键盘<i class="icon icon-select"></i></label>
+                <label class="">电源连接线<i class="icon icon-select"></i></label>
+                <label class="">显示屏<i class="icon icon-select"></i></label>
+                <label class="">鼠标<i class="icon icon-select"></i></label>
+                <label class="">机箱<i class="icon icon-select"></i></label>
+                <label class="">CPU<i class="icon icon-select"></i></label>
+            </div>
+        </div>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('topbar');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/* ui*/
+.editor {
+  padding-top: 6px; }
+
+.editor-simp textarea {
+  width: 600px;
+  height: 400px; }
+
+.pop-preview {
+  width: 640px; }
+
+.pop-preview .pop-bd h3 {
+  text-align: center;
+  font: bold 22px/1.5 arial '\5B8B\4F53';
+  padding-bottom: 8px; }
+
+.pop-preview .pop-bd {
+  padding: 10px 20px;
+  max-height: 400px;
+  _height: 400px;
+  line-height: 2;
+  overflow-y: auto; }
+
+.pop-preview .pop-bd em {
+  font-style: italic; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/platform/m_intro.css.map */

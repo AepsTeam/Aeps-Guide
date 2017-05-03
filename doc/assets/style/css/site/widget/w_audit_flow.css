@@ -1,0 +1,216 @@
+/*
+* audit flow style
+* 2015-07-06
+*/
+.audit-set label {
+  display: inline-block;
+  width: 108px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  margin-right: 15px;
+  border: 1px solid #d5e2eb;
+  background-color: #FFF; }
+  .audit-set label input {
+    margin-right: 10px; }
+
+.audit-set .selected {
+  background-color: #f8fef2;
+  border-color: #abdea3; }
+
+/* audit-flow */
+.audit-flow {
+  margin: 10px 0 30px;
+  border: 1px solid #ccc;
+  background-color: #fff; }
+
+.audit-flow-hd h3 {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+  overflow: hidden; }
+
+.audit-flow-bd {
+  position: relative; }
+
+.flow-wrap {
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.flow {
+  padding: 27px 0 40px;
+  height: 95px;
+  width: 2000px; }
+
+.flow-node {
+  float: left;
+  width: 150px;
+  text-align: center;
+  position: relative; }
+  .flow-node:after {
+    display: block;
+    content: " ";
+    width: 120px;
+    height: 3px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 15px;
+    left: -60px; }
+  .flow-node .over:after {
+    background-color: #29a653; }
+
+.audit-flow-bd .poptip .arrow-top {
+  left: 95px; }
+
+.audit-flow-bd .poptip--multi .audit-multi-item {
+  padding: 10px;
+  border-top: 1px dotted #999; }
+  .audit-flow-bd .poptip--multi .audit-multi-item:first-of-type {
+    border-top: none; }
+
+.audit-multi-item .multi-item-hd {
+  margin-bottom: 8px; }
+
+/* remove the first node line */
+.flow .first:after {
+  display: none; }
+
+/* flow-node icon */
+.flow-node .icon {
+  width: 32px;
+  height: 32px;
+  background: url(../../../../img/back/audit/audit_flow.png);
+  position: relative;
+  z-index: 49; }
+
+.flow-node .icon-audit-pass {
+  background-position: 0 0; }
+
+.flow-node .icon-audit-edit {
+  background-position: 0 -32px; }
+
+.flow-node .icon-audit-failed {
+  background-position: 0 -64px; }
+
+.flow-node .icon-audit-over {
+  width: 90px;
+  background-position: 0 -96px; }
+
+.flow-node .icon-audit-disabled {
+  background-position: 0 -192px; }
+
+.flow-node .icon-audit-over-gray {
+  width: 90px;
+  background-position: 0 -160px; }
+
+.flow-node p {
+  height: 20px;
+  line-height: 20px; }
+
+.flow-node .node-txt-over {
+  margin-top: 3px;
+  max-width: 150px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.flow-node .node-time {
+  color: #666; }
+
+.flow-node .node-tip {
+  position: absolute;
+  top: -27px;
+  left: 35px;
+  width: 75px;
+  border: 2px solid #f27c49;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #f27c49; }
+  .flow-node .node-tip .arrow {
+    position: absolute;
+    bottom: -12px;
+    left: 32px;
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-style: dashed;
+    border-color: transparent;
+    border-width: 6px;
+    border-top: 6px solid #f27c49; }
+
+.audit-flow-bd .poptip {
+  display: none;
+  width: 178px;
+  text-align: left;
+  top: 147px; }
+
+.audit-flow-bd .arrow-top {
+  left: 95px; }
+
+/* ==================poptip static=============== */
+.poptip-static {
+  display: none;
+  position: relative;
+  padding: 5px 20px 5px 10px;
+  font-size: 12px;
+  margin: -28px 15px 15px; }
+  .poptip-static .pop-static-con {
+    overflow: auto;
+    max-height: 240px; }
+  .poptip-static .poptip-close {
+    color: #999;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer; }
+    .poptip-static .poptip-close:hover {
+      color: #666; }
+  .poptip-static .poptip-bd {
+    padding: 10px 0; }
+  .poptip-static h3 {
+    font-size: 14px; }
+  .poptip-static .arrow {
+    width: 0px;
+    height: 0px;
+    line-height: 0;
+    font-size: 0;
+    border: 8px dashed transparent;
+    position: absolute;
+    zoom: 1; }
+  .poptip-static .arrow-top {
+    border-bottom: 8px solid transparent;
+    top: -16px;
+    left: 20px; }
+    .poptip-static .arrow-top .arrow-in {
+      border-bottom: 8px solid transparent;
+      margin-top: -7px;
+      margin-left: -8px; }
+  .poptip-static .arrow-right {
+    border-left: 8px solid transparent;
+    top: 20px;
+    right: -16px;
+    _right: -17px; }
+    .poptip-static .arrow-right .arrow-in {
+      border-left: 8px solid transparent;
+      margin-top: -8px;
+      margin-left: -9px; }
+  .poptip-static .arrow-bottom {
+    border-top: 8px solid transparent;
+    bottom: -16px;
+    left: 20px; }
+    .poptip-static .arrow-bottom .arrow-in {
+      border-top: 8px solid transparent;
+      margin-top: -9px;
+      margin-left: -8px; }
+  .poptip-static .arrow-left {
+    border-right: 8px solid transparent;
+    top: 20px;
+    left: -16px; }
+    .poptip-static .arrow-left .arrow-in {
+      border-left: 8px solid transparent;
+      margin-top: -8px;
+      margin-left: -7px; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_audit_flow.css.map */

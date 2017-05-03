@@ -1,0 +1,341 @@
+@charset "UTF-8";
+.multi-choose-wrap {
+  position: relative;
+  height: 30px;
+  /*cursor: pointer;*/ }
+
+.multi-chosen-wrap {
+  position: relative;
+  height: 34px;
+  width: 575px;
+  padding-right: 19px; }
+
+.multi-choose-wrap,
+.multi-choose-wrap *,
+.multi-chosen-wrap,
+.multi-chosen-wrap * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.multi-choose {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #81beeb;
+  background-color: #fff;
+  padding: 4px;
+  overflow: hidden;
+  height: 100%;
+  line-height: 26px; }
+
+.multi-chosen {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 6px 4px;
+  overflow: hidden;
+  height: 36px;
+  line-height: 26px; }
+
+.multi-choose .item,
+.multi-chosen .item {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0 5px;
+  height: 20px;
+  width: 152px;
+  background-color: #f2f8fd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: 14px/20px "microsoft yahei";
+  color: #4d4d4d; }
+
+.multi-choose-wrap .choose-btn {
+  padding: 0 5px;
+  height: 20px;
+  font: 14px/20px "microsoft yahei"; }
+
+.multi-choose--expand {
+  z-index: 100;
+  height: auto;
+  max-height: 140px;
+  overflow: auto; }
+
+.choose--xl {
+  width: 543px; }
+
+.multi-chosen-control {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  text-align: center;
+  width: 20px;
+  background-color: #f1f1f1; }
+
+.multi-chosen-control .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0; }
+
+.multi-chosen-control .arrow--up {
+  border-width: 6px 4px 0 4px;
+  border-style: solid dashed dashed dashed;
+  border-color: #333 transparent transparent transparent; }
+
+.multi-chosen-control .arrow--down {
+  border-width: 0px 4px 6px 4px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #333 transparent; }
+
+.fold-clean .form-panel {
+  position: relative; }
+
+.fold-clean .form-panel img {
+  max-width: 100%; }
+
+.rank-stage {
+  top: 30%;
+  right: 90px;
+  position: absolute;
+  z-index: 9; }
+
+button.rank-stage {
+  height: 50px;
+  padding: 0 64px; }
+
+.form-text > .crr-price {
+  font-size: 26px; }
+
+.form-text > b {
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: bottom; }
+
+.tab {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px; }
+
+.tab-menu {
+  padding: 6px 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e6e6e6; }
+
+.tab-menu > li {
+  float: left;
+  padding: 0 20px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+  font-size: 14px; }
+
+.tab-menu > li.on {
+  font-weight: bold;
+  background: none; }
+
+.tab-menu > li:first-child {
+  border-right: 1px solid #ccc; }
+
+.tab-con {
+  padding: 0 20px;
+  background-color: #FFFFFF;
+  overflow: hidden; }
+
+.tb-fake-hd {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #e6e6e6; }
+
+.tb-fake-bd {
+  margin-bottom: -1px;
+  max-height: 210px;
+  overflow-y: scroll; }
+
+.tb-fake-bd > li {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px dotted #ccc;
+  overflow: hidden;
+  position: relative; }
+
+.tb-fake-bd > li:hover {
+  background-color: #fafafa; }
+
+.tb-fake-hd span {
+  float: left;
+  width: 32.5%;
+  text-align: center;
+  color: #999;
+  font-weight: bold; }
+
+.tb-fake-bd > li > span {
+  float: left;
+  width: 33%;
+  text-align: center; }
+
+.tb-fake-5 .tb-fake-hd span {
+  width: 18.5%; }
+
+.tb-fake-5 .tb-fake-bd > li > span {
+  width: 19%; }
+
+/* 竞价详情页(排名) */
+.front {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  position: relative; }
+
+.front-blue {
+  background-color: #61bbed;
+  color: #fff; }
+
+.front-percent {
+  width: 70px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #eff8fd;
+  border: solid 1px #dcf0fa;
+  position: absolute;
+  right: -80px;
+  color: #61bbed; }
+
+.front-percent:before,
+.front-percent:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border: 6px solid transparent;
+  position: absolute; }
+
+.front-percent:after {
+  border-right: 6px solid #eff8fd;
+  top: 5px;
+  right: 68px; }
+
+.front-percent:before {
+  border-right: 6px solid #dcf0fa;
+  top: 5px;
+  right: 70px; }
+
+.tab-con-node .time {
+  color: #999; }
+
+.tab-union-node img {
+  width: 100%; }
+
+.no-data {
+  text-align: center;
+  vertical-align: middle;
+  padding: 46px 0;
+  color: #999; }
+
+.left-time b {
+  font-size: 26px;
+  font-weight: normal; }
+
+.tb-fake-5 > .tb-fake-hd > span:first-child,
+.tb-fake-5 > .tb-fake-bd > li > span:first-child {
+  text-align: left;
+  padding-left: 20px; }
+
+.form-panel-ft {
+  margin-top: 20px;
+  padding-top: 6px;
+  border-top: 1px dotted #ccc; }
+
+.field--tit-attach {
+  padding-left: 40px; }
+
+.field--tit-attach .field-tit {
+  width: 40px; }
+
+.form-text.form-rank-price {
+  line-height: 16px; }
+
+.category {
+  color: #999;
+  display: inline-block; }
+
+.category .text-clip {
+  max-width: 100px;
+  vertical-align: bottom; }
+
+.rank-form-txt {
+  width: 188px; }
+
+.rank-form-selct {
+  width: 197px; }
+
+.field-bd > .check-group {
+  margin-top: 4px; }
+
+.field-bd > .radio-group > label {
+  display: inline-block;
+  width: 60px; }
+
+.form-slide-wrap > .form-inner {
+  position: relative; }
+
+.form-ver-tit > .tail {
+  padding-right: 54px; }
+
+.poptip-delaytime {
+  left: 225px;
+  width: 260px; }
+
+.fold-hd .rank-tit {
+  float: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: normal; }
+
+/* fld-group */
+.fld-group {
+  margin: 5px 0; }
+
+.fld-group-rank .fld-item {
+  width: 33%;
+  margin: 0; }
+
+.fld-group-rank .fld-item + .fld-item {
+  margin-left: 0;
+  width: 67%; }
+
+/* rank-type */
+.form-ver-lst > li {
+  width: 50%;
+  margin: 0 0 0 6px; }
+
+span.cke_skin_kama {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.form-row.form-panel {
+  margin-top: -1px; }
+
+.field--tit-short .field-tit.fwb {
+  width: 65px; }
+
+.form-panel-rank {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .form-panel-rank .field {
+    padding-top: 4px;
+    padding-bottom: 4px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/order/m_rank.css.map */

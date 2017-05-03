@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/module/oss/oss_common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_panel_info.css">
+
+    <style type="text/css">
+	    body{
+            height:auto;
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="panel-info">
+        <div class="panel-info-tit">权限快捷模板：</div>
+        <div class="panel-info-bd">
+            <div class="label-group">
+                <label for="" class="selected">库管员<i class="icon icon-select"></i></label>
+                <label for="">test模板<i class="icon icon-select"></i></label>
+                <label for="">采购员<i class="icon icon-select"></i></label>
+                <label for="" >请购员<i class="icon icon-select"></i></label>
+                <label for="">基础资料管理员<i class="icon icon-select"></i></label>
+                <label for="">请购单相关权限<i class="icon icon-select"></i></label>
+                <label for="">采购主管<i class="icon icon-select"></i></label>
+            </div>
+        </div>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('panel_info');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+.msg-tab {
+  position: fixed;
+  z-index: 59;
+  top: 2.15rem;
+  left: 0;
+  width: 100%;
+  height: 2.25rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: -ms-box;
+  display: box;
+  display: -webkit-flexbox;
+  display: -moz-flexbox;
+  display: -o-flexbox;
+  display: -ms-flexbox;
+  display: flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -ms-flex;
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid #ccc; }
+  .msg-tab li {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex: 1;
+    -o-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -o-flex: 1;
+    flex: 1;
+    height: 2.25rem;
+    line-height: 2.25rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #333; }
+    .msg-tab li a {
+      display: block; }
+  .msg-tab .tb-bar {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 50%;
+    height: 0.1rem;
+    background: #dc3214;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out; }
+  .msg-tab .curr {
+    color: #dc3214; }
+  .msg-tab li:last-of-type.curr + .tb-bar {
+    -webkit-transform: translate3d(100%, 0, 0);
+    -moz-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    -o-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+
+.msg-tab-disabled li, .msg-tab-disabled .curr {
+  color: #ccc; }
+
+.msg-tab-disabled .tb-bar {
+  background: #ccc; }
+
+.msg-lst {
+  padding: 0 0.75rem 0.5rem; }
+
+.msg-lst-date {
+  height: 0.75rem;
+  line-height: 0.75rem;
+  padding: 0.575rem 0 0.3rem;
+  text-align: center;
+  font-size: 0.5rem;
+  color: #999; }
+
+.msg-lst-con {
+  position: relative;
+  padding: 0.55rem 0.725rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  border-radius: 0.25rem; }
+  .msg-lst-con .txt {
+    line-height: 0.9rem;
+    font-size: 0.6rem;
+    word-break: break-all; }
+  .msg-lst-con .dlink {
+    margin-top: 0.35rem;
+    padding-top: 0.3rem;
+    border-top: 1px solid #ccc;
+    font-size: 0.5rem; }
+
+.msg-lst-unread .msg-lst-con:before {
+  content: "";
+  position: absolute;
+  top: -0.2rem;
+  left: -0.2rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #dc3214;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.msg-lst-check .check-ico {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: #ccc #ccc transparent transparent;
+  -webkit-border-top-right-radius: 0.25rem;
+  -moz-border-top-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem; }
+  .msg-lst-check .check-ico .icon {
+    position: absolute;
+    top: -0.3rem;
+    left: -0.05rem;
+    line-height: 0.3rem;
+    font-size: 0.3rem;
+    font-weight: bold;
+    color: #fff; }
+
+.msg-lst-checked .msg-lst-con {
+  background: #f5fff0;
+  border-color: #54c218; }
+
+.msg-lst-checked .check-ico {
+  border-color: #54c218 #54c218 transparent transparent; }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/module/message.css.map */

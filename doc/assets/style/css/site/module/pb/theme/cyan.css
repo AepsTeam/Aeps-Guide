@@ -1,0 +1,84 @@
+/*
+ * des front theme color red
+ * @author: liuyao 2016-07-26
+*/
+.nav {
+  background-color: #00abb2; }
+  .nav .now a,
+  .nav a:hover {
+    background-color: #008f95; }
+
+.panel-log {
+  background: url(/assets/img/pb/home/log_bg_green.jpg) top left no-repeat #fff; }
+
+.panel-hd {
+  border-top-color: #02aab5;
+  background-image: -moz-linear-gradient(top, #e4f8f9 0, #fff 100%);
+  background-image: -webkit-linear-gradient(top, #e4f8f9 0, #fff 100%);
+  background-image: -o-linear-gradient(top, #e4f8f9 0, #fff 100%);
+  background-image: linear-gradient(to bottom, #e4f8f9 0, #fff 100%); }
+  .panel-hd .icon {
+    color: #00abb2; }
+
+.tab-menu .on {
+  background-color: #00abb2;
+  border-color: #00abb2; }
+
+.btn-log {
+  color: #fff;
+  background-color: #fe9807;
+  background-image: -moz-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: -webkit-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: -o-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: linear-gradient(to bottom, #ffa006 0, #fd930c 100%); }
+  .btn-log:link, .btn-log:visited {
+    color: #fff; }
+  .btn-log:hover {
+    background-color: #eb8a01;
+    background-image: -moz-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: -webkit-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: -o-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: linear-gradient(to bottom, #ec9200 0, #ee8602 100%);
+    color: #fff;
+    text-decoration: none; }
+  .btn-log:active {
+    background-image: -moz-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: -webkit-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: -o-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: linear-gradient(to bottom, #ee8602 0, #ec9200 100%); }
+
+.side-cata-hd .icon {
+  color: #00abb2; }
+
+/* vo theme
+---------------------------------------------*/
+.theme-vo {
+  background: #e7f5f6; }
+  .theme-vo .header {
+    height: 60px;
+    background-color: #00abb2;
+    background-image: none; }
+  .theme-vo .login-info .split {
+    color: #4cf8ff; }
+  .theme-vo .wrap {
+    background: url(/assets/img/pb/theme/cyan/vo_cnt_bg.jpg) center top no-repeat; }
+  .theme-vo .menu .menu-hd .menu-ico {
+    color: #67cda3; }
+  .theme-vo .menu .menu-bd a:hover b {
+    border-color: #9ae0c3;
+    background: #e7fff1; }
+    .theme-vo .menu .menu-bd a:hover b:before, .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #9ae0c3; }
+    .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #e7fff1; }
+  .theme-vo .menu .menu-bd .now b {
+    border-color: #9ae0c3;
+    background: #e7fff1; }
+    .theme-vo .menu .menu-bd .now b:before, .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #9ae0c3; }
+    .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #e7fff1; }
+  .theme-vo .msg-panel th {
+    border-top: 1px solid #00abb2; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/pb/theme/cyan.css.map */

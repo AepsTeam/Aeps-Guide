@@ -2,16 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>优采企业版前端规范</title>
+    <title>优采企业版前端规范 Documentation</title>
     <meta name="keywords" content="documentation,dox" />
     <meta name="description" content="Front-End Coding Guidelines." />
     <script src="assets/prettify.js"></script>
     <script src="assets/jquery-1.8.2.min.js"></script>
-	<script src="assets/aeps.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
-	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+    <link rel="stylesheet" type="text/css" href="assets/aeps.css" />
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
@@ -30,23 +29,27 @@
           <ul class="nav navbar-nav">
           
             <li>
-              <a href="./1-HTML规范.html">1-HTML规范</a>
+              <a href="./1-HTML规范.html">HTML规范</a>
             </li>
           
             <li>
-              <a href="./2-CSS规范.html">2-CSS规范</a>
+              <a href="./2-CSS规范.html">CSS规范</a>
             </li>
           
             <li>
-              <a href="./3-图片规范.html">3-图片规范</a>
+              <a href="./3-图片规范.html">图片规范</a>
             </li>
           
             <li>
-              <a href="./4-命名规范.html">4-命名规范</a>
+              <a href="./4-命名规范.html">命名规范</a>
             </li>
           
             <li>
-              <a href="./5-项目规范.html">5-项目规范</a>
+              <a href="./5-项目规范.html">项目规范</a>
+            </li>
+          
+            <li>
+              <a href="./6-项目组件.html">项目组件</a>
             </li>
           
           
@@ -98,17 +101,30 @@
     </a>
   </li>
 
+  <li class="level_2">
+    <a href="#index_项目规范" title="项目规范">
+      <i class="icon-chevron-right"></i>项目规范
+    </a>
+  </li>
+
 </ul>
 
     </div>
     <div class="col-md-9">
       <section>
-        <h2>概述</h2>
-<p>本规范结合日常业务需求以及团队在日常开发过程中总结提炼出的经验而制定。<br />旨在增强团队开发协作、提高代码质量和打造开发基石的编码规范，<br />以下规范是团队基本约定的内容，必须严格遵循。</p><h2>HTML规范</h2>
-<p>基于W3C等官方文档，并结合团队业务和开发过程中总结的规范约定，让页面HTML代码更具语义性。  </p><h2>CSS规范</h2>
-<p>统一规范团队 CSS 代码书写风格和使用 CSS 预编译语言语法风格，提供常用媒体查询语句和浏览器私有属性引用，并从业务层面统一规范常用模块的引用。</p><h2>图片规范</h2>
-<p>了解各种图片格式特性，根据特性制定图片规范，包括但不限于图片的质量约定、图片引入方式、图片合并处理等，旨在从图片层面优化页面性能。</p><h2>命名规范</h2>
+        <h2 id="-">概述</h2>
+<p>本规范结合日常业务需求以及团队在日常开发过程中总结提炼出的经验而制定。<br>旨在增强团队开发协作、提高代码质量和打造开发基石的编码规范，<br>以下规范是团队基本约定的内容，必须严格遵循。</p>
+<h2 id="html-">HTML规范</h2>
+<p>基于W3C等官方文档，并结合团队业务和开发过程中总结的规范约定，让页面HTML代码更具语义性。  </p>
+<h2 id="css-">CSS规范</h2>
+<p>统一规范团队 CSS 代码书写风格和使用 CSS 预编译语言语法风格，提供常用媒体查询语句和浏览器私有属性引用，并从业务层面统一规范常用模块的引用。</p>
+<h2 id="-">图片规范</h2>
+<p>了解各种图片格式特性，根据特性制定图片规范，包括但不限于图片的质量约定、图片引入方式、图片合并处理等，旨在从图片层面优化页面性能。</p>
+<h2 id="-">命名规范</h2>
 <p>从<code>目录</code> <code>图片</code> <code>HTML/CSS文件</code> <code>ClassName</code> 的命名等层面约定规范团队的命名习惯，增强团队代码的可读性。</p>
+<h2 id="-">项目规范</h2>
+<p>熟知企业版前端开发环境，组织架构，编写统一、复用的高质量代码。</p>
+
       </section>
   
     </div>
@@ -119,8 +135,7 @@
           <p class="pull-right">
             <a href="#">Back to top</a>
           </p>
-          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
-
+          <p>Powerd by doxmate. © ABIZ. @TR.3&gzd</p>
       </div>
     </footer>
     <script>
@@ -153,6 +168,26 @@
           current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
         });
       });
+
+      /*$('.iframe-wrap iframe').each(function(i,n){
+        var sunWin=n.contentWindow;
+        sunWin.onload=function(){
+          $(n).height($(n).contents().find('body').outerHeight(true));
+        }
+      });*/
+
+      $('.code-switch').click(function(){
+        var $code = $(this).parent().next('.prettyprint');
+        var _this = this;
+        $code.slideToggle(function(){
+          if($code.is(':visible')){
+            $(_this).text('收起源码');
+          }else{
+            $(_this).text('展开源码');
+          }
+        });
+      });
+
     </script>
   
   </body>

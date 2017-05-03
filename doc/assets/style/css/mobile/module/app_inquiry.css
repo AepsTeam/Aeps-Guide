@@ -1,0 +1,35 @@
+.inquiry-result-list > li {
+  position: relative; }
+  .inquiry-result-list > li .icon-arrow-right2 {
+    position: absolute;
+    right: 2%;
+    top: 45%; }
+  .inquiry-result-list > li .info {
+    width: 90%; }
+    .inquiry-result-list > li .info:before, .inquiry-result-list > li .info:after {
+      content: " ";
+      display: table;
+      height: 0;
+      visibility: hidden;
+      font-size: 0; }
+    .inquiry-result-list > li .info:after {
+      clear: both; }
+  .inquiry-result-list > li .result-sub-tit {
+    margin-left: -0.2rem;
+    padding-top: 0.125rem;
+    font-size: 0.6rem;
+    font-weight: bold; }
+
+.sup-accept-status {
+  float: right;
+  margin-top: -20%;
+  margin-right: 10%; }
+
+.status-accepted {
+  display: inline-block;
+  vertical-align: middle;
+  width: 56px;
+  height: 25px;
+  background: url(/assets/img/back/inquiry/status_accepted.png) no-repeat; }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/module/app_inquiry.css.map */

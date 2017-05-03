@@ -1,0 +1,70 @@
+.FOCUS_UPLOAD_wrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 15px;
+  height: 26px;
+  line-height: 24px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  zoom: 1;
+  background-color: #f1f1f1;
+  background-image: -moz-linear-gradient(top, #fafafa 0, #e6e6e6 100%);
+  background-image: -webkit-linear-gradient(top, #fafafa 0, #e6e6e6 100%);
+  background-image: -o-linear-gradient(top, #fafafa 0, #e6e6e6 100%);
+  background-image: linear-gradient(to bottom, #fafafa 0%, #e6e6e6 100%);
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #333; }
+
+.FOCUS_UPLOAD_wrap {
+  *display: inline; }
+
+.FOCUS_UPLOAD_wrap_hover {
+  border-bottom-color: #bfbfbf;
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(top, #f2f2f2 0, #dadada 100%);
+  background-image: -webkit-linear-gradient(top, #f2f2f2 0, #dadada 100%);
+  background-image: -o-linear-gradient(top, #f2f2f2 0, #dadada 100%);
+  background-image: linear-gradient(to bottom, #f2f2f2 0%, #dadada 100%);
+  color: #333; }
+
+.FOCUS_UPLOAD_wrap .FOCUS_UPLOAD_text {
+  background-color: transparent; }
+
+.FOCUS_UPLOAD_selector {
+  position: absolute;
+  top: -10px;
+  left: -820px;
+  border: 0 none;
+  display: block;
+  font-size: 200px;
+  left: -20px\9;
+  width: 650px\9;
+  height: 210px\9;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  *vertical-align: baseline !important; }
+
+.FOCUS_UPLOAD_flashWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 88px;
+  display: block;
+  background-color: transparent; }
+
+/*
+* disabled wrap
+*/
+.FOCUS_UPLOAD_wrap_disabled {
+  background-color: #ccc;
+  cursor: default; }
+
+.FOCUS_UPLOAD_wrap_disabled .FOCUS_UPLOAD_text {
+  color: #999; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_old_upload.css.map */

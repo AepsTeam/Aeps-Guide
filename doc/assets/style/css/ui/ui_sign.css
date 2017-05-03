@@ -1,0 +1,56 @@
+/*
+ *  @author shijinyu
+ *  @des font icon style
+ *  @create at 2015/7/29
+ */
+@font-face {
+  font-family: "aeps";
+  src: url("../../../img/sign/iconfont.eot");
+  /* IE9*/
+  src: url("../../../img/sign/iconfont.eot?#iefix") format("embedded-opentype"), url("../../../img/sign/iconfont.woff") format("woff"), url("../../../img/sign/iconfont.ttf") format("truetype"), url("../../../img/sign/iconfont.svg#aeps") format("svg");
+  /* iOS 4.1- */ }
+
+.sg {
+  display: inline-block;
+  font: normal normal normal 14px/1 "aeps";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  /*-webkit-text-stroke-width: 0.2px;*/
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  speak: none; }
+
+.sg-play:before {
+  content: "\e600"; }
+
+.sg-setting:before {
+  content: "\e601"; }
+
+.sg-unlock:before {
+  content: "\e621"; }
+
+.sg-locked:before {
+  content: "\e622"; }
+
+.sg-search:before {
+  content: "\e623"; }
+
+.sg-ques:before {
+  content: "\e624"; }
+
+.sg-unfold:before {
+  content: "\e620"; }
+
+.sg-fold:before {
+  content: "\e61f"; }
+
+.sg-sharp-bar:before {
+  content: "\e627"; }
+
+.sg-sharp-line:before {
+  content: "\e626"; }
+
+.sg-sharp-spline-bar:before {
+  content: "\e625"; }
+
+/*# sourceMappingURL=../../sourcemaps/ui/ui_sign.css.map */

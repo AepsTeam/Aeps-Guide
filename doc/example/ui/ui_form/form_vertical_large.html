@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+      p{
+        padding-top:10px;
+      }
+      p span{
+        margin-right:5px;
+      }
+    </style>
+  </head>
+  <body>
+      
+      <div class="form-panel">
+        
+        <div class="form-ver from-ver-large">
+          <ul class="form-ver-lst clearfix">
+            
+            <li>
+              <h4 class="form-ver-tit">
+                <span class="required">*</span>询价标题
+              </h4>
+              <div class="form-ver-bd">
+                <input type="text" class="txt txt-l" />
+              </div>
+            </li>
+            <li>
+                <h4 class="form-ver-tit"><span class="required">*</span>报价截止时间</h4>
+                <div class="form-ver-bd">
+                    <input type="text" class="txt txt-date" readonly="">
+                    <select>
+                      <option value="00">00</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                    </select>
+                    <span>时</span>
+                    <select>
+                      <option value="00">00</option>
+                      <option value="01">01</option>
+                      <option value="02">02</option>
+                    </select>
+                    <span>分</span>
+                </div>
+            </li>
+            <li>
+                <h4 class="form-ver-tit"><span class="required">*</span>询价方式</h4>
+                <div class="form-ver-bd">
+                    <select class="selct-m">
+                      <option value="1">公开</option>
+                    </select>
+                </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('form_vertical_large');
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,342 @@
+.num {
+  font-size: 16px; }
+
+/* new-pay */
+.new-tip {
+  position: relative;
+  display: block; }
+
+.new-tip .new-mark {
+  position: absolute;
+  top: -18px; }
+
+.new-mark {
+  display: inline-block;
+  padding: 0 4px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff; }
+
+.new-mark b {
+  display: inline-block;
+  height: 0;
+  line-height: 0;
+  font-size: 0;
+  border-style: dashed;
+  border-width: 4px;
+  border-color: transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 40%; }
+
+.pay-mark {
+  background-color: #eb6c52;
+  border: 1px solid #e05d43; }
+
+.pay-mark b {
+  border-top: 4px solid #e05d43; }
+
+.ques-mark {
+  background-color: #49b378;
+  border: 1px solid #4dbb7e; }
+
+.ques-mark b {
+  border-top: 4px solid #4dbb7e; }
+
+.change-mark {
+  background-color: #ec9a48;
+  border: 1px solid #e68526; }
+
+.change-mark b {
+  border-top: 4px solid #e68526; }
+
+.opt-tab .new-mark {
+  top: -12px;
+  left: 30%; }
+
+.tb .new-mark {
+  left: 22%; }
+
+/* time-node */
+.time-node {
+  padding: 10px 30px 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9; }
+
+.time-node .time-line {
+  margin-bottom: 10px;
+  margin-left: -20px;
+  color: #666; }
+
+.time-node .time-line .icon {
+  margin-right: 4px; }
+
+.time-node .time-line .new-mark {
+  margin-left: 10px; }
+
+.time-node .sub-hd {
+  margin: 5px 0 4px 0; }
+
+.time-node .response {
+  padding-top: 13px;
+  margin: 12px 0 4px;
+  border-top: 1px dashed #d9d9d9;
+  overflow: hidden;
+  *zoom: 1; }
+
+.time-node .response h4 {
+  float: left;
+  margin-right: 10px;
+  color: #333; }
+
+.new {
+  background-color: #f0f5f8;
+  border-color: #b8dde6; }
+
+.time-node .audit-meta {
+  margin-top: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  border-top: 1px solid #ccc; }
+
+/* txt-lst */
+.txt-lst li {
+  padding-left: 70px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  *zoom: 1; }
+
+.txt-lst .txt-tit {
+  float: left;
+  margin-left: -70px; }
+
+.txt-lst .txt-bd {
+  float: left;
+  color: #333; }
+
+.txt-lst .txt-ope {
+  margin-top: 20px; }
+
+.txt-lst .txt-ope .btn {
+  margin-right: 5px; }
+
+.change-lst {
+  margin-left: 0; }
+
+.change-lst li {
+  padding-left: 2px;
+  list-style-type: circle;
+  list-style-position: inside; }
+
+/* ope-lst */
+.ope-lst .btn-mini {
+  padding: 0 5px;
+  color: #06d; }
+
+.ope-lst .btn-mini:link,
+.ope-lst .btn-mini:visited {
+  color: #06d; }
+
+.ope-lst .btn-mini:hover {
+  background-color: #e68938;
+  color: #fff; }
+
+/* tb-date */
+.tb-date {
+  text-align: center; }
+
+.tb-date .date {
+  display: block;
+  word-wrap: break-word; }
+
+/* toggle-txt */
+.toggle-txt {
+  position: relative;
+  overflow: hidden; }
+
+.toggle-txt .toggle-switch {
+  display: block;
+  width: 36px;
+  padding-left: 10px;
+  background-color: #fff;
+  vertical-align: middle; }
+
+.toggle-txt .toggle-switch b {
+  position: absolute;
+  top: 2px; }
+
+.toggle-txt-close {
+  max-height: 36px; }
+
+.toggle-txt-close .toggle-switch {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.toggle-txt-open {
+  height: auto; }
+
+.toggle-txt-open .toggle-switch {
+  position: relative;
+  float: right; }
+
+.toggle-txt-open .toggle-switch b {
+  top: -2px; }
+
+.bid-result {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  padding: 15px 0; }
+
+.bid-result .field-tit {
+  top: 11px; }
+
+.bid-result .field-bd {
+  padding-left: 0; }
+
+.bid-result .field {
+  padding: 12px 0 12px 120px; }
+
+.bid-result .text-after {
+  line-height: 16px; }
+
+.bid-label,
+.bid-label-text {
+  overflow: hidden; }
+
+.bid-label {
+  margin-right: 10px;
+  border: 1px solid #b2b2b2;
+  float: left; }
+
+.bid-label-icon {
+  float: left;
+  width: 28px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #b2b2b2; }
+
+.bid-label-icon .cny {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; }
+
+.bid-label-text {
+  padding: 0 10px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.bid-label-win {
+  border-color: #70ce9a; }
+
+.bid-label-win .bid-label-icon {
+  background-color: #70ce9a; }
+
+.bid-label-win .bid-label-text {
+  color: #70ce9a; }
+
+.field-bid-report .field-bd {
+  line-height: 26px; }
+
+.field-bid-report .icon-pdf {
+  margin: -1px 5px 0 0; }
+
+.bid-sp-lst {
+  overflow: hidden; }
+
+.bid-sp-item {
+  width: 310px;
+  border: 1px solid #d9d9d9;
+  float: left;
+  margin: 0 10px 15px 0; }
+
+.bid-sp-hd {
+  background-color: #f2f2f2;
+  padding: 8px 15px;
+  position: relative;
+  height: 58px; }
+
+.bid-sp-hd h3 {
+  font-size: 14px;
+  width: 160px;
+  float: left;
+  margin-top: 8px; }
+
+.bid-result-input .bid-sp-item:hover .bid-sp-hd,
+.bid-sp-win .bid-sp-hd {
+  background-color: #f1fcf6; }
+
+.bid-result-input .bid-sp-unwin:hover .bid-sp-hd {
+  background-color: #f2f2f2; }
+
+.bid-mark-win,
+.bid-mark-unwin {
+  background: url(../../../../../../img/back/bid/bid_result_label.png) no-repeat;
+  width: 108px;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  display: none; }
+
+.bid-sp-unwin .bid-mark-unwin {
+  display: block; }
+
+.bid-sp-win .bid-mark-win {
+  display: block;
+  background-position: 0 -60px;
+  width: 85px;
+  height: 55px; }
+
+.bid-sp-bd {
+  padding: 8px 15px; }
+
+.bid-sp-info {
+  line-height: 24px;
+  padding-bottom: 10px; }
+
+.bid-sp-info .btn {
+  margin: 10px 0 5px; }
+
+.bid-result-fill,
+.bid-status {
+  border-top: 1px dashed #e6e6e6;
+  padding-top: 10px;
+  height: 225px; }
+
+.bid-status {
+  height: auto; }
+
+.bid-status li {
+  padding: 5px 0; }
+
+.bid-status .txt-over {
+  display: inline-block;
+  width: 270px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.bid-result-fill dl,
+.bid-result-fill dd {
+  overflow: hidden; }
+
+.bid-result-fill dl {
+  padding: 5px 0; }
+
+.bid-result-fill dt {
+  float: left;
+  padding-left: 15px;
+  line-height: 26px; }
+
+.icon-unwin {
+  background-position: -32px -128px; }
+
+.bid-result-show .bid-mark-unwin {
+  display: block; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/bid/m_common.css.map */

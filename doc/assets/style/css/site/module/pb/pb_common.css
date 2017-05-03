@@ -1,0 +1,496 @@
+/*
+ * @des: 
+ * @author: liu-yao 2016/9/18
+ * @update: 
+*/
+/* color */
+.red {
+  color: #e04b43; }
+
+.green {
+  color: #229900; }
+
+.blue {
+  color: #06d; }
+
+.orange {
+  color: #ed9853; }
+
+.gray {
+  color: #666; }
+
+.gray-light {
+  color: #999; }
+
+.gray-lighter {
+  color: #ccc; }
+
+/* box model */
+.mt5 {
+  margin-top: 5px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+/* layout */
+.posr {
+  position: relative; }
+
+.posa {
+  position: absolute; }
+
+.poss {
+  position: static; }
+
+.hidden {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.db {
+  display: block; }
+
+.dn {
+  display: none; }
+
+.di {
+  display: inline; }
+
+.dib {
+  display: inline-block; }
+
+.dtb {
+  display: table; }
+
+.vat {
+  vertical-align: top; }
+
+.vam {
+  vertical-align: middle; }
+
+.vab {
+  vertical-align: bottom; }
+
+.vatt {
+  vertical-align: text-top; }
+
+.vatb {
+  vertical-align: text-bottom; }
+
+.tal {
+  text-align: left; }
+
+.tac {
+  text-align: center; }
+
+.tar {
+  text-align: right; }
+
+.fll {
+  float: left; }
+
+.flr {
+  float: right; }
+
+.fln {
+  float: none; }
+
+.fwn {
+  font-weight: normal; }
+
+.fwb {
+  font-weight: bold; }
+
+.fz-m {
+  font-size: 12px; }
+
+.fz-l {
+  font-size: 14px; }
+
+.ff-yh {
+  font-family: arial, "Microsoft Yahei", sans-serif; }
+
+.required {
+  color: red;
+  font-weight: bold;
+  margin-right: 2px;
+  vertical-align: middle; }
+
+/* Based on [Eric Meyer's reset 2.0](http://meyerweb.com/eric/tools/css/reset/index.html) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*========== normal style ==========*/
+body {
+  height: 100%;
+  background-color: white;
+  color: #4d4d4d;
+  font: 12px/1.5 Arial, Helvetica, SimSun, sans-serif; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  vertical-align: middle; }
+
+button {
+  cursor: pointer; }
+
+table {
+  width: 100%; }
+
+img {
+  vertical-align: middle; }
+
+/*========== text ==========*/
+h1, h2, h3, h4, h5, strong {
+  font-weight: bold; }
+
+h1, h2, h3, h4 {
+  font-family: arial, "Microsoft Yahei", sans-serif; }
+
+a {
+  text-decoration: none; }
+  a:link, a:visited {
+    color: #06d; }
+  a:hover {
+    color: #e04b43;
+    text-decoration: underline; }
+
+textarea {
+  resize: none; }
+
+ol {
+  margin-left: 1.6em;
+  *margin-left: 2em; }
+
+ol li {
+  list-style-type: decimal; }
+
+.fms {
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif; }
+
+.fcn {
+  font-family: SimSun; }
+
+.v-sep {
+  color: #ccc;
+  margin: 0 5px; }
+
+.space {
+  margin: 0 3px; }
+
+.text-clip {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+/*=========== solution =========*/
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+.sl-vam {
+  display: table;
+  border-collapse: collapse;
+  position: relative;
+  *overflow: hidden; }
+
+.sl-vam-outer {
+  display: table-cell;
+  vertical-align: middle;
+  *display: block;
+  *position: absolute;
+  *top: 50%;
+  *left: 50%; }
+
+.sl-vam-inner {
+  text-align: center;
+  margin: 0 auto;
+  *position: relative;
+  *top: -50%;
+  *left: -50%; }
+
+.pic-mini {
+  width: 70px;
+  height: 70px; }
+
+.pic-small {
+  width: 100px;
+  height: 100px; }
+
+.pic-mid {
+  width: 160px;
+  height: 160px; }
+
+.pic-big {
+  width: 240px;
+  height: 240px; }
+
+.img-txt, .img-txt .txt {
+  overflow: hidden;
+  *zoom: 1; }
+
+.img-txt .img {
+  float: left;
+  margin-right: 10px; }
+
+.box-flex,
+.box-flex:before,
+.box-flex:after,
+.box-flex *,
+.box-flex *:before,
+.box-flex *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.box-flex {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .box-flex:before, .box-flex:after,
+  .box-flex *,
+  .box-flex *:before,
+  .box-flex *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.no-wrap {
+  white-space: nowrap; }
+
+.vep,
+.state-sep,
+.split {
+  margin: 0 15px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 22px; }
+
+.br-tip {
+  background-color: #faedee;
+  border: 1px solid #fad2cd;
+  color: #cc220b;
+  overflow: hidden;
+  *zoom: 1; }
+  .br-tip .br-tip-bd {
+    overflow: hidden;
+    *zoom: 1; }
+    .br-tip .br-tip-bd p {
+      padding: 3px 0;
+      text-align: center; }
+
+/* common
+====================================================*/
+.wrap .container {
+  padding-bottom: 40px;
+  overflow: hidden; }
+
+/* bread-crumb
+====================================================*/
+.nav-crumb {
+  margin: 0 auto;
+  padding: 8px 0;
+  white-space: nowrap;
+  line-height: 18px;
+  color: #666; }
+  .nav-crumb a:link,
+  .nav-crumb a:visited {
+    color: #666; }
+  .nav-crumb a:hover {
+    color: #e04b43; }
+  .nav-crumb .arr-cate {
+    margin: 0 3px;
+    color: #999; }
+
+/* content
+====================================================*/
+.content {
+  padding: 20px;
+  min-height: 600px;
+  background-color: #fff;
+  box-shadow: 0 0 3px #d9e4e4; }
+  .content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal; }
+
+/* 403 & 404
+====================================================*/
+.net-error {
+  margin: 30px 0; }
+  .net-error .tip-hd {
+    font-size: 36px;
+    font-weight: normal;
+    color: #de3237;
+    margin-bottom: 15px; }
+  .net-error .tip-bd {
+    font: normal 18px/1.5 "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1";
+    color: #666; }
+
+/* alert
+====================================================*/
+.alert {
+  overflow: hidden;
+  *zoom: 1;
+  border: 1px solid #e1e1e1;
+  background-color: #fff; }
+  .alert-tit, .alert-bd {
+    float: left;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px; }
+  .alert-tit {
+    border-right: 1px solid #e1e1e1;
+    background-color: #f5f5f5;
+    color: #333; }
+
+/*# sourceMappingURL=../../../../sourcemaps/site/module/pb/pb_common.css.map */

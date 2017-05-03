@@ -1,0 +1,97 @@
+.multi-choose-wrap {
+  position: relative;
+  height: 30px;
+  /*cursor: pointer;*/ }
+
+.multi-chosen-wrap {
+  position: relative;
+  height: 34px;
+  width: 575px;
+  padding-right: 19px; }
+
+.multi-choose-wrap,
+.multi-choose-wrap *,
+.multi-chosen-wrap,
+.multi-chosen-wrap * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.multi-choose {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #81beeb;
+  background-color: #fff;
+  padding: 4px;
+  overflow: hidden;
+  height: 100%;
+  line-height: 26px; }
+
+.multi-chosen {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  right: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 6px 4px;
+  overflow: hidden;
+  height: 36px;
+  line-height: 26px; }
+
+.multi-choose .item,
+.multi-chosen .item {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 0 5px;
+  height: 20px;
+  width: 152px;
+  background-color: #f2f8fd;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: 14px/20px "microsoft yahei";
+  color: #4d4d4d; }
+
+.multi-choose-wrap .choose-btn {
+  padding: 0 5px;
+  height: 20px;
+  font: 14px/20px "microsoft yahei"; }
+
+.multi-choose--expand {
+  z-index: 100;
+  height: auto;
+  max-height: 140px;
+  overflow: auto; }
+
+.choose--xl {
+  width: 543px; }
+
+.multi-chosen-control {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 34px;
+  line-height: 34px;
+  vertical-align: middle;
+  text-align: center;
+  width: 20px;
+  background-color: #f1f1f1; }
+
+.multi-chosen-control .arrow {
+  display: inline-block;
+  width: 0;
+  height: 0; }
+
+.multi-chosen-control .arrow--up {
+  border-width: 6px 4px 0 4px;
+  border-style: solid dashed dashed dashed;
+  border-color: #333 transparent transparent transparent; }
+
+.multi-chosen-control .arrow--down {
+  border-width: 0px 4px 6px 4px;
+  border-style: dashed dashed solid dashed;
+  border-color: transparent transparent #333 transparent; }
+
+/*# sourceMappingURL=../../sourcemaps/ui/ui_multi_choose.css.map */

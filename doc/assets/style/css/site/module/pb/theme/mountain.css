@@ -1,0 +1,87 @@
+/*
+ * des front theme color mountain
+ * @author: liuyao 2016-07-26
+*/
+.header {
+  background: url(/assets/img/pb/theme/mountain/header_bg.jpg) center no-repeat #fff; }
+
+.nav {
+  background-color: #38a9e3; }
+  .nav .now a,
+  .nav a:hover {
+    background-color: #3098cd; }
+
+.panel-log {
+  background: url(/assets/img/pb/home/log_bg.jpg) top left no-repeat #fff; }
+
+.panel-hd {
+  border-top-color: #4b8bd3;
+  background-image: -moz-linear-gradient(top, #deeff9 0, #fff 100%);
+  background-image: -webkit-linear-gradient(top, #deeff9 0, #fff 100%);
+  background-image: -o-linear-gradient(top, #deeff9 0, #fff 100%);
+  background-image: linear-gradient(to bottom, #deeff9 0, #fff 100%); }
+  .panel-hd .icon {
+    color: #38a9e3; }
+
+.tab-menu .on {
+  background-color: #38a9e3;
+  border-color: #38a9e3; }
+
+.btn-log {
+  color: #fff;
+  background-color: #fe9807;
+  background-image: -moz-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: -webkit-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: -o-linear-gradient(top, #ffa006 0, #fd930c 100%);
+  background-image: linear-gradient(to bottom, #ffa006 0, #fd930c 100%); }
+  .btn-log:link, .btn-log:visited {
+    color: #fff; }
+  .btn-log:hover {
+    background-color: #eb8a01;
+    background-image: -moz-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: -webkit-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: -o-linear-gradient(top, #ec9200 0, #ee8602 100%);
+    background-image: linear-gradient(to bottom, #ec9200 0, #ee8602 100%);
+    color: #fff;
+    text-decoration: none; }
+  .btn-log:active {
+    background-image: -moz-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: -webkit-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: -o-linear-gradient(top, #ee8602 0, #ec9200 100%);
+    background-image: linear-gradient(to bottom, #ee8602 0, #ec9200 100%); }
+
+.side-cata-hd .icon {
+  color: #38a9e3; }
+
+/* vo theme
+---------------------------------------------*/
+.theme-vo {
+  background: #def2fc; }
+  .theme-vo .header {
+    height: 60px;
+    background-color: #38a9e3;
+    background-image: none; }
+  .theme-vo .login-info .split {
+    color: #bee3f6; }
+  .theme-vo .wrap {
+    background: url(/assets/img/pb/theme/mountain/vo_cnt_bg.jpg) center top no-repeat; }
+  .theme-vo .menu .menu-hd .menu-ico {
+    color: #6ab0f2; }
+  .theme-vo .menu .menu-bd a:hover b {
+    border-color: #a4d3ff;
+    background: #e3f1ff; }
+    .theme-vo .menu .menu-bd a:hover b:before, .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #a4d3ff; }
+    .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #e3f1ff; }
+  .theme-vo .menu .menu-bd .now b {
+    border-color: #a4d3ff;
+    background: #e3f1ff; }
+    .theme-vo .menu .menu-bd .now b:before, .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #a4d3ff; }
+    .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #e3f1ff; }
+  .theme-vo .msg-panel th {
+    border-top: 1px solid #38a9e3; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/pb/theme/mountain.css.map */

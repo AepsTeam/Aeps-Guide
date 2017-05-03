@@ -1,0 +1,100 @@
+.st {
+  display: inline-block;
+  font-size: 12px;
+  padding: 1px 2px;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid; }
+
+.st-succ {
+  border-color: #290;
+  color: #290;
+  background-color: #c4f1b8; }
+
+.st-succ-with-right {
+  border-color: #290;
+  color: #290;
+  background-color: #c4f1b8; }
+
+.st-succ-with-right:after {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+  content: '\0020';
+  background-image: url(../../../img/ui/icon-16.png);
+  background-position: -48px -240px; }
+
+.st-fail {
+  border-color: #faaae6;
+  color: #dc50b4;
+  background-color: #ffdcfa; }
+
+.st-unprocess {
+  border-color: #aac8ff;
+  color: #506ed2;
+  background-color: #dce6ff; }
+
+.st-disabled {
+  color: #999; }
+
+.st-drop {
+  border-color: #999;
+  background-color: #888;
+  color: #fff; }
+
+.st-warn {
+  border-color: #e05c45;
+  color: #fff;
+  background-color: #e86e3f; }
+
+.st-as-default {
+  color: #ed9947;
+  background-color: #ffeede; }
+
+a.st-as-default {
+  min-width: 56px;
+  text-align: center;
+  color: #ed9947;
+  text-decoration: none;
+  border: none; }
+
+.st-default {
+  min-width: 56px;
+  text-align: center;
+  background-color: #ed9947;
+  color: #fff;
+  border: none; }
+
+a.st-default {
+  color: #fff;
+  text-decoration: none; }
+
+.st-class-a,
+.st-class-b,
+.st-class-c {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  line-height: 12px;
+  margin-right: 3px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: baseline; }
+
+.st-class-a {
+  border-color: #fab2a6;
+  color: #fa807b; }
+
+.st-class-b {
+  border-color: #9ed7f4;
+  color: #5fbff2; }
+
+.st-class-c {
+  border-color: #d9d9d9;
+  color: #999; }
+
+/*# sourceMappingURL=../../sourcemaps/ui/ui_status.css.map */

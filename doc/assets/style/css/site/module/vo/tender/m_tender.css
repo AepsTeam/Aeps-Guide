@@ -1,0 +1,610 @@
+@charset "UTF-8";
+/* import widget*/
+/*
+ * @des:
+ * @author: xubaoshi 2016/9/19
+ * @update:
+*/
+/* bid info
+===================================================*/
+.num {
+  font-size: 16px; }
+
+.new-tip {
+  position: relative;
+  display: block; }
+  .new-tip .new-mark {
+    position: absolute;
+    top: -18px; }
+
+.new-mark {
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 16px;
+  border-radius: 3px;
+  font-size: 12px;
+  color: #fff; }
+  .new-mark b {
+    display: inline-block;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 40%; }
+
+.pay-mark {
+  background-color: #eb6c52;
+  border: 1px solid #e05d43; }
+  .pay-mark b {
+    border-top: 4px solid #e05d43; }
+
+.ques-mark {
+  background-color: #49b378;
+  border: 1px solid #4dbb7e; }
+  .ques-mark b {
+    border-top: 4px solid #4dbb7e; }
+
+.change-mark {
+  background-color: #ec9a48;
+  border: 1px solid #e68526; }
+  .change-mark b {
+    border-top: 4px solid #e68526; }
+
+.opt-tab .new-mark {
+  top: -12px;
+  left: 30%; }
+
+.tb .new-mark {
+  left: 22%; }
+
+.time-node {
+  padding: 10px 30px 12px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9; }
+  .time-node .time-line {
+    margin-bottom: 10px;
+    margin-left: -20px;
+    color: #666; }
+    .time-node .time-line .icon {
+      margin-right: 4px; }
+    .time-node .time-line .new-mark {
+      margin-left: 10px; }
+  .time-node .sub-hd {
+    margin: 5px 0 4px 0; }
+  .time-node .response {
+    padding-top: 13px;
+    margin: 12px 0 4px;
+    border-top: 1px dashed #d9d9d9;
+    overflow: hidden;
+    *zoom: 1; }
+    .time-node .response h4 {
+      float: left;
+      margin-right: 10px;
+      color: #333; }
+  .time-node .audit-meta {
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    border-top: 1px solid #ccc; }
+
+.new {
+  background-color: #f0f5f8;
+  border-color: #b8dde6; }
+
+.txt-lst li {
+  padding-left: 70px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  *zoom: 1; }
+
+.txt-lst .txt-tit {
+  float: left;
+  margin-left: -70px; }
+
+.txt-lst .txt-bd {
+  float: left;
+  color: #333; }
+
+.txt-lst .txt-ope {
+  margin-top: 20px; }
+  .txt-lst .txt-ope .btn {
+    margin-right: 5px; }
+
+.change-lst {
+  margin-left: 0; }
+  .change-lst li {
+    padding-left: 2px;
+    list-style-type: circle;
+    list-style-position: inside; }
+
+.ope-lst .btn-mini {
+  padding: 0 5px;
+  color: #06d; }
+  .ope-lst .btn-mini .btn-mini:link, .ope-lst .btn-mini .btn-mini:visited {
+    color: #06d; }
+  .ope-lst .btn-mini .btn-mini:hover {
+    background-color: #e68938;
+    color: #fff; }
+
+.tb-date {
+  text-align: center; }
+  .tb-date .date {
+    display: block;
+    word-wrap: break-word; }
+
+.toggle-txt {
+  position: relative;
+  overflow: hidden; }
+  .toggle-txt .toggle-switch {
+    display: block;
+    width: 36px;
+    padding-left: 10px;
+    background-color: #fff;
+    vertical-align: middle; }
+    .toggle-txt .toggle-switch b {
+      position: absolute;
+      top: 2px; }
+
+.toggle-txt-close {
+  max-height: 36px; }
+  .toggle-txt-close .toggle-switch {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+
+.toggle-txt-open {
+  height: auto; }
+  .toggle-txt-open .toggle-switch {
+    position: relative;
+    float: right; }
+    .toggle-txt-open .toggle-switch b {
+      top: -2px; }
+
+/* bid result
+===================================================*/
+.bid-result {
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  padding: 15px 0; }
+  .bid-result .field-tit {
+    top: 11px; }
+  .bid-result .field-bd {
+    padding-left: 0; }
+  .bid-result .field {
+    padding: 12px 0 12px 120px; }
+  .bid-result .text-after {
+    line-height: 16px; }
+
+.bid-label,
+.bid-label-text {
+  overflow: hidden; }
+
+.bid-label {
+  margin-right: 10px;
+  border: 1px solid #b2b2b2;
+  float: left; }
+
+.bid-label-text {
+  padding: 0 10px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.bid-label-icon {
+  float: left;
+  width: 28px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #b2b2b2; }
+  .bid-label-icon .cny {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; }
+
+.bid-label-win {
+  border-color: #70ce9a; }
+  .bid-label-win .bid-label-icon {
+    background-color: #70ce9a; }
+  .bid-label-win .bid-label-text {
+    color: #70ce9a; }
+
+.field-bid-report .field-bd {
+  line-height: 26px; }
+
+.field-bid-report .icon-pdf {
+  margin: -1px 5px 0 0; }
+
+.bid-sp-lst {
+  overflow: hidden; }
+
+.bid-sp-item {
+  width: 310px;
+  border: 1px solid #d9d9d9;
+  float: left;
+  margin: 0 10px 15px 0; }
+
+.bid-sp-hd {
+  background-color: #f2f2f2;
+  padding: 8px 15px;
+  position: relative;
+  height: 58px; }
+  .bid-sp-hd h3 {
+    font-size: 14px;
+    width: 160px;
+    float: left;
+    margin-top: 8px; }
+
+.bid-result-input .bid-sp-item:hover .bid-sp-hd,
+.bid-sp-win .bid-sp-hd {
+  background-color: #f1fcf6; }
+
+.bid-result-input .bid-sp-unwin:hover .bid-sp-hd {
+  background-color: #f2f2f2; }
+
+.bid-mark-win,
+.bid-mark-unwin {
+  background: url(/assets/img/back/bid/bid_result_label.png) no-repeat;
+  width: 108px;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  display: none; }
+
+.bid-sp-unwin .bid-mark-unwin {
+  display: block; }
+
+.bid-mark-win .bid-mark-win {
+  display: block;
+  background-position: 0 -60px;
+  width: 85px;
+  height: 55px; }
+
+.bid-sp-bd {
+  padding: 8px 15px; }
+
+.bid-sp-info {
+  line-height: 24px;
+  padding-bottom: 10px; }
+  .bid-sp-info .btn {
+    margin: 10px 0 5px; }
+
+.bid-result-fill,
+.bid-status {
+  border-top: 1px dashed #e6e6e6;
+  padding-top: 10px;
+  height: 225px; }
+
+.bid-status {
+  height: auto; }
+  .bid-status li {
+    padding: 5px 0; }
+  .bid-status .txt-over {
+    display: inline-block;
+    width: 270px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+
+.bid-result-fill dl {
+  overflow: hidden;
+  padding: 5px 0; }
+
+.bid-result-fill dd {
+  overflow: hidden; }
+
+.bid-result-fill dt {
+  float: left;
+  padding-left: 15px;
+  line-height: 26px; }
+
+.icon-unwin {
+  background-position: -32px -128px; }
+
+.bid-result-show .bid-mark-unwin {
+  display: block; }
+
+/* bid state
+===================================================*/
+.pop-sign {
+  width: 600px; }
+  .pop-sign .fold-bd {
+    padding: 10px 0; }
+
+.fold-clean .fold-hd, .fold-clean .fold-bd {
+  background-color: #fff; }
+
+.tb-form-view .bid-progress {
+  padding: 0; }
+
+.bid-progress-hd {
+  height: 66px;
+  padding: 9px 0 9px 46px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 9; }
+  .bid-progress-hd .bid-circle {
+    float: left;
+    width: 49px;
+    height: 49px;
+    margin-right: 13px;
+    background: url(/assets/img/front/bid_state.png) no-repeat; }
+  .bid-progress-hd h3 {
+    float: left;
+    font: normal 24px/48px "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1";
+    color: #fff; }
+
+.bid-progress-bd {
+  text-align: center;
+  vertical-align: middle; }
+  .bid-progress-bd .sl-vam {
+    width: 100%;
+    height: 225px; }
+  .bid-progress-bd .bid-progress-main {
+    margin: 8px 0 10px;
+    text-align: center; }
+  .bid-progress-bd .btn-biger {
+    padding: 0 35px; }
+  .bid-progress-bd .bid-state {
+    width: 205px;
+    height: 53px;
+    margin: 0 auto;
+    padding-top: 7px;
+    border-radius: 50px;
+    vertical-align: middle; }
+    .bid-progress-bd .bid-state .lg-txt {
+      font: normal 18px/26px "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1"; }
+    .bid-progress-bd .bid-state .small-txt {
+      font: normal 14px/1.5 "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1"; }
+  .bid-progress-bd .faild-reason {
+    position: relative;
+    margin: 10px auto;
+    width: 205px;
+    text-align: left; }
+    .bid-progress-bd .faild-reason strong {
+      display: block; }
+    .bid-progress-bd .faild-reason .poptip {
+      margin-top: 12px; }
+      .bid-progress-bd .faild-reason .poptip p {
+        max-height: 360px; }
+
+.bid-state-succ {
+  background-color: #e5fae1; }
+  .bid-state-succ p {
+    color: #5ba34d; }
+
+.bid-state-failed {
+  background-color: #fae6e7; }
+  .bid-state-failed p {
+    color: #ca4b52; }
+
+.bid-state-warn {
+  background-color: #fbf3de; }
+  .bid-state-warn p {
+    color: #b2863e; }
+
+.bid-state-close {
+  background-color: #f0f0f0; }
+  .bid-state-close p {
+    color: #666; }
+
+.bid-progress-info {
+  margin: -1px 15px 0;
+  padding: 15px 0;
+  border-top: 1px dashed #e6e6e6; }
+  .bid-progress-info h4 {
+    margin-bottom: 5px; }
+  .bid-progress-info .icon {
+    margin-right: 3px; }
+
+.bid-progress-sign .bid-progress-hd {
+  background-color: #70ce9a; }
+
+.bid-progress-sign .bid-circle {
+  background-position: 0 0; }
+
+.bid-progress-audit .bid-progress-hd {
+  background-color: #edcf47; }
+
+.bid-progress-audit .bid-circle {
+  background-position: 0 -49px; }
+
+.bid-progress-tender .bid-progress-hd {
+  background-color: #ed9947; }
+
+.bid-progress-tender .bid-circle {
+  background-position: 0 -98px; }
+
+.bid-progress-filter .bid-progress-hd {
+  background-color: #eb6c52; }
+
+.bid-progress-filter .bid-circle {
+  background-position: 0 -147px; }
+
+.bid-progress-close .bid-progress-hd {
+  background-color: #ebebeb; }
+
+.bid-progress-close .bid-circle {
+  background-position: 0 -196px; }
+
+.bid-progress-failed .bid-progress-hd {
+  background-color: #e64c2e; }
+
+.bid-progress-failed .bid-circle {
+  background-position: 0 -245px; }
+
+.tab-primary {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 10px; }
+  .tab-primary:before, .tab-primary:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .tab-primary:after {
+    clear: both; }
+  .tab-primary > li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 10px;
+    height: 34px;
+    min-width: 100px;
+    border-top: 1px solid #dadada;
+    background-color: #f2f2f2; }
+    .tab-primary > li:first-child {
+      margin-left: 0; }
+    .tab-primary > li:hover {
+      background-color: #fff; }
+    .tab-primary > li a {
+      display: block;
+      padding: 0 10px;
+      height: 33px;
+      border-left: 1px solid #dadada;
+      border-right: 1px solid #dadada;
+      font: normal 14px/32px arial, "Microsoft Yahei", sans-serif;
+      text-align: center;
+      color: #333; }
+      .tab-primary > li a:hover {
+        text-decoration: none; }
+  .tab-primary > .on {
+    padding-top: 0;
+    height: 35px;
+    margin-bottom: -1px;
+    border-top: 2px solid #ee512e;
+    background-color: #fff; }
+  .tab-primary > .tail {
+    float: right;
+    border-top: none;
+    text-align: right; }
+
+.tab-sub {
+  height: 35px;
+  border-bottom: 1px solid #208adc; }
+  .tab-sub:before, .tab-sub:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .tab-sub:after {
+    clear: both; }
+  .tab-sub > li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    font: normal 14px/34px arial, "Microsoft Yahei", sans-serif; }
+    .tab-sub > li:first-child {
+      margin-left: 0; }
+    .tab-sub > li a {
+      display: block;
+      height: 34px;
+      padding: 0 20px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #fff;
+      text-decoration: none; }
+      .tab-sub > li a:link, .tab-sub > li a:visited {
+        color: #333; }
+      .tab-sub > li a:hover {
+        color: #333;
+        text-decoration: none; }
+  .tab-sub .selected a {
+    background-color: #208adc;
+    border-color: #208adc;
+    text-decoration: none; }
+    .tab-sub .selected a:link, .tab-sub .selected a:visited {
+      color: #fff; }
+    .tab-sub .selected a:hover {
+      color: #fff;
+      text-decoration: none; }
+  .tab-sub .tab-sub-tail {
+    float: right;
+    text-align: right;
+    margin-right: 0; }
+    .tab-sub .tab-sub-tail .btn {
+      margin-right: 5px; }
+      .tab-sub .tab-sub-tail .btn:last-child {
+        margin-right: 0; }
+
+.tab-sub-ope {
+  padding-top: 10px; }
+
+.tab-sub-submit {
+  padding: 20px 0;
+  background-color: #e6edf5;
+  text-align: center; }
+
+.tab-sub-narrow li {
+  margin-left: 3px; }
+
+.tab-con .tab-node {
+  display: none; }
+
+.tab-con .on {
+  display: block; }
+
+.tab .opt-tab {
+  margin-bottom: 15px; }
+
+.tab-union {
+  position: relative; }
+
+/*
+ * TODO: 只有vo在用，待移除
+ * @des collapse style tab
+ * @author shjy 2014-02-28
+ */
+.tab {
+  margin-bottom: 10px; }
+
+.tab-hd {
+  height: 35px;
+  position: relative;
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: #e6edf5; }
+  .tab-hd a {
+    float: left;
+    position: relative;
+    font: bold 14px/35px "\5B8B\4F53";
+    padding: 0 15px;
+    height: 34px; }
+    .tab-hd a:link, .tab-hd a:visited,
+    .tab-hd a:link .green,
+    .tab-hd a:visited .green {
+      color: #666; }
+    .tab-hd a:hover,
+    .tab-hd a:hover .green {
+      color: #333;
+      text-decoration: none; }
+    .tab-hd a.on {
+      padding: 0 14px;
+      height: 35px;
+      bottom: 0px;
+      border: 1px solid #d8dfe6;
+      border-bottom: none;
+      background-color: #fff; }
+    .tab-hd a.on:link, .tab-hd a.on:visited {
+      color: #333; }
+      .tab-hd a.on:link .green, .tab-hd a.on:visited .green {
+        color: #290; }
+    .tab-hd a.on:hover {
+      text-decoration: none; }
+
+.tab-bd {
+  border: 1px solid #D8DFE6;
+  padding: 10px; }
+
+.tab-primary {
+  margin-top: 40px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/vo/tender/m_tender.css.map */

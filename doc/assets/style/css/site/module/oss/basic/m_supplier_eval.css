@@ -1,0 +1,56 @@
+.sup-eval-tip {
+  position: fixed;
+  bottom: 0;
+  padding-left: 20px; }
+  .sup-eval-tip .tip-big {
+    border: 5px solid #f0e5c9; }
+
+.fold-bd .tb-eval-set .label-group {
+  display: inline-block; }
+
+.fold-bd .tb-eval-set .txt-fll {
+  line-height: 26px; }
+
+.fold-bd .tb-eval-set th,
+.fold-bd .tb-eval-set td {
+  padding: 6px 15px; }
+
+.fold-bd .tb-eval-set td {
+  vertical-align: middle; }
+
+.pop-lvl-set {
+  width: 528px; }
+  .pop-lvl-set .pop-bd {
+    padding: 25px; }
+
+.fold-grade-rule {
+  margin-top: 10px;
+  max-height: 360px;
+  overflow-y: scroll; }
+  .fold-grade-rule .fold-bd {
+    padding: 10px;
+    border: 1px solid #e6e6e6; }
+    .fold-grade-rule .fold-bd h3 {
+      font-size: 14px; }
+
+.pop-grade-set {
+  width: 543px; }
+  .pop-grade-set .pop-bd {
+    padding: 25px; }
+
+.detail-conf {
+  max-height: 366px;
+  overflow-y: auto; }
+
+.pop-conf-set {
+  width: 714px; }
+  .pop-conf-set .pop-bd {
+    padding: 25px; }
+  .pop-conf-set .sheet > tbody > tr > td {
+    line-height: 22px;
+    vertical-align: middle; }
+
+.pop-uconf-set .detail-conf {
+  overflow-y: visible; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/basic/m_supplier_eval.css.map */

@@ -1,0 +1,38 @@
+/**
+ *jQuery.jcrop
+ */
+.jcrop-holder {
+  text-align: left;
+  margin: 0 auto; }
+
+.jcrop-vline, .jcrop-hline {
+  font-size: 0;
+  position: absolute; }
+
+.jcrop-vline {
+  height: 100%;
+  width: 1px !important; }
+
+.jcrop-hline {
+  height: 1px !important;
+  width: 100%; }
+
+.jcrop-handle {
+  background-color: #333333;
+  border: 1px solid #EEEEEE;
+  font-size: 1px;
+  height: 7px !important;
+  width: 7px !important; }
+
+.jcrop-tracker {
+  height: 100%;
+  width: 100%; }
+
+.custom .jcrop-vline, .custom .jcrop-hline {
+  background: none repeat scroll 0 0 #FFFF00; }
+
+.custom .jcrop-handle {
+  background-color: #C7BB00;
+  border-color: #000000; }
+
+/*# sourceMappingURL=../../sourcemaps/ui/ui_jcrop.css.map */

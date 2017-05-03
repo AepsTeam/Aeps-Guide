@@ -1,0 +1,47 @@
+/*
+ * des improve
+ */
+.panel-improve {
+  margin: 20px;
+  padding: 20px;
+  border: 1px dotted #dfdfdf;
+  border-radius: 5px;
+  background-color: #fffeec; }
+  .panel-improve h3 {
+    margin: 5px 0 15px;
+    font-size: 14px; }
+  .panel-improve .improve-info {
+    margin-bottom: 15px;
+    color: #c59120; }
+
+.improve-lst {
+  margin-right: -14px;
+  overflow: hidden;
+  *zoom: 1; }
+  .improve-lst li {
+    float: left;
+    width: 244px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 15px;
+    margin-right: 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    background-image: -moz-linear-gradient(top, #fdfdfd, #f5f5f5);
+    background-image: -webkit-linear-gradient(top, #fdfdfd, #f5f5f5);
+    background-image: -o-linear-gradient(top, #fdfdfd, #f5f5f5);
+    background-image: linear-gradient(to bottom, #fdfdfd, #f5f5f5); }
+  .improve-lst .improve-tit {
+    float: left; }
+    .improve-lst .improve-tit:link, .improve-lst .improve-tit :visited {
+      color: #333; }
+    .improve-lst .improve-tit:hover {
+      color: #e04b43; }
+  .improve-lst .improve-state {
+    float: right;
+    font-family: Tahoma; }
+  .improve-lst .finished {
+    color: #69b902; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_improve.css.map */

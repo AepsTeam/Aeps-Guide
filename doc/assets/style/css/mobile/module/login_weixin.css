@@ -1,0 +1,162 @@
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 20px; }
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+img {
+  border: 0 none;
+  vertical-align: top; }
+
+i, em {
+  font-style: normal; }
+
+ol, ul {
+  list-style: none; }
+
+input, select, button, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family: inherit; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+body {
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
+  line-height: 1.5;
+  color: #666;
+  background-color: #f2f2f2;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important; }
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #f2f2f2 inset;
+  -moz-box-shadow: 0 0 0 50px #f2f2f2 inset;
+  box-shadow: 0 0 0 50px #f2f2f2 inset; }
+
+input[type="text"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #f2f2f2 inset;
+  -moz-box-shadow: 0 0 0 50px #f2f2f2 inset;
+  box-shadow: 0 0 0 50px #f2f2f2 inset;
+  -webkit-text-fill-color: #333; }
+
+button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  vertical-align: middle;
+  text-align: center;
+  background: transparent; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.orange {
+  color: #ed9853; }
+
+.red, .wxlogin-error {
+  color: #e04b43; }
+
+.gray {
+  color: #999; }
+
+.green {
+  color: #199900; }
+
+.wxlogin-title {
+  line-height: 1.4rem;
+  padding: 0.75rem 1rem 0;
+  font-size: 0.65rem;
+  color: #333; }
+
+.wxlogin-box {
+  padding: 1rem 1.5rem 0; }
+
+.wxlogin-lst-item {
+  position: relative;
+  padding-bottom: 1.2rem; }
+
+.wxlogin-inp {
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  padding: 0.55rem 0.6rem 0.575rem;
+  border: none;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 0.6rem;
+  color: #333;
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 0.15rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.wxlogin-btn {
+  width: 100%;
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #6898fe;
+  border: none;
+  text-align: center;
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 0.15rem; }
+
+.wxlogin-btn-disabled {
+  background: #797979; }
+
+.wxlogin-error {
+  padding-top: 0.15rem;
+  line-height: 0.9rem;
+  font-size: 0.6rem; }
+
+.tip-nor {
+  position: absolute;
+  top: 16%;
+  left: 0;
+  width: 100%;
+  line-height: 1.6rem;
+  text-align: center;
+  font-size: 1.5rem; }
+  .tip-nor .icon {
+    margin-right: 0.5rem;
+    font-size: 1.6rem; }
+
+.tip-succ .icon {
+  color: #70b701; }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/module/login_weixin.css.map */

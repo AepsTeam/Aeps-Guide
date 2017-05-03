@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_status.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+      p{
+        padding-top:10px;
+      }
+      p span{
+        margin-right:5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      st-succ：
+      <span class="st st-succ" title="合格供应商">合格</span>
+      <span class="st st-succ">供应商已发货</span>
+      <span class="st st-succ-with-right">供应商已接收</span>
+      一般用于成功状态
+    </p>
+    <p>
+      st-fail：
+      <span class="st st-fail">暂停</span>
+      <span class="st st-fail" title="审批不通过，退回处理">退</span>
+      <span class="st st-fail">紧急</span>
+      <span class="st st-fail">供应商已拒绝</span>
+      一般用于失败状态
+    </p>
+    <p>
+      st-unprocess：
+      <span class="st st-unprocess" title="反审批">反</span>
+      一般用于反审批状态
+    </p>
+    <p>
+      st-drop：
+      <span class="st st-drop">删除</span>
+      <span class="st st-drop" title="黑名单供应商">黑名单</span>
+      一般用于删除状态
+    </p>
+    <p>
+      st-warn：
+      <span class="st st-warn" title="潜在供应商">潜在</span>
+      <span class="st st-warn">紧急</span>
+      <span class="st st-warn">返回修改</span>
+      一般用于警告状态
+    </p>
+    <p>
+      st-as-default：
+      <span class="st st-as-default">合</span>
+      <span class="st st-as-default">详</span>
+      <a href="#" class="st st-as-default">设为默认</a>
+      一般用于默认状态
+    </p>
+    <p>
+      <s>st-default</s>：
+      <span class="st st-default">默认</span>
+      <a href="#" class="st st-default">设为默认</a>
+      一般用于默认状态,待废弃
+    </p>
+    <p>
+      st-class-a：
+      <span class="st st-class-a" title="A类">A</span>
+      一般用于A类物品
+    </p>
+    <p>
+      st-class-b：
+      <span class="st st-class-b" title="B类">B</span>
+      一般用于B类物品
+    </p>
+    <p>
+      st-class-c：
+      <span class="st st-class-c" title="C类">C</span>
+      一般用于C类物品
+    </p>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('status');
+    </script>
+  </body>
+</html>
+

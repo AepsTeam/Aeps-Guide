@@ -1,0 +1,205 @@
+/* color */
+.red {
+  color: #e04b43; }
+
+.green {
+  color: #229900; }
+
+.blue {
+  color: #06d; }
+
+.orange {
+  color: #ed9853; }
+
+.gray {
+  color: #666; }
+
+.gray-light {
+  color: #999; }
+
+.gray-lighter {
+  color: #ccc; }
+
+/* box model */
+.mt5 {
+  margin-top: 5px; }
+
+.mr5 {
+  margin-right: 5px; }
+
+.mb5 {
+  margin-bottom: 5px; }
+
+.ml5 {
+  margin-left: 5px; }
+
+.pt5 {
+  padding-top: 5px; }
+
+.pr5 {
+  padding-right: 5px; }
+
+.pb5 {
+  padding-bottom: 5px; }
+
+.pl5 {
+  padding-left: 5px; }
+
+.mt10 {
+  margin-top: 10px; }
+
+.mr10 {
+  margin-right: 10px; }
+
+.mb10 {
+  margin-bottom: 10px; }
+
+.ml10 {
+  margin-left: 10px; }
+
+.pt10 {
+  padding-top: 10px; }
+
+.pr10 {
+  padding-right: 10px; }
+
+.pb10 {
+  padding-bottom: 10px; }
+
+.pl10 {
+  padding-left: 10px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mr15 {
+  margin-right: 15px; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.ml15 {
+  margin-left: 15px; }
+
+.pt15 {
+  padding-top: 15px; }
+
+.pr15 {
+  padding-right: 15px; }
+
+.pb15 {
+  padding-bottom: 15px; }
+
+.pl15 {
+  padding-left: 15px; }
+
+.mt20 {
+  margin-top: 20px; }
+
+.mr20 {
+  margin-right: 20px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
+.ml20 {
+  margin-left: 20px; }
+
+.pt20 {
+  padding-top: 20px; }
+
+.pr20 {
+  padding-right: 20px; }
+
+.pb20 {
+  padding-bottom: 20px; }
+
+.pl20 {
+  padding-left: 20px; }
+
+/* layout */
+.posr {
+  position: relative; }
+
+.posa {
+  position: absolute; }
+
+.poss {
+  position: static; }
+
+.hidden {
+  visibility: hidden; }
+
+.visible {
+  visibility: visible; }
+
+.db {
+  display: block; }
+
+.dn {
+  display: none; }
+
+.di {
+  display: inline; }
+
+.dib {
+  display: inline-block; }
+
+.dtb {
+  display: table; }
+
+.vat {
+  vertical-align: top; }
+
+.vam {
+  vertical-align: middle; }
+
+.vab {
+  vertical-align: bottom; }
+
+.vatt {
+  vertical-align: text-top; }
+
+.vatb {
+  vertical-align: text-bottom; }
+
+.tal {
+  text-align: left; }
+
+.tac {
+  text-align: center; }
+
+.tar {
+  text-align: right; }
+
+.fll {
+  float: left; }
+
+.flr {
+  float: right; }
+
+.fln {
+  float: none; }
+
+.fwn {
+  font-weight: normal; }
+
+.fwb {
+  font-weight: bold; }
+
+.fz-m {
+  font-size: 12px; }
+
+.fz-l {
+  font-size: 14px; }
+
+.ff-yh {
+  font-family: arial, "Microsoft Yahei", sans-serif; }
+
+.required {
+  color: red;
+  font-weight: bold;
+  margin-right: 2px;
+  vertical-align: middle; }
+
+/*# sourceMappingURL=../../sourcemaps/base/atom.css.map */

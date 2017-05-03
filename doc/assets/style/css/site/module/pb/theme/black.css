@@ -1,0 +1,84 @@
+/*
+ * des front theme color red
+ * @author: liuyao 2016-07-26
+*/
+.nav {
+  background-color: #130f10; }
+  .nav .now a,
+  .nav a:hover {
+    background-color: #595959; }
+
+.panel-log {
+  background: url(/assets/img/pb/home/log_bg.jpg) top left no-repeat #fff; }
+
+.panel-hd {
+  border-top-color: #cdcdcd;
+  background-image: -moz-linear-gradient(top, #eee 0, #fff 100%);
+  background-image: -webkit-linear-gradient(top, #eee 0, #fff 100%);
+  background-image: -o-linear-gradient(top, #eee 0, #fff 100%);
+  background-image: linear-gradient(to bottom, #eee 0, #fff 100%); }
+  .panel-hd .icon {
+    color: #d82d25; }
+
+.tab-menu .on {
+  background-color: #d82d25;
+  border-color: #d82d25; }
+
+.btn-log {
+  color: #fff;
+  background-color: #d82d25;
+  background-image: -moz-linear-gradient(top, #e03e33 0, #e0352d 100%);
+  background-image: -webkit-linear-gradient(top, #e03e33 0, #e0352d 100%);
+  background-image: -o-linear-gradient(top, #e03e33 0, #e0352d 100%);
+  background-image: linear-gradient(to bottom, #e03e33 0, #e0352d 100%); }
+  .btn-log:link, .btn-log:visited {
+    color: #fff; }
+  .btn-log:hover {
+    background-color: #c22821;
+    background-image: -moz-linear-gradient(top, #d92d21 0, #d4271f 100%);
+    background-image: -webkit-linear-gradient(top, #d92d21 0, #d4271f 100%);
+    background-image: -o-linear-gradient(top, #d92d21 0, #d4271f 100%);
+    background-image: linear-gradient(to bottom, #d92d21 0, #d4271f 100%);
+    color: #fff;
+    text-decoration: none; }
+  .btn-log:active {
+    background-image: -moz-linear-gradient(top, #d4271f 0, #d92d21 100%);
+    background-image: -webkit-linear-gradient(top, #d4271f 0, #d92d21 100%);
+    background-image: -o-linear-gradient(top, #d4271f 0, #d92d21 100%);
+    background-image: linear-gradient(to bottom, #d4271f 0, #d92d21 100%); }
+
+.side-cata-hd .icon {
+  color: #d82d25; }
+
+/* vo theme
+---------------------------------------------*/
+.theme-vo {
+  background: #ebebeb; }
+  .theme-vo .header {
+    height: 60px;
+    background-color: #130f10;
+    background-image: none; }
+  .theme-vo .login-info .split {
+    color: #695358; }
+  .theme-vo .wrap {
+    background: url(/assets/img/pb/theme/black/vo_cnt_bg.jpg) center top no-repeat; }
+  .theme-vo .menu .menu-hd .menu-ico {
+    color: #eb3b46; }
+  .theme-vo .menu .menu-bd a:hover b {
+    border-color: #f8c9cc;
+    background: #fcf1f2; }
+    .theme-vo .menu .menu-bd a:hover b:before, .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #f8c9cc; }
+    .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #fcf1f2; }
+  .theme-vo .menu .menu-bd .now b {
+    border-color: #f8c9cc;
+    background: #fcf1f2; }
+    .theme-vo .menu .menu-bd .now b:before, .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #f8c9cc; }
+    .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #fcf1f2; }
+  .theme-vo .msg-panel th {
+    border-top: 1px solid #d82d25; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/pb/theme/black.css.map */

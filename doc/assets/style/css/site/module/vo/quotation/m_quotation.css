@@ -1,0 +1,71 @@
+.collate {
+  cursor: pointer; }
+
+.tb-with-arrow th .icon-arrow-top {
+  border-color: #f5f5f5 #f5f5f5 #7D7D7D #f5f5f5; }
+
+.tb-with-arrow th .icon-arrow-bottom {
+  border-color: #7D7D7D #f5f5f5 #f5f5f5 #f5f5f5; }
+
+.tb-form .tb-form-bd {
+  width: 400px; }
+
+.tb-form-view .tb-form-bd {
+  width: 305px; }
+
+.audit {
+  width: auto; }
+
+.fold-clean .fold-hd,
+.fold-clean .fold-bd {
+  background: #fff; }
+
+.fold-border .fold-bd {
+  padding: 10px 20px;
+  border: 1px solid #ccc; }
+
+.quo-tit {
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 28px;
+  border-bottom: 1px dashed #e0e0e0;
+  color: #666; }
+
+.quo-num {
+  color: #666;
+  margin-bottom: 10px; }
+
+.txt-mx {
+  width: 114px; }
+
+.main-sup-quote {
+  width: 920px; }
+
+.main-quote-add {
+  width: 100%;
+  overflow: visible; }
+
+.fold-quote .form-lst {
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #ccc; }
+  .fold-quote .form-lst .ta-mid {
+    width: 895px;
+    height: 70px; }
+
+.day-num {
+  display: inline-block;
+  vertical-align: middle; }
+
+.sheet > tbody > tr > .celleditable .cell-optios {
+  border-right: 1px solid #ccc; }
+
+.options {
+  display: inline-block; }
+  .options label {
+    margin-left: 15px; }
+
+.sheet .form-text {
+  padding: 7px 10px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/vo/quotation/m_quotation.css.map */

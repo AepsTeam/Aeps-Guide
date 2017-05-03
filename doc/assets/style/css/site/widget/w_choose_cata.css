@@ -1,0 +1,122 @@
+/*
+* choose cata layout
+* 2015-07-06
+*/
+.drop-select-area {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 199;
+  max-width: 470px;
+  min-width: 240px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+  .drop-select-area .pop-ft {
+    margin: 5px 0 5px;
+    text-align: center; }
+    .drop-select-area .pop-ft .btn {
+      margin: 0 5px; }
+  .drop-select-area .select-area-bd {
+    max-height: 120px; }
+  .drop-select-area .res-area-sel-lst {
+    height: 60px; }
+  .drop-select-area .select-area-result {
+    margin-top: 10px; }
+    .drop-select-area .select-area-result strong {
+      display: block;
+      margin-bottom: 5px; }
+    .drop-select-area .select-area-result em {
+      margin: 0 5px;
+      font-family: "\5b8b\4f53"; }
+
+.select-area-hd {
+  position: relative; }
+  .select-area-hd .drop-lst {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -1px;
+    width: 100%; }
+
+.select-area-bd {
+  margin-top: 10px;
+  position: relative;
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow: auto; }
+  .select-area-bd .ztree-wrap {
+    max-height: none;
+    overflow: auto; }
+
+/* todo delete
+=================================================================*/
+.drop-select-cata {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 10;
+  max-width: 470px;
+  min-width: 240px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff; }
+
+.drop-select-cata .pop-ft {
+  margin: 5px 0 5px;
+  text-align: center; }
+
+.drop-select-cata .pop-ft .btn {
+  margin: 0 5px; }
+
+.select-cata-hd {
+  position: relative; }
+
+.select-cata-hd .drop-lst {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: -1px;
+  width: 100%; }
+
+.select-cata-bd {
+  margin-top: 10px;
+  position: relative;
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow: auto; }
+
+.select-cata-bd .ztree-wrap {
+  max-height: none;
+  overflow: auto; }
+
+.drop-select-cata .select-cata-bd {
+  max-height: 120px; }
+
+.drop-select-cata .res-cate-sel-lst {
+  height: 60px; }
+
+.select-cata-result {
+  margin-top: 10px; }
+
+.select-cata-result strong {
+  display: block;
+  margin-bottom: 5px; }
+
+.select-cata-result em {
+  margin: 0 5px;
+  font-family: "\5b8b\4f53"; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_choose_cata.css.map */

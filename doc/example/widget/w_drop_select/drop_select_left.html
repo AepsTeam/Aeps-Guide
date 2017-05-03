@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_button.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_drop_select.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body style="height:320px;text-align:center;">
+    <div class="m-drop-select m-drop-select--align-left">
+        <button type="button" class="btn btn-mini btn-icon btn-gray"><i class="icon icon-gear"></i>设置</button>
+        <div class="drop-content" style="display: block;">
+          <h4 class="drop-tit">是否显示</h4>
+          <ul class="drop-con-lst">
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="CAT_CODE_TEXT" checked="checked">所属类目
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="PROD_NO" checked="checked" disabled="">物品编号
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="PROD_NAME" checked="checked" disabled="">物品名称
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="ITEM_SPEC" checked="checked">规格型号
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="PROD_UNIT" checked="checked">单位
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="BEFORE_PURCHASE">采购前置期
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="BUYER_NAME" checked="checked">采购员
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="MIN_ORDER_QUANTITY">最小采购量
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="ABC_TYPE">ABC分类
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="colunmField" value="BUSINESS_FLAG" checked="checked" disabled="">状态
+                </label>
+            </li>
+          </ul>
+          <div class="drop-ft">
+            <button type="button" class="btn btn-small btn-main">保存</button>
+            <button type="button" class="btn btn-small btn-gray">取消</button>
+          </div>
+        </div>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('drop_select_left');
+    </script>
+  </body>
+</html>

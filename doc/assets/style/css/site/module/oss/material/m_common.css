@@ -1,0 +1,115 @@
+.main-bd-compact {
+  position: relative; }
+
+.main-bd .main-compact {
+  margin: -20px 0 30px -20px;
+  padding: 20px;
+  border-bottom: 1px dashed #e0e0e0;
+  background-color: #fff; }
+
+.tb-custom-wrapper {
+  position: relative; }
+
+.poptip-abc {
+  top: 40px;
+  left: 133px;
+  width: 300px;
+  z-index: 100;
+  color: #333; }
+
+.fold-abc-set {
+  /*margin-top: 30px;*/
+  /*width:520px;*/ }
+
+.fold-abc-set .tb-mid {
+  width: 420px; }
+
+.fold-abc-set .field {
+  padding-left: 100px; }
+
+.fold-abc-set .field-tit {
+  left: 0px;
+  width: 90px;
+  text-align: left; }
+
+.fold-abc-set .ta-mid {
+  width: 414px; }
+
+.select-group {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+.select-group label {
+  float: left;
+  padding: 3px 10px;
+  width: 46px;
+  word-spacing: normal;
+  border: 1px solid #a2b9cc;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  position: relative; }
+
+.select-group label + label {
+  margin-left: -1px; }
+
+.select-group label .icon-select {
+  position: absolute;
+  z-index: 1;
+  top: -7px;
+  right: -6px;
+  display: none; }
+
+.select-group label.selected {
+  border-color: #3aaf2e;
+  background-color: #dff9c9; }
+
+.select-group label.selected .icon-select {
+  display: block; }
+
+.try-result {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 3px 0; }
+
+.try-result-l, .try-result-r {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table-cell;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle; }
+
+.try-result-l {
+  padding-left: 109px;
+  padding-right: 10px; }
+
+.try-result-r {
+  padding-left: 10px;
+  border-left: 1px solid #eee; }
+
+.try-result-item {
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 24px; }
+
+.result-item-tit {
+  display: inline-block;
+  width: 70px; }
+
+.applied-wrap {
+  display: none; }
+
+.apply-to-goods-wrap .tip {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 10px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/material/m_common.css.map */

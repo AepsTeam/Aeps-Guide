@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_audit.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	ul,li{
+    		margin:0;
+    		padding:0;
+    		list-style:none;
+    	}
+    </style>
+  </head>
+  <body>
+    <ul class="audit">
+		<li>
+		    <span class="audit-tit">审批人：</span>史蒂夫
+		</li>
+		<li>
+		    <span class="audit-tit">审批时间：</span> 2014-02-15 12：00：00
+		</li>
+		<li>
+		    <span class="audit-tit">审批意见：</span>
+		    天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~
+		</li>
+	</ul>
+  <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('audit');
+    </script>
+  </body>
+</html>
+

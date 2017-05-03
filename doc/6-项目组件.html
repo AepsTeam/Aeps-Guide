@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>优采企业版前端规范 Documentation</title>
+    <meta name="keywords" content="documentation,dox" />
+    <meta name="description" content="Front-End Coding Guidelines." />
+    <script src="assets/prettify.js"></script>
+    <script src="assets/jquery-1.8.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/base.css" />
+    <link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">开始</a>
+        </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+          
+            <li>
+              <a href="./1-HTML规范.html">HTML规范</a>
+            </li>
+          
+            <li>
+              <a href="./2-CSS规范.html">CSS规范</a>
+            </li>
+          
+            <li>
+              <a href="./3-图片规范.html">图片规范</a>
+            </li>
+          
+            <li>
+              <a href="./4-命名规范.html">命名规范</a>
+            </li>
+          
+            <li>
+              <a href="./5-项目规范.html">项目规范</a>
+            </li>
+          
+            <li>
+              <a href="./6-项目组件.html">项目组件</a>
+            </li>
+          
+          
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <header class="jumbotron subhead">
+      <div class="container">
+        <h1>优采企业版前端规范</h1>
+        <p class="lead">
+          Front-End Coding Guidelines.
+        </p>
+      </div>
+    </header>
+
+<div class="container content">
+  <div class="row">
+  	<div class="col-md-3">
+      <ul class="nav nav-list bs-docs-sidenav affix">
+
+  <li class="level_2">
+    <a href="#index_全站组件" title="全站组件">
+      <i class="icon-chevron-right"></i>全站组件
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_一、按钮" title="一、按钮">
+      <i class="icon-chevron-right"></i>一、按钮
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_二、表格" title="二、表格">
+      <i class="icon-chevron-right"></i>二、表格
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_三、表单" title="三、表单">
+      <i class="icon-chevron-right"></i>三、表单
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_四、状态" title="四、状态">
+      <i class="icon-chevron-right"></i>四、状态
+    </a>
+  </li>
+
+  <li class="level_2">
+    <a href="#index_业务组件" title="业务组件">
+      <i class="icon-chevron-right"></i>业务组件
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_一、审批" title="一、审批">
+      <i class="icon-chevron-right"></i>一、审批
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_二、审批流" title="二、审批流">
+      <i class="icon-chevron-right"></i>二、审批流
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_三、tab菜单" title="三、tab菜单">
+      <i class="icon-chevron-right"></i>三、tab菜单
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_四、fold结构" title="四、fold结构">
+      <i class="icon-chevron-right"></i>四、fold结构
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_五、下拉选择" title="五、下拉选择">
+      <i class="icon-chevron-right"></i>五、下拉选择
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_六、筛选" title="六、筛选">
+      <i class="icon-chevron-right"></i>六、筛选
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_七、顶部条筛选" title="七、顶部条筛选">
+      <i class="icon-chevron-right"></i>七、顶部条筛选
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_八、图片上传" title="八、图片上传">
+      <i class="icon-chevron-right"></i>八、图片上传
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_九、导入" title="九、导入">
+      <i class="icon-chevron-right"></i>九、导入
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_十、面板信息" title="十、面板信息">
+      <i class="icon-chevron-right"></i>十、面板信息
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_十一、表格式表单" title="十一、表格式表单">
+      <i class="icon-chevron-right"></i>十一、表格式表单
+    </a>
+  </li>
+
+  <li class="level_3">
+    <a href="#index_十二、顶部搜索" title="十二、顶部搜索">
+      <i class="icon-chevron-right"></i>十二、顶部搜索
+    </a>
+  </li>
+
+</ul>
+
+    </div>
+    <div class="col-md-9">
+      <section>
+        <blockquote>
+<p>由于项目在不断迭代，所以一些组件可能未及时更新，以下代码仅供参考和查阅，具体html、sass、css代码请以项目中的源码为准。</p>
+</blockquote>
+<h2 id="-">全站组件</h2>
+<p><code>sass/ui/ui_*.scss</code>文件为全站通用样式组件</p>
+<p>ps:企业版通用ui组件基于<code>abiz-ui</code>组件库，部分组件如未在此展示，请参考<a href="http://demo.vemic.com/abiz/4-Ui.html" target="_blank">abiz-ui</a></p>
+<h3 id="-">一、按钮</h3>
+<p>样式文件：<code>ui_button.scss</code></p>
+<p>一般按钮需要添加3个class名称：<code>.btn</code>、<code>.btn-{size}</code>、<code>.btn-{type}</code></p>
+<p>按钮尺寸(由小到大)：<code>.btn-mini</code>、<code>.btn-small</code>、<code>.btn-mid</code>、<code>.btn-big</code>、<code>.btn-biger</code></p>
+<p>按钮类型（颜色不一样）：<code>.btn-red</code>、<code>.btn-yellow</code>、<code>.btn-blue</code>、<code>.btn-gray</code>、<code>.btn-main</code></p>
+<h4 id="1-">1、按钮不同尺寸展示</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/size.html" id="size" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;button class=&quot;btn btn-mini btn-main&quot;&gt;极小尺寸按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-small btn-main&quot;&gt;小尺寸按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-mid btn-main&quot;&gt;中等尺寸按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-big btn-main&quot;&gt;大尺寸按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-biger btn-main&quot;&gt;超大尺寸按钮&lt;/button&gt;
+</code></pre>
+<h4 id="2-">2、按钮不同类型展示</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/type.html" id="type" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;button class=&quot;btn btn-mid btn-red&quot;&gt;红色按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-mid btn-yellow&quot;&gt;黄色按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-mid btn-blue&quot;&gt;蓝色按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-mid btn-gray&quot;&gt;灰色按钮&lt;/button&gt;
+&lt;button class=&quot;btn btn-mid btn-main&quot;&gt;主要按钮&lt;/button&gt;
+</code></pre>
+<h4 id="3-">3、按钮禁用状态展示</h4>
+<p>添加 <code>disabled</code> 属性将按钮设置为禁用状态</p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/disabled.html" id="disabled" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;button class=&quot;btn btn-mid btn-red&quot; disabled&gt;禁用状态按钮&lt;/button&gt;
+</code></pre>
+<h4 id="4-">4、图标按钮</h4>
+<p>添加 <code>.btn-icon</code> class，并添加相应图标</p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/icon.html" id="icon" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;button class=&quot;btn btn-mid btn-red btn-icon&quot;&gt;&lt;i class=&quot;icon icon-warn&quot;&gt;&lt;/i&gt;图标按钮&lt;/button&gt;
+</code></pre>
+<h4 id="5-">5、按钮组</h4>
+<p>按钮组基于定义的常规按钮，添加父级容器并为其添加 <code>.btn-group</code> class。</p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/group.html" id="group" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button class=&quot;btn btn-mid btn-gray&quot;&gt;按钮一&lt;/button&gt;
+    &lt;button class=&quot;btn btn-mid btn-gray&quot;&gt;按钮二&lt;/button&gt;
+    &lt;button class=&quot;btn btn-mid btn-gray&quot;&gt;按钮三&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="6-">6、下拉按钮</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_button/dropdown.html" id="dropdown" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;!--dropdown--&gt;
+&lt;ul class=&quot;dropdown&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li style=&quot;top:24px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;复制&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li class=&quot;last&quot; style=&quot;top:46px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--dropdown-w4--&gt;
+&lt;ul class=&quot;dropdown dropdown-w4&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown-w4&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li style=&quot;top:24px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;复制&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li class=&quot;last&quot; style=&quot;top:46px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--dropdown-w5--&gt;
+&lt;ul class=&quot;dropdown dropdown-w5&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown-w5&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li style=&quot;top:24px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;复制&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li class=&quot;last&quot; style=&quot;top:46px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--dropdown-w6--&gt;
+&lt;ul class=&quot;dropdown dropdown-w6&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;dropdown-w6&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li style=&quot;top:24px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;复制&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+  &lt;li class=&quot;last&quot; style=&quot;top:46px;&quot;&gt;&lt;a href=&quot;#&quot;&gt;删除&lt;/a&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="-">二、表格</h3>
+<p>样式文件：<code>ui_table.scss</code></p>
+<h4 id="1-sheet-">1、sheet(带输入框的表格，一般用于新增修改页面)</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_table/sheet.html" id="sheet" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;table class=&quot;sheet&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class=&quot;g-id&quot;&gt;序号&lt;/th&gt;
+      &lt;th class=&quot;g-serial&quot;&gt;物品编号&lt;/th&gt;
+      &lt;th class=&quot;g-tit&quot;&gt;&lt;span class=&quot;require&quot;&gt;*&lt;/span&gt;物品名称&lt;/th&gt;
+      &lt;th class=&quot;g-spec&quot;&gt;规格型号&lt;/th&gt;
+      &lt;th class=&quot;g-unit&quot;&gt;单位&lt;/th&gt;
+      &lt;th class=&quot;g-amount&quot;&gt;采购量&lt;/th&gt;
+      &lt;th class=&quot;g-xs tac&quot;&gt;操作&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td class=&quot;g-id&quot;&gt;1&lt;/td&gt;
+      &lt;td class=&quot;g-serial celleditable&quot;&gt;
+        &lt;div class=&quot;celleditable-wrap&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;celleditable-ctrl&quot; value=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;g-tit celleditable&quot;&gt;
+        &lt;div class=&quot;celleditable-wrap&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;celleditable-ctrl&quot; value=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;g-spec&quot;&gt;100个/箱&lt;/td&gt;
+      &lt;td class=&quot;g-unit&quot;&gt;个&lt;/td&gt;
+      &lt;td class=&quot;g-amount celleditable&quot;&gt;
+        &lt;div class=&quot;celleditable-wrap&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;celleditable-ctrl&quot; value=&quot;&quot;&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;g-xs tac&quot;&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;tb-btn tb-btn--add&quot;&gt;&lt;/a&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;tb-btn tb-btn--remove&quot;&gt;&lt;/a&gt;
+      &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h4 id="2-tb-tb-border-tb-fixed-">2、tb tb-border tb-fixed(只读展示用，一般用于列表、详情、审批页)</h4>
+<p>ps: <code>tb</code>为表格基本样式，<code>tb-border</code>设置表格有边框，<code>tb-fixed</code>设置为固定表格布局（列宽度计算方式为固定，和表格内容无关）。</p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_table/tb.html" id="tb" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;table class=&quot;tb tb-border tb-fixed&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th class=&quot;g-id&quot;&gt;序号&lt;/th&gt;
+        &lt;th class=&quot;g-serial g-clip&quot; title=&quot;收货单号&quot;&gt;收货单号&lt;/th&gt;
+        &lt;th class=&quot;g-state g-clip&quot; title=&quot;单据类型&quot; &gt;单据类型&lt;/th&gt;
+        &lt;th class=&quot;g-time g-clip&quot; title=&quot;收货日期&quot;&gt;收货日期&lt;/th&gt;
+        &lt;th class=&quot;g-state g-clip&quot; title=&quot;审批状态&quot;&gt;审批状态&lt;/th&gt;
+        &lt;th class=&quot;g-tit g-clip&quot; title=&quot;供应商名称&quot;&gt;供应商名称&lt;/th&gt;
+        &lt;th class=&quot;g-serial g-clip&quot; title=&quot;添加人&quot;&gt;添加人&lt;/th&gt;
+        &lt;th class=&quot;g-time g-clip&quot; title=&quot;添加日期&quot;&gt;添加日期&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td class=&quot;g-id&quot;&gt;1&lt;/td&gt;
+        &lt;td class=&quot;g-serial g-clip&quot;&gt;
+            &lt;a class=&quot;dib&quot; href=&quot;#&quot; title=&quot;尚未提交，暂无单号&quot;&gt;暂无&lt;/a&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;g-state g-clip&quot;&gt;
+            &lt;span class=&quot;gray&quot;&gt;本地收货单&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;g-time g-clip&quot; title=&quot;2017-03-21&quot;&gt;
+            2017-03-21
+        &lt;/td&gt;
+        &lt;td class=&quot;g-state g-clip&quot;&gt;
+            &lt;span class=&quot;orange&quot;&gt;审批中&lt;/span&gt;
+        &lt;/td&gt;
+        &lt;td class=&quot;g-tit g-clip&quot; title=&quot;11&quot;&gt;
+            &lt;i class=&quot;&quot;&gt;&lt;/i&gt;
+            11
+        &lt;/td&gt;
+        &lt;td class=&quot;g-serial g-clip&quot; title=&quot;admin0lala&quot;&gt;
+            admin0lala
+        &lt;/td&gt;
+        &lt;td class=&quot;g-time g-clip&quot; title=&quot;2017-03-21&quot;&gt;
+            2017-03-21
+        &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<blockquote>
+<p>表格的列宽均通过指定的class名称来设置，不建议单独去定义，下面来具体介绍下这些class。</p>
+</blockquote>
+<p><code>g-id</code>：序号</p>
+<p><code>g-select</code>： 单选框或复选框，多见于选择弹层中</p>
+<p><del><code>g-num</code></del>、<code>g-serial</code> : 编号、单号，如物品编号、采购订单号等；<del><code>g-num</code></del>待废弃不建议使用，建议使用<code>g-serial</code></p>
+<p><del><code>g-num-l</code></del>：编号、单号如物品编号、供应商编号；待废弃不建议使用，建议使用<code>g-serial</code></p>
+<p><code>g-product</code>：物品，如可供物品、主营产品等</p>
+<p><code>g-tit</code>：名称，如公司名称、物品名称、询价标题、招募标题等</p>
+<p><code>g-date</code>：日期，年月日格式，如2017-03-02</p>
+<p><code>g-time</code>：日期，年月日时分秒格式，如2017-03-02 12:16:30</p>
+<p><code>g-expired-date</code>：期限，年月日到年月日格式，如2017-03-03至2017-06-23</p>
+<p><code>g-person</code>：人员，如联系人、添加人、请购人等</p>
+<p><del><code>g-person-gender</code></del>：人员带性别的，待废弃不建议使用</p>
+<p><code>g-state</code>：状态，如审批状态、处理状态等</p>
+<p><code>g-type</code>：类型、类目，如招标类型、物品类目等</p>
+<p><code>g-tel</code>：联系电话，13913584526</p>
+<p><code>g-area</code>：区域，如所在地区、交货地等</p>
+<p><code>g-spec</code>：规格型号</p>
+<p><code>g-unit</code>：单位</p>
+<p><code>g-amount</code>：数量，如入库数量、订购数量、采购数量、拒收数量等</p>
+<p><code>g-money</code>：单价</p>
+<p><code>g-brand</code>：品牌</p>
+<p><code>g-sum</code>：总价</p>
+<p><code>g-txt</code>：备注或其它文本</p>
+<p><code>g-dept</code>：部门，如所在部门、出库部门等</p>
+<p><code>g-project</code>：项目</p>
+<p><code>g-file</code>：文件，如报名文件、招标文件</p>
+<p><del><code>g-comb</code></del>：组合，批号、有效期、库位组合，待废弃不建议使用</p>
+<p><code>g-ope-w1</code>、<code>g-ope-w2</code>、<code>g-ope-w3</code>、<code>g-ope-w4</code>、<code>g-ope-w5</code>、<code>g-ope-w6</code>：操作，宽度从w1~w6由小到大</p>
+<p><code>g-xxs</code>、<code>g-xs</code>、<code>g-s</code>、<code>g-m</code>、<code>g-l</code>、<code>g-xl</code>：通用宽度，宽度从xxs~xl由小到大</p>
+<p><code>g-clip</code>：用于列内容超出隐藏并显示点点点</p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_table/width.html" id="width" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<h3 id="-">三、表单</h3>
+<p>样式文件：<code>ui_form.scss</code></p>
+<h4 id="1-">1、常规结构</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_normal.html" id="form_normal" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="2-">2、常规结构-短标题栏</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_normal_short.html" id="form_normal_short" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;field field--tit-short&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field field--tit-short&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+          &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="3-">3、行结构-两列/行</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_2.html" id="form_row_2" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;form-row fowm-row--2 clearfix&quot;&gt;&lt;!-- add class form-row--2 --&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="4-">4、行结构-三列/行</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_3.html" id="form_row_3" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;form-row fowm-row--3 clearfix&quot;&gt;&lt;!-- add class form-row--3 --&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--3 clearfix&quot;&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field-extend--2&quot;&gt;&lt;!-- add class field-extend--2 --&gt;
+          &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+          &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="5-">5、行结构-四列/行</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_4.html" id="form_row_4" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;form-row form-row--4 clearfix&quot;&gt;&lt;!-- add class form-row--4 --&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--4 clearfix&quot;&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field-extend--2&quot;&gt;&lt;!-- add class field-extend--2 --&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--4 clearfix&quot;&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field-extend--3&quot;&gt;&lt;!-- add class field-extend--3 --&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="6-">6、行结构-五列/行</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_5.html" id="form_row_5" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;form-row form-row--5 clearfix&quot;&gt;&lt;!-- add class form-row--5 --&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--5 clearfix&quot;&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field-extend--2&quot;&gt;&lt;!-- add class field-extend--2 --&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="7-">7、行结构-短标题</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_short.html" id="form_row_short" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+
+    &lt;div class=&quot;form-row form-row--3 clearfix&quot;&gt;&lt;!-- add class form-row--5 --&gt;
+
+        &lt;div class=&quot;field field--tit-short&quot;&gt; &lt;!-- add class field--tit-short --&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--3 clearfix&quot;&gt;
+
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field field--tit-short field-extend--2&quot;&gt;&lt;!-- add class field-extend--2 --&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;付款方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="8-">8、行结构-表单居左</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_row_align_left.html" id="form_row_align_left" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst form-align-left&quot;&gt;&lt;!-- add class form-align-left --&gt;
+
+    &lt;div class=&quot;form-row clearfix&quot;&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;交货方式：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="9-">9、垂直结构</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_vertical.html" id="form_vertical" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-panel&quot;&gt;
+
+    &lt;div class=&quot;form-ver&quot;&gt;
+        &lt;ul class=&quot;form-ver-lst clearfix&quot;&gt;
+
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;
+                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;询价标题
+                &lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-l&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;报价截止时间&lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date&quot; readonly=&quot;&quot;&gt;
+                    &lt;select&gt;
+                        &lt;option value=&quot;00&quot;&gt;00&lt;/option&gt;
+                        &lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;
+                        &lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;span&gt;时&lt;/span&gt;
+                    &lt;select&gt;
+                        &lt;option value=&quot;00&quot;&gt;00&lt;/option&gt;
+                        &lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;
+                        &lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;span&gt;分&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;询价方式&lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;select class=&quot;selct-m&quot;&gt;
+                        &lt;option value=&quot;1&quot;&gt;公开&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="10-">10、垂直结构-大号</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_vertical_large.html" id="form_vertical_large" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-panel&quot;&gt;
+
+    &lt;div class=&quot;form-ver from-ver-large&quot;&gt;&lt;!--  add class from-ver-large --&gt;
+        &lt;ul class=&quot;form-ver-lst clearfix&quot;&gt;
+
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;
+                    &lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;询价标题
+                &lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-l&quot;/&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;报价截止时间&lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date&quot; readonly=&quot;&quot;&gt;
+                    &lt;select&gt;
+                        &lt;option value=&quot;00&quot;&gt;00&lt;/option&gt;
+                        &lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;
+                        &lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;span&gt;时&lt;/span&gt;
+                    &lt;select&gt;
+                        &lt;option value=&quot;00&quot;&gt;00&lt;/option&gt;
+                        &lt;option value=&quot;01&quot;&gt;01&lt;/option&gt;
+                        &lt;option value=&quot;02&quot;&gt;02&lt;/option&gt;
+                    &lt;/select&gt;
+                    &lt;span&gt;分&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;h4 class=&quot;form-ver-tit&quot;&gt;&lt;span class=&quot;required&quot;&gt;*&lt;/span&gt;询价方式&lt;/h4&gt;
+                &lt;div class=&quot;form-ver-bd&quot;&gt;
+                    &lt;select class=&quot;selct-m&quot;&gt;
+                        &lt;option value=&quot;1&quot;&gt;公开&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="11-">11、输入框</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_input.html" id="form_input" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+    &lt;div class=&quot;form-row form-row--3 clearfix&quot;&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-xs：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-xs&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-s：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-s&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-m：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row form-row--2 clearfix&quot;&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-ml：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-ml&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-l：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-l&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row clearfix&quot;&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-xl：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row clearfix&quot;&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-xxl：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-xxl&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;form-row clearfix&quot;&gt;
+        &lt;div class=&quot;field field--tit-short&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;txt-full：&lt;/label&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h4 id="12-">12、文本域</h4>
+<div class="iframe-wrap"><iframe src="example/ui/ui_form/form_textarea.html" id="form_textarea" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code>&lt;div class=&quot;form-lst&quot;&gt;
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;txt-area--xxs：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;textarea class=&quot;txt-area-flex txt-area--xxs&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;txt-area--xs：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;textarea class=&quot;txt-area-flex txt-area--xs&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;txt-area--s：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;textarea class=&quot;txt-area-flex txt-area--s&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;txt-area--m：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;textarea class=&quot;txt-area-flex txt-area--m&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;field&quot;&gt;
+        &lt;label class=&quot;field-tit&quot;&gt;txt-area--m：&lt;/label&gt;
+        &lt;div class=&quot;field-bd&quot;&gt;
+            &lt;textarea class=&quot;txt-area-flex txt-area--m&quot;&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre><h3 id="-">四、状态</h3>
+<p>样式文件：<code>ui_status.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/ui/ui_status/status.html" id="status" width="100%" scrolling="no" frameborder="0"></iframe></div>
+
+
+<h2 id="-">业务组件</h2>
+<p><code>sass/site/widget/*.scss</code>文件为全站通用业务功能组件（和具体业务相关）</p>
+<h3 id="-">一、审批</h3>
+<p>样式文件：<code>w_audit.scss</code></p>
+<h4 id="1-">1、审批信息</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit/audit.html" id="audit" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;ul class=&quot;audit&quot;&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;audit-tit&quot;&gt;审批人：&lt;/span&gt;史蒂夫
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;audit-tit&quot;&gt;审批时间：&lt;/span&gt; 2014-02-15 12：00：00
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;audit-tit&quot;&gt;审批意见：&lt;/span&gt;
+        天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~天空飘来五个字，那都不是事~
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h4 id="2-">2、操作记录</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit/record.html" id="record" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-meta&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;&lt;span class=&quot;item-tit&quot;&gt;添加：&lt;/span&gt;李伟&lt;/span&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;2014-02-26&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;span class=&quot;split&quot;&gt;|&lt;/span&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;&lt;span class=&quot;item-tit&quot;&gt;修改：&lt;/span&gt;李伟&lt;/span&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;2014-02-26&lt;/span&gt;
+        &lt;/li&gt;
+        &lt;!-- 有审核意见的时候不显示 --&gt;
+        &lt;li&gt;
+            &lt;span class=&quot;split&quot;&gt;|&lt;/span&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;&lt;span class=&quot;item-tit&quot;&gt;审批：&lt;/span&gt;李伟&lt;/span&gt;
+            &lt;span class=&quot;audit-meta-item&quot;&gt;2014-02-26&lt;/span&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="3-">3、审批操作</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit/operate.html" id="operate" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-ope&quot;&gt;
+    &lt;ul class=&quot;form-lst&quot;&gt;
+        &lt;li class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;
+            &lt;/label&gt;
+
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;div class=&quot;chose form-text&quot;&gt;
+                    &lt;label for=&quot;&quot;&gt;&lt;input type=&quot;radio&quot;&gt;加入我的供应商&lt;/label&gt;
+                    &lt;label for=&quot;&quot;&gt;&lt;input type=&quot;radio&quot;&gt;需要补充资料&lt;/label&gt;
+                    &lt;label for=&quot;&quot;&gt;&lt;input type=&quot;radio&quot;&gt;加入黑名单&lt;/label&gt;
+                    &lt;label for=&quot;&quot;&gt;&lt;input type=&quot;radio&quot;&gt;删除&lt;/label&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;field&quot;&gt;
+            &lt;label class=&quot;field-tit&quot;&gt;
+                &lt;em class=&quot;required&quot;&gt;*&lt;/em&gt;审批意见
+            &lt;/label&gt;
+
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;div class=&quot;explain&quot;&gt;
+                    &lt;textarea name=&quot;&quot; id=&quot;&quot; cols=&quot;30&quot; rows=&quot;5&quot; class=&quot;txt-xxl&quot;&gt;&lt;/textarea&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;field field-ope&quot;&gt;
+            &lt;div class=&quot;field-bd&quot;&gt;
+                &lt;button class=&quot;btn btn-big btn-main&quot;&gt;提 交&lt;/button&gt;
+                &lt;button class=&quot;btn btn-big btn-gray&quot;&gt;取消&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-">二、审批流</h3>
+<p>样式文件：<code>w_audit_flow.scss</code> </p>
+<h4 id="1-">1、待审批（一般用于待审批详情页）</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit_flow/process1.html" id="process1" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-flow&quot;&gt;
+    &lt;div class=&quot;audit-flow-hd&quot;&gt;
+      &lt;h3&gt;审批过程&lt;/h3&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;audit-flow-bd&quot;&gt;
+        &lt;div class=&quot;flow-wrap&quot;&gt;
+            &lt;ul class=&quot;flow clearfix&quot; style=&quot;width: 450px;&quot;&gt;
+              &lt;li class=&quot;flow-node over first&quot;&gt;
+                &lt;i class=&quot;icon icon-audit-pass&quot;&gt;&lt;/i&gt;
+                &lt;p class=&quot;node-txt-over&quot; title=&quot;admin0&quot;&gt;admin0&lt;/p&gt;
+                &lt;p class=&quot;node-time&quot;&gt;2016-10-09 17:43&lt;/p&gt;
+                &lt;p class=&quot;green&quot;&gt;[制单]&lt;/p&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;flow-node over&quot;&gt;
+                &lt;i class=&quot;icon icon-audit-edit&quot;&gt;&lt;/i&gt;
+                &lt;p class=&quot;node-txt-over&quot; title=&quot;admin0&quot;&gt;admin0&lt;/p&gt;
+                &lt;p class=&quot;&quot;&gt;[待审批]&lt;/p&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;flow-node&quot;&gt;
+                &lt;i class=&quot;icon icon-audit-over-gray&quot;&gt;&lt;/i&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;poptip-static poptip-info&quot;&gt;
+            &lt;div class=&quot;msg&quot;&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+            &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;poptip-static poptip-info poptip--multi&quot;&gt;
+            &lt;div class=&quot;msg&quot;&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+            &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="2-">2、审批通过（一般用于普通详情页）</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit_flow/process2.html" id="process2" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-check&quot;&gt;
+    &lt;div class=&quot;audit-flow&quot; style=&quot;display: block;&quot;&gt;
+        &lt;div class=&quot;audit-flow-hd&quot;&gt;
+            &lt;h3&gt;审批过程&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;audit-flow-bd&quot;&gt;
+            &lt;div class=&quot;flow-wrap&quot;&gt;
+                &lt;ul class=&quot;flow clearfix&quot; style=&quot;width: 300px;&quot;&gt;
+                    &lt;li class=&quot;flow-node over first&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-pass&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;admin&quot;&gt;admin&lt;/p&gt;
+                        &lt;p class=&quot;node-time&quot;&gt;2015-11-27 14:43&lt;/p&gt;
+                        &lt;p class=&quot;green&quot;&gt;[制单]&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;flow-node ver&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-over&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;&quot;&gt;&lt;/p&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info poptip--multi&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;audit-check-tail&quot;&gt;
+        &lt;a class=&quot;audit-switch green on&quot; href=&quot;javascript:void(0)&quot;&gt;审批通过 &lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;span class=&quot;split&quot;&gt;|&lt;/span&gt;
+        已关闭
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="3-tab-">3、审批通过（一般用于普通详情页，带tab菜单）</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit_flow/process3.html" id="process3" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-check audit-check-tab&quot;&gt;
+    &lt;div class=&quot;audit-flow&quot; style=&quot;display: block;&quot;&gt;
+        &lt;div class=&quot;audit-flow-hd&quot;&gt;
+            &lt;h3&gt;审批过程&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;audit-flow-bd&quot;&gt;
+            &lt;div class=&quot;flow-wrap&quot;&gt;
+                &lt;ul class=&quot;flow clearfix&quot; style=&quot;width: 300px;&quot;&gt;
+                    &lt;li class=&quot;flow-node over first&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-pass&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;admin&quot;&gt;admin&lt;/p&gt;
+                        &lt;p class=&quot;node-time&quot;&gt;2015-11-27 14:43&lt;/p&gt;
+                        &lt;p class=&quot;green&quot;&gt;[制单]&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;flow-node over&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-over&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;&quot;&gt;&lt;/p&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info poptip--multi&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;audit-check-tail&quot;&gt;
+        &lt;a class=&quot;audit-switch green on&quot; href=&quot;javascript:void(0)&quot;&gt;审批通过 &lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;span class=&quot;split&quot;&gt;|&lt;/span&gt;
+        已关闭
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;tab-primary clearfix&quot;&gt;
+    &lt;li class=&quot;on&quot;&gt;
+        &lt;a href=&quot;javascript:void(0)&quot;&gt;基本信息&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;javascript:void(0)&quot;&gt;交付/付款&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h4 id="4-tab-">4、审批中（一般用于普通详情页，带tab菜单）</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_audit_flow/process4.html" id="process4" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;audit-check audit-check-tab&quot;&gt;
+    &lt;div class=&quot;audit-flow&quot; style=&quot;display: block;&quot;&gt;
+        &lt;div class=&quot;audit-flow-hd&quot;&gt;
+            &lt;h3&gt;审批过程&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;audit-flow-bd&quot;&gt;
+            &lt;div class=&quot;flow-wrap&quot;&gt;
+                &lt;ul class=&quot;flow clearfix&quot; style=&quot;width: 450px;&quot;&gt;
+                    &lt;li class=&quot;flow-node over first&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-pass&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;admin0&quot;&gt;admin0&lt;/p&gt;
+                        &lt;p class=&quot;node-time&quot;&gt;2016-10-09 17:43&lt;/p&gt;
+                        &lt;p class=&quot;green&quot;&gt;[制单]&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;flow-node over&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-edit&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;node-txt-over&quot; title=&quot;admin0&quot;&gt;admin0&lt;/p&gt;
+                        &lt;p class=&quot;&quot;&gt;[待审批]&lt;/p&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;flow-node&quot;&gt;
+                        &lt;i class=&quot;icon icon-audit-over-gray&quot;&gt;&lt;/i&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;js-arrow arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;poptip-static poptip-info poptip--multi&quot;&gt;
+                &lt;div class=&quot;msg&quot;&gt;
+                &lt;/div&gt;
+                &lt;span class=&quot;poptip-close&quot;&gt;×&lt;/span&gt;
+                &lt;span class=&quot;arrow arrow-top&quot;&gt;
+                    &lt;span class=&quot;arrow arrow-in&quot;&gt;&lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;audit-check-tail&quot;&gt;
+        &lt;a class=&quot;audit-switch orange on&quot; href=&quot;javascript:void(0)&quot;&gt;审批中&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;span class=&quot;split&quot;&gt;|&lt;/span&gt;
+        已关闭
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul class=&quot;tab-primary clearfix&quot;&gt;
+    &lt;li class=&quot;on&quot;&gt;
+        &lt;a href=&quot;javascript:void(0)&quot;&gt;基本信息&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;javascript:void(0)&quot;&gt;交付/付款&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="-tab-">三、tab菜单</h3>
+<p>样式文件：<code>w_tab.scss</code></p>
+<h4 id="1-tab-">1、主要tab菜单</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_tab/tab_primary.html" id="tab_primary" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;ul class=&quot;tab tab-primary&quot;&gt;&lt;!-- add class &#39;tab-primary&#39; --&gt;
+    &lt;li class=&quot;on&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;公司信息&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;供应商资质&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;联系人信息&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;可供物品&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h4 id="2-tab-">2、次要tab菜单</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_tab/tab_sub.html" id="tab_sub" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;ul class=&quot;tab tab-sub&quot;&gt;&lt;!-- add class &#39;tab-sub&#39; --&gt;
+    &lt;li class=&quot;selected&quot;&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;公司信息&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;供应商资质&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;联系人信息&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;javascript:void(0)&quot;&gt;可供物品&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="-fold-">四、fold结构</h3>
+<p>样式文件：<code>w_fold.scss</code></p>
+<h4 id="1-fold">1、展示型fold</h4>
+<p>ps：去除了原有的边框背景等样式，一般只作为一种结构使用</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_fold/fold_clean.html" id="fold_clean" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;div class=&quot;fold fold-clean&quot;&gt;&lt;!-- add class &#39;fold-clean&#39; --&gt;
+    &lt;div class=&quot;fold-hd&quot;&gt;
+        &lt;h3&gt;物品信息&lt;/h3&gt;
+        &lt;i class=&quot;icon icon-close flr&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fold-bd&quot;&gt;
+        &lt;table class=&quot;tb tb-border tb-add-res&quot;&gt;
+            &lt;colgroup&gt;
+                &lt;col width=&quot;6%&quot;&gt;
+                &lt;!-- 序号 --&gt;
+                &lt;col width=&quot;22%&quot;&gt;
+                &lt;!-- 物品名称 --&gt;
+                &lt;col width=&quot;12%&quot;&gt;
+                &lt;!-- 规格型号 --&gt;
+                &lt;col width=&quot;10%&quot;&gt;
+                &lt;!-- 出库数量 --&gt;
+                &lt;col width=&quot;6%&quot;&gt;
+                &lt;!-- 单位 --&gt;
+                &lt;col width=&quot;10%&quot;&gt;
+                &lt;!-- 单价 --&gt;
+                &lt;col width=&quot;10%&quot;&gt;
+                &lt;!-- 金额 --&gt;
+                &lt;col width=&quot;24%&quot;&gt;
+                &lt;!-- 备注 --&gt;
+            &lt;/colgroup&gt;
+            &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;th&gt;序号&lt;/th&gt;
+                &lt;th&gt;&lt;em class=&quot;required&quot;&gt;*&lt;/em&gt;物品名称&lt;/th&gt;
+                &lt;th&gt;规格型号&lt;/th&gt;
+                &lt;th&gt;&lt;em class=&quot;required&quot;&gt;*&lt;/em&gt;出库数量&lt;/th&gt;
+                &lt;th&gt;单位&lt;/th&gt;
+                &lt;th&gt;&lt;em class=&quot;required&quot;&gt;*&lt;/em&gt;单价(元)&lt;/th&gt;
+                &lt;th&gt;金额(元)&lt;/th&gt;
+                &lt;th&gt;备注&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;
+                    &lt;span class=&quot;res-name&quot;&gt;苹果手机&lt;/span&gt;
+                &lt;/td&gt;
+                &lt;td&gt;4S&lt;/td&gt;
+                &lt;td&gt;233&lt;/td&gt;
+                &lt;td&gt;个&lt;/td&gt;
+                &lt;td&gt;1000&lt;/td&gt;
+                &lt;td&gt;0.00&lt;/td&gt;
+                &lt;td&gt;Which team is the 2014 NBA final champion ?&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tbody&gt;
+            &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td colspan=&quot;8&quot; class=&quot;clearfix&quot;&gt;
+                    &lt;div class=&quot;flr&quot;&gt;总金额(元): &lt;span class=&quot;required fwb&quot;&gt;0.00&lt;/span&gt;&lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;/tfoot&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="2-fold-">2、fold风格一</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_fold/fold.html" id="fold" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;div class=&quot;fold&quot;&gt;
+    &lt;div class=&quot;fold-hd&quot;&gt;
+        &lt;h3&gt;标题&lt;/h3&gt;
+        &lt;span class=&quot;fold-txt ml5&quot;&gt;(此处放副标题)&lt;/span&gt;
+        &lt;a href=&quot;javascript:void(0)&quot; class=&quot;fold-switch&quot;&gt;收起&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fold-bd&quot; style=&quot;display: block;&quot;&gt;
+        正文内容
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="3-fold-">3、fold风格二</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_fold/fold_normal.html" id="fold_normal" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;div class=&quot;fold fold-normal&quot;&gt;&lt;!-- add class &#39;fold-normal&#39; --&gt;
+    &lt;div class=&quot;fold-hd&quot;&gt;
+        &lt;h3&gt;标题&lt;/h3&gt;
+        &lt;span class=&quot;fold-txt ml5&quot;&gt;(此处放副标题)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fold-bd&quot; style=&quot;display: block;&quot;&gt;
+        正文内容
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="4-fold-">4、fold风格三</h4>
+<div class="iframe-wrap"><iframe src="example/widget/w_fold/fold_compare.html" id="fold_compare" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+<pre><code class="lang-html">&lt;div class=&quot;fold fold-compare&quot;&gt;&lt;!-- add class &#39;fold-compare&#39; --&gt;
+    &lt;div class=&quot;fold-hd&quot;&gt;
+        &lt;h3&gt;标题&lt;/h3&gt;
+        &lt;span class=&quot;fold-txt ml5&quot;&gt;(此处放副标题)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;fold-bd&quot; style=&quot;display: block;&quot;&gt;
+        正文内容
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-">五、下拉选择</h3>
+<p>样式文件：<code>w_drop_select.scss</code></p>
+<p>ps：需要配合<code>ui/ui_icon.scss</code>和<code>ui/ui_button.scss</code>一起使用</p>
+<h4 id="1-">1、下拉框居右</h4>
+<p>添加<code>m-drop-select--align-right</code>class将下拉框设置为居右显示</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_drop_select/drop_select_right.html" id="drop_select_right" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;m-drop-select m-drop-select--align-right&quot;&gt;&lt;!-- add class &#39;m-drop-select--align-right&#39; --&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-mini btn-icon btn-gray&quot;&gt;&lt;i class=&quot;icon icon-gear&quot;&gt;&lt;/i&gt;设置&lt;/button&gt;
+    &lt;div class=&quot;drop-content&quot; style=&quot;display: block;&quot;&gt;
+      &lt;h4 class=&quot;drop-tit&quot;&gt;是否显示&lt;/h4&gt;
+      &lt;ul class=&quot;drop-con-lst&quot;&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;CAT_CODE_TEXT&quot; checked=&quot;checked&quot;&gt;所属类目
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_NO&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;物品编号
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_NAME&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;物品名称
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;ITEM_SPEC&quot; checked=&quot;checked&quot;&gt;规格型号
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_UNIT&quot; checked=&quot;checked&quot;&gt;单位
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BEFORE_PURCHASE&quot;&gt;采购前置期
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BUYER_NAME&quot; checked=&quot;checked&quot;&gt;采购员
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;MIN_ORDER_QUANTITY&quot;&gt;最小采购量
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;ABC_TYPE&quot;&gt;ABC分类
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BUSINESS_FLAG&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;状态
+            &lt;/label&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class=&quot;drop-ft&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-main&quot;&gt;保存&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-gray&quot;&gt;取消&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="2-">2、下拉框居左</h4>
+<p>添加<code>m-drop-select--align-left</code>class将下拉框设置为居左显示</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_drop_select/drop_select_left.html" id="drop_select_left" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;m-drop-select m-drop-select--align-left&quot;&gt;&lt;!-- add class &#39;m-drop-select--align-left&#39; --&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-mini btn-icon btn-gray&quot;&gt;&lt;i class=&quot;icon icon-gear&quot;&gt;&lt;/i&gt;设置&lt;/button&gt;
+    &lt;div class=&quot;drop-content&quot; style=&quot;display: block;&quot;&gt;
+      &lt;h4 class=&quot;drop-tit&quot;&gt;是否显示&lt;/h4&gt;
+      &lt;ul class=&quot;drop-con-lst&quot;&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;CAT_CODE_TEXT&quot; checked=&quot;checked&quot;&gt;所属类目
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_NO&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;物品编号
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_NAME&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;物品名称
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;ITEM_SPEC&quot; checked=&quot;checked&quot;&gt;规格型号
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;PROD_UNIT&quot; checked=&quot;checked&quot;&gt;单位
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BEFORE_PURCHASE&quot;&gt;采购前置期
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BUYER_NAME&quot; checked=&quot;checked&quot;&gt;采购员
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;MIN_ORDER_QUANTITY&quot;&gt;最小采购量
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;ABC_TYPE&quot;&gt;ABC分类
+            &lt;/label&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;label&gt;
+                &lt;input type=&quot;checkbox&quot; name=&quot;colunmField&quot; value=&quot;BUSINESS_FLAG&quot; checked=&quot;checked&quot; disabled=&quot;&quot;&gt;状态
+            &lt;/label&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div class=&quot;drop-ft&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-main&quot;&gt;保存&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-small btn-gray&quot;&gt;取消&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h4 id="3-">3、小型下拉框</h4>
+<p>添加<code>m-drop-select-s</code>将其设置为小型下拉框</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_drop_select/drop_select_s.html" id="drop_select_s" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;span class=&quot;m-drop-select m-drop-select-s m-drop-select--align-right&quot;&gt;&lt;!-- add class &#39;m-drop-select-s&#39; --&gt;
+    &lt;a class=&quot;btn btn-small btn-gray&quot; href=&quot;javaScript:void(0);&quot;&gt;更多&lt;b class=&quot;icon icon-arrow-bottom&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;div class=&quot;drop-content js-drop-content&quot; style=&quot;display: block;&quot;&gt;
+        &lt;ul class=&quot;drop-con-lst&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;/oss/order/2744/copy&quot; class=&quot;drop-item&quot;&gt;复制&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;drop-item&quot; href=&quot;javaScript:void(0)&quot;&gt;导出&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;drop-item&quot; href=&quot;/oss/order/2744/print&quot; target=&quot;_blank&quot;&gt;打印&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/span&gt;
+</code></pre>
+<h4 id="4-">4、中型下拉框</h4>
+<p>添加<code>m-drop-select-m</code>将其设置为中型下拉框</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_drop_select/drop_select_m.html" id="drop_select_m" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;span class=&quot;m-drop-select m-drop-select-m m-drop-select--align-right&quot;&gt;&lt;!-- add class &#39;m-drop-select-m&#39; --&gt;
+    &lt;a class=&quot;btn btn-small btn-gray&quot; href=&quot;javaScript:void(0);&quot;&gt;更多&lt;b class=&quot;icon icon-arrow-bottom&quot;&gt;&lt;/b&gt;&lt;/a&gt;
+    &lt;div class=&quot;drop-content js-drop-content&quot; style=&quot;display: block;&quot;&gt;
+        &lt;ul class=&quot;drop-con-lst&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;drop-item&quot;&gt;新增报价单&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;javascript:void(0);&quot; class=&quot;drop-item&quot;&gt;反审批&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a class=&quot;drop-item&quot; href=&quot;#&quot; target=&quot;_blank&quot;&gt;打印&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/span&gt;
+</code></pre>
+<h3 id="-">六、筛选</h3>
+<p>样式文件：<code>w_filter.scss</code></p>
+<p>ps：需要配合<code>ui/ui_form.scss</code>和<code>ui/ui_button.scss</code>一起使用</p>
+<blockquote>
+<p>筛选的结构为<code>filter</code>&gt;<code>flt-row</code>&gt;<code>flt-item</code>，<code>filter</code>中包含行（<code>flt-row</code>），行中包含列（<code>flt-item</code>）,需要折叠的行均被包含在<code>flt-collapse</code>中。</p>
+</blockquote>
+<h4 id="1-">1、普通筛选</h4>
+<p>普通筛选每列的宽度没有固定，一行不够显示其包含的列，则自动换行</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_filter/filter_normal.html" id="filter_normal" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;div class=&quot;filter&quot;&gt;
+    &lt;ul class=&quot;flt-row&quot;&gt;
+        &lt;li class=&quot;flt-item&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;关键字搜索&lt;/label&gt;
+            &lt;div class=&quot;flt-item-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot; placeholder=&quot;询价标题/物品名称&quot;&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;flt-collapse&quot;&gt;
+        &lt;ul class=&quot;flt-row&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约单号&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约总额&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约类型&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;框架协议&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;普通采购合同&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;flt-row&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加人&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加时间&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;状态&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;flt-row&quot;&gt;
+        &lt;!-- 展开时追加 flt-item-opened --&gt;
+        &lt;li class=&quot;flt-item flt-item-ope&quot;&gt;
+            &lt;button class=&quot;btn btn-small btn-main&quot;&gt;搜索&lt;/button&gt;
+            &lt;a href=&quot;javascript:void(0)&quot; class=&quot;flt-switch&quot;&gt;更多搜索条件&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;filter-after&quot;&gt;
+    搜索结果：&lt;strong class=&quot;red&quot;&gt;6&lt;/strong&gt;条
+&lt;/div&gt;
+</code></pre>
+<h4 id="2-">2、定列筛选</h4>
+<p>定列筛选设定了每行的显示列数是固定的（即定义了每列的宽度），目前定义了三列显示和四列显示。</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_filter/filter_fixcol.html" id="filter_fixcol" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+
+
+<pre><code class="lang-html">&lt;!--三列筛选--&gt;
+
+&lt;!-- 在flt-row后面追加flt-row--3或者flt-row--4将这一行设置成三列或四列。以此来实现三列筛选和四列筛选 --&gt;
+
+&lt;div class=&quot;filter&quot;&gt;
+    &lt;ul class=&quot;flt-row flt-row--3&quot;&gt;
+        &lt;li class=&quot;flt-item&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;关键字搜索&lt;/label&gt;
+            &lt;div class=&quot;flt-item-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot; placeholder=&quot;询价标题/物品名称&quot;&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;flt-collapse&quot;&gt;
+        &lt;ul class=&quot;flt-row flt-row--3&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约单号&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约总额&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约类型&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;框架协议&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;普通采购合同&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;flt-row flt-row--3&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加人&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加时间&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;状态&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;flt-row flt-row--3&quot;&gt;
+        &lt;!-- 展开时追加 flt-item-opened --&gt;
+        &lt;li class=&quot;flt-item flt-item-ope&quot;&gt;
+            &lt;button class=&quot;btn btn-small btn-main&quot;&gt;搜索&lt;/button&gt;
+            &lt;a href=&quot;javascript:void(0)&quot; class=&quot;flt-switch&quot;&gt;更多搜索条件&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;filter-after&quot;&gt;
+    搜索结果：&lt;strong class=&quot;red&quot;&gt;6&lt;/strong&gt;条
+&lt;/div&gt;
+
+&lt;!--四列筛选--&gt;
+&lt;div class=&quot;filter&quot;&gt;
+    &lt;ul class=&quot;flt-row flt-row--4&quot;&gt;
+        &lt;li class=&quot;flt-item&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;关键字搜索&lt;/label&gt;
+            &lt;div class=&quot;flt-item-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot; placeholder=&quot;询价标题/物品名称&quot;&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;flt-collapse&quot;&gt;
+        &lt;ul class=&quot;flt-row flt-row--4&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约单号&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约总额&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-s&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-s&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约类型&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;框架协议&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;普通采购合同&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约类型&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;框架协议&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;普通采购合同&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;flt-row flt-row--4&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加人&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-full&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加时间&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-s&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-s&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;状态&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;状态&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;flt-row flt-row--4&quot;&gt;
+        &lt;!-- 展开时追加 flt-item-opened --&gt;
+        &lt;li class=&quot;flt-item flt-item-ope&quot;&gt;
+            &lt;button class=&quot;btn btn-small btn-main&quot;&gt;搜索&lt;/button&gt;
+            &lt;a href=&quot;javascript:void(0)&quot; class=&quot;flt-switch&quot;&gt;更多搜索条件&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;filter-after&quot;&gt;
+    搜索结果：&lt;strong class=&quot;red&quot;&gt;6&lt;/strong&gt;条
+&lt;/div&gt;
+</code></pre>
+<h4 id="3-">3、小尺寸筛选</h4>
+<p>在<code>filter</code>后面追加<code>filter-s</code>即可设定为小尺寸筛选（标题的宽度比正常的小的）</p>
+<div class="iframe-wrap"><iframe src="example/widget/w_filter/filter_small.html" id="filter_small" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">&lt;!--筛选--&gt;
+&lt;div class=&quot;filter filter-s&quot;&gt;
+    &lt;ul class=&quot;flt-row&quot;&gt;
+        &lt;li class=&quot;flt-item&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;关键字搜索&lt;/label&gt;
+            &lt;div class=&quot;flt-item-bd&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot; placeholder=&quot;询价标题/物品名称&quot;&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;flt-collapse&quot;&gt;
+        &lt;ul class=&quot;flt-row&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约单号&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约总额&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;合约类型&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;框架协议&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;普通采购合同&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class=&quot;flt-row&quot;&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加人&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-xl&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;添加时间&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                    ~
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-m txt-date&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;flt-item&quot;&gt;
+                &lt;label for=&quot;&quot; class=&quot;flt-item-tit&quot;&gt;状态&lt;/label&gt;
+                &lt;div class=&quot;flt-item-bd&quot;&gt;
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;txt-m&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;ul class=&quot;flt-row&quot;&gt;
+        &lt;!-- 展开时追加 flt-item-opened --&gt;
+        &lt;li class=&quot;flt-item flt-item-ope&quot;&gt;
+            &lt;button class=&quot;btn btn-small btn-main&quot;&gt;搜索&lt;/button&gt;
+            &lt;a href=&quot;javascript:void(0)&quot; class=&quot;flt-switch&quot;&gt;更多搜索条件&lt;b&gt;&lt;/b&gt;&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;filter-after&quot;&gt;
+    搜索结果：&lt;strong class=&quot;red&quot;&gt;6&lt;/strong&gt;条
+&lt;/div&gt;
+</code></pre>
+<h3 id="-">七、顶部条筛选</h3>
+<p>样式文件：<code>w_topbar.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/widget/w_topbar/topbar.html" id="topbar" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;div class=&quot;topbar&quot;&gt;
+    &lt;div class=&quot;topbar-row&quot;&gt;
+                &lt;span class=&quot;topbar-row-item&quot;&gt;关键字搜索：
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-xxl mr10&quot; placeholder=&quot;询价标题/物品名称&quot;&gt;
+                &lt;/span&gt;
+                &lt;span class=&quot;topbar-row-item&quot;&gt;来源：
+                    &lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;mr10&quot;&gt;
+                        &lt;option value=&quot;&quot;&gt;全部&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;自主添加&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;门户注册&lt;/option&gt;
+                        &lt;option value=&quot;&quot;&gt;百卓采购网&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+        &lt;button class=&quot;btn btn-small btn-main&quot;&gt;搜索&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;topbar-row topbar-row-last&quot;&gt;
+        &lt;div class=&quot;topbar-row-tit&quot;&gt;通过标签筛选：&lt;/div&gt;
+        &lt;div class=&quot;topbar-row-bd label-group&quot;&gt;
+            &lt;label class=&quot;selected&quot;&gt;电脑主机&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;键盘&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;电源连接线&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;显示屏&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;鼠标&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;机箱&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label class=&quot;&quot;&gt;CPU&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-">八、图片上传</h3>
+<p>样式文件：<code>w_img_upload.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/widget/w_img_upload/img_upload.html" id="img_upload" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;ul class=&quot;img-lst clearfix&quot;&gt;
+    &lt;!--待上传--&gt;
+    &lt;li class=&quot;upload-item&quot;&gt;
+        &lt;div class=&quot;upload-img-wrap&quot;&gt;
+            &lt;div class=&quot;sl-vam&quot;&gt;
+                &lt;div class=&quot;sl-vam-outer&quot;&gt;
+                    &lt;div class=&quot;sl-vam-inner&quot;&gt;
+                        &lt;img src=&quot;../../../assets/img/back/upload/upload_img.png&quot; alt=&quot;&quot; data-scale=&quot;100&quot;&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;prodPicIds&quot; value=&quot;&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;upload-img-btn upload-img-del&quot; href=&quot;javascript:void(0)&quot; style=&quot;display:none&quot;&gt;×&lt;/a&gt;
+        &lt;div class=&quot;upload-img-file&quot;&gt;
+            &lt;span class=&quot;upload-img-btn upload-img-plus&quot;&gt;+&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;!--已上传--&gt;
+    &lt;li class=&quot;upload-item&quot;&gt;
+        &lt;div class=&quot;upload-img-wrap&quot;&gt;
+            &lt;div class=&quot;sl-vam&quot;&gt;
+                &lt;div class=&quot;sl-vam-outer&quot;&gt;
+                    &lt;div class=&quot;sl-vam-inner&quot;&gt;
+                        &lt;a class=&quot;js-upload-anchor&quot; href=&quot;javascript:void(0)&quot;&gt;&lt;img src=&quot;../../../assets/img/back/upload/Lighthouse.jpg&quot; alt=&quot;&quot; data-scale=&quot;100&quot; width=&quot;100&quot; height=&quot;75&quot;&gt;&lt;/a&gt;
+                        &lt;input type=&quot;hidden&quot; name=&quot;prodPicIds&quot; value=&quot;UJWNI7733A0w&quot;&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;upload-img-btn upload-img-del&quot; href=&quot;javascript:void(0)&quot; style=&quot;&quot;&gt;×&lt;/a&gt;
+        &lt;div class=&quot;upload-img-file upload-img-hidden&quot;&gt;
+            &lt;span class=&quot;upload-img-btn upload-img-plus&quot;&gt;+&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="-">九、导入</h3>
+<p>样式文件：<code>w_imprt_step.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/widget/w_imprt_step/imprt_step.html" id="imprt_step" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;ul class=&quot;imprt-step&quot;&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;step-num&quot;&gt;1&lt;/span&gt;
+        &lt;div class=&quot;step-cnt&quot;&gt;
+            &lt;img src=&quot;../../../assets/img/back/icon_excel.png&quot; alt=&quot;物品批量导入模板&quot; class=&quot;excel&quot;&gt;
+            &lt;p&gt;物品批量导入模板.xls&lt;/p&gt;
+            &lt;p&gt;
+                &lt;a href=&quot;#&quot; class=&quot;btn btn-small btn-gray&quot;&gt;下载模板&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;step-num&quot;&gt;2&lt;/span&gt;
+        &lt;div class=&quot;step-cnt&quot;&gt;
+            &lt;p class=&quot;notice&quot;&gt;向Excel模板中添加数据，&lt;span class=&quot;red&quot;&gt;注意：不能改变模板中的栏目及格式！&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;span class=&quot;step-num&quot;&gt;3&lt;/span&gt;
+        &lt;div class=&quot;step-cnt&quot; id=&quot;uploadAttach&quot;&gt;
+            &lt;p&gt;上传添加好数据的Excel文件&lt;/p&gt;
+            &lt;div class=&quot;upload-btn mr10&quot;&gt;
+                &lt;span class=&quot;btn btn-small btn-gray&quot;&gt;上传&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;tempAttId&quot; value=&quot;&quot;&gt;
+        &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<h3 id="-">十、面板信息</h3>
+<p>样式文件：<code>w_panel_info.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/widget/w_panel_info/panel_info.html" id="panel_info" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;div class=&quot;panel-info&quot;&gt;
+    &lt;div class=&quot;panel-info-tit&quot;&gt;权限快捷模板：&lt;/div&gt;
+    &lt;div class=&quot;panel-info-bd&quot;&gt;
+        &lt;div class=&quot;label-group&quot;&gt;
+            &lt;label for=&quot;&quot; class=&quot;selected&quot;&gt;库管员&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot;&gt;test模板&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot;&gt;采购员&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot; &gt;请购员&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot;&gt;基础资料管理员&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot;&gt;请购单相关权限&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+            &lt;label for=&quot;&quot;&gt;采购主管&lt;i class=&quot;icon icon-select&quot;&gt;&lt;/i&gt;&lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<h3 id="-">十一、表格式表单</h3>
+<p>样式文件：<code>w_table_form.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/widget/w_table_form/table_form.html" id="table_form" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;table class=&quot;tb tb-border tb-form&quot;&gt;
+    &lt;colgroup&gt;
+        &lt;col width=&quot;12%&quot;&gt;
+        &lt;col width=&quot;38%&quot;&gt;
+        &lt;col width=&quot;12%&quot;&gt;
+        &lt;col width=&quot;38%&quot;&gt;
+    &lt;/colgroup&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;thd&quot;&gt;所属类目&lt;/td&gt;
+            &lt;td colspan=&quot;3&quot;&gt;一级目录甲&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td class=&quot;thd&quot;&gt;采购前置期&lt;/td&gt;
+            &lt;td&gt;123天&lt;/td&gt;
+            &lt;td class=&quot;thd&quot;&gt;最小订购量&lt;/td&gt;
+            &lt;td&gt;123&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<h3 id="-">十二、顶部搜索</h3>
+<p>样式文件：<code>search.scss</code></p>
+<div class="iframe-wrap"><iframe src="example/component/search.html" id="search" width="100%" scrolling="no" frameborder="0"></iframe><span class="code-switch">展开源码</span></div>
+
+<pre><code class="lang-html">
+&lt;div class=&quot;sch sch-default&quot;&gt;
+    &lt;div class=&quot;sch-main&quot;&gt;
+        &lt;ul class=&quot;sch-lst&quot;&gt;
+            &lt;li class=&quot;sch-item&quot;&gt;
+                &lt;span class=&quot;sch-item-tit&quot; title=&quot;关键字&quot;&gt;关键字&lt;/span&gt;
+                &lt;div class=&quot;sch-item-bd js-item-content&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt sch-input&quot; placeholder=&quot;询价标题/询价单号/物品&quot;&gt;
+                    &lt;div class=&quot;drop-lst-wrap input-style-drop-wrap js-suggest&quot; style=&quot;display:none&quot;&gt;
+                        &lt;ul class=&quot;drop-lst&quot;&gt;&lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;i class=&quot;icon icon-delete js-remove-value&quot; style=&quot;display: none;&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;sch-item&quot;&gt;
+                &lt;span class=&quot;sch-item-tit&quot; title=&quot;询价日期&quot;&gt;询价日期&lt;/span&gt;
+                &lt;div class=&quot;sch-item-bd flt-date&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date hasDatepick&quot; readonly=&quot;&quot;&gt;
+                    &lt;span&gt; - &lt;/span&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date hasDatepick&quot; readonly=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;sch-item&quot;&gt;
+                &lt;span class=&quot;sch-item-tit&quot; title=&quot;询价人&quot;&gt;询价人&lt;/span&gt;
+                &lt;div class=&quot;sch-item-bd js-item-content&quot;&gt;
+                &lt;input type=&quot;text&quot; class=&quot;txt sch-input&quot;&gt;
+                    &lt;div class=&quot;drop-lst-wrap input-style-drop-wrap js-suggest&quot; style=&quot;display:none&quot;&gt;
+                        &lt;ul class=&quot;drop-lst&quot;&gt;&lt;/ul&gt;
+                    &lt;/div&gt;
+                    &lt;i class=&quot;icon icon-delete js-remove-value&quot; style=&quot;display: none;&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;sch-item&quot; style=&quot;display:none;&quot;&gt;
+                &lt;span class=&quot;sch-item-tit&quot; title=&quot;截止日期&quot;&gt;截止日期&lt;/span&gt;
+                &lt;div class=&quot;sch-item-bd flt-date&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date hasDatepick&quot; readonly=&quot;&quot;&gt;
+                    &lt;span&gt; - &lt;/span&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt txt-date hasDatepick&quot;readonly=&quot;&quot;&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;sch-item&quot; style=&quot;display:none;&quot;&gt;
+                &lt;span class=&quot;sch-item-tit&quot; title=&quot;询价部门&quot;&gt;询价部门&lt;/span&gt;
+                &lt;div class=&quot;sch-item-bd js-item-content&quot;&gt;
+                    &lt;input type=&quot;text&quot; class=&quot;txt sch-input&quot;&gt;
+                    &lt;i class=&quot;icon icon-delete js-remove-value&quot; style=&quot;display: none;&quot;&gt;&lt;/i&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;div class=&quot;sch-btn&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-small btn-main js-search-btn&quot;&gt;搜索&lt;/button&gt;
+            &lt;span class=&quot;sch-rst&quot;&gt;共&lt;strong class=&quot;red&quot;&gt;22&lt;/strong&gt;条&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;sch-more&quot;&gt;
+      &lt;span class=&quot;sch-more-switch js-sch-more&quot;&gt;
+          &lt;b&gt;&lt;/b&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+      </section>
+  
+    </div>
+  </div>
+</div>
+      <footer class="footer">
+        <div class="container">
+          <p class="pull-right">
+            <a href="#">Back to top</a>
+          </p>
+          <p>Powerd by doxmate. © ABIZ. @TR.3&gzd</p>
+      </div>
+    </footer>
+    <script>
+      $(function() {
+        $('pre').addClass('prettyprint');
+        $('td pre').removeClass('prettyprint');
+        prettyPrint();
+        var $window = $(window);
+        var sidenav = $('.bs-docs-sidenav');
+        if (sidenav.height() < window.innerHeight) {
+          sidenav.affix({
+            offset: {
+              top: function () {
+                return $window.width() <= 980 ? 290 : 210
+              },
+              bottom: 200
+            }
+          });
+        } else {
+          sidenav.removeClass('affix');
+        }
+        $(".content").find('h1, h2, h3, h4, h5, h6').each(function () {
+          var node = $(this);
+          // 总是设置id
+          node.attr("id", node.data('id') || "index_" + node.text());
+        });
+
+        $('.bs-docs-sidenav .accordion-marker').on('click', function(event) {
+          var current = $(event.currentTarget);
+          current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+        });
+      });
+
+      /*$('.iframe-wrap iframe').each(function(i,n){
+        var sunWin=n.contentWindow;
+        sunWin.onload=function(){
+          $(n).height($(n).contents().find('body').outerHeight(true));
+        }
+      });*/
+
+      $('.code-switch').click(function(){
+        var $code = $(this).parent().next('.prettyprint');
+        var _this = this;
+        $code.slideToggle(function(){
+          if($code.is(':visible')){
+            $(_this).text('收起源码');
+          }else{
+            $(_this).text('展开源码');
+          }
+        });
+      });
+
+    </script>
+  
+  </body>
+</html>
+

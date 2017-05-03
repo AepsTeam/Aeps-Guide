@@ -1,0 +1,160 @@
+.grid {
+  padding: 2.15rem 0 2.5rem; }
+
+.grid-s {
+  padding: 2.15rem 0 0; }
+
+.grid-lg {
+  padding: 4.4rem 0 2.5rem; }
+
+.grid-list {
+  padding-bottom: 3.75rem; }
+
+.go-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 3.5rem;
+  display: block;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: url("/assets/img/mobile/gotop.png") center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain; }
+
+/* header
+---------------------------------------------------- */
+.header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.15rem;
+  line-height: 2.15rem;
+  background-color: #dc3214;
+  color: #fff;
+  text-align: center; }
+  .header:before, .header:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .header:after {
+    clear: both; }
+  .header .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.75rem; }
+  .header .icon-user {
+    font-size: 0.9rem; }
+  .header a {
+    color: #fff; }
+  .header h2 {
+    display: inline-block;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: normal; }
+  .header .op-cancel, .header .op-choose {
+    position: absolute;
+    top: 0;
+    width: 2.75rem;
+    font-size: 0.7rem; }
+  .header .op-cancel {
+    left: 0; }
+  .header .op-choose {
+    right: 0; }
+
+/* pop
+---------------------------------------------------- */
+.pop-mask {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: table;
+  -webkit-transition: opacity ease 0.3s;
+  -moz-transition: opacity ease 0.3s;
+  -o-transition: opacity ease 0.3s;
+  transition: opacity ease 0.3s; }
+
+.pop-wrap {
+  display: table-cell;
+  vertical-align: middle; }
+
+.pop-content {
+  width: 90%;
+  margin: 0px auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+  .pop-content .pop-hd {
+    height: 2.625rem;
+    line-height: 2.625rem;
+    margin: 0 1rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.7rem;
+    text-align: center; }
+  .pop-content .pop-bd {
+    padding: 0 1rem; }
+  .pop-content .pop-msg {
+    padding: 1rem 0;
+    font-size: 0.7rem;
+    text-align: center; }
+  .pop-content .pop-ft {
+    height: 2.25rem;
+    line-height: 2.25rem;
+    border-top: 1px solid #ccc; }
+    .pop-content .pop-ft .close {
+      display: block;
+      font-size: 0.7rem;
+      text-align: center; }
+    .pop-content .pop-ft .btn-confirm {
+      float: left;
+      width: 50%;
+      height: 2.25rem;
+      line-height: 2.25rem;
+      text-align: center;
+      font-size: 0.7rem;
+      color: #666;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .pop-content .pop-ft .btn-confirm:first-child {
+        border-right: 1px solid #ccc; }
+  .pop-content .pop-tip {
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1rem;
+    text-align: center; }
+    .pop-content .pop-tip img {
+      vertical-align: middle; }
+
+/*
+ * the following styles are auto-applied to elements with
+ * v-transition="modal" when their visiblity is toggled
+ * by Vue.js.
+ *
+ * You can easily play with the modal transition by editing
+ * these styles.
+ */
+.pop-enter, .pop-leave {
+  opacity: 0; }
+
+.pop-enter .pop-content,
+.pop-leave .pop-content {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/component/layout.css.map */

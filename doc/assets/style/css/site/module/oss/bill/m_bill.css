@@ -1,0 +1,280 @@
+@charset "UTF-8";
+.tab-primary {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 10px; }
+  .tab-primary:before, .tab-primary:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .tab-primary:after {
+    clear: both; }
+  .tab-primary > li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    margin-left: 10px;
+    height: 34px;
+    min-width: 100px;
+    border-top: 1px solid #dadada;
+    background-color: #f2f2f2; }
+    .tab-primary > li:first-child {
+      margin-left: 0; }
+    .tab-primary > li:hover {
+      background-color: #fff; }
+    .tab-primary > li a {
+      display: block;
+      padding: 0 10px;
+      height: 33px;
+      border-left: 1px solid #dadada;
+      border-right: 1px solid #dadada;
+      font: normal 14px/32px arial, "Microsoft Yahei", sans-serif;
+      text-align: center;
+      color: #333; }
+      .tab-primary > li a:hover {
+        text-decoration: none; }
+  .tab-primary > .on {
+    padding-top: 0;
+    height: 35px;
+    margin-bottom: -1px;
+    border-top: 2px solid #ee512e;
+    background-color: #fff; }
+  .tab-primary > .tail {
+    float: right;
+    border-top: none;
+    text-align: right; }
+
+.tab-sub {
+  height: 35px;
+  border-bottom: 1px solid #208adc; }
+  .tab-sub:before, .tab-sub:after {
+    content: " ";
+    display: table;
+    height: 0;
+    visibility: hidden;
+    font-size: 0; }
+  .tab-sub:after {
+    clear: both; }
+  .tab-sub > li {
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    font: normal 14px/34px arial, "Microsoft Yahei", sans-serif; }
+    .tab-sub > li:first-child {
+      margin-left: 0; }
+    .tab-sub > li a {
+      display: block;
+      height: 34px;
+      padding: 0 20px;
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #fff;
+      text-decoration: none; }
+      .tab-sub > li a:link, .tab-sub > li a:visited {
+        color: #333; }
+      .tab-sub > li a:hover {
+        color: #333;
+        text-decoration: none; }
+  .tab-sub .selected a {
+    background-color: #208adc;
+    border-color: #208adc;
+    text-decoration: none; }
+    .tab-sub .selected a:link, .tab-sub .selected a:visited {
+      color: #fff; }
+    .tab-sub .selected a:hover {
+      color: #fff;
+      text-decoration: none; }
+  .tab-sub .tab-sub-tail {
+    float: right;
+    text-align: right;
+    margin-right: 0; }
+    .tab-sub .tab-sub-tail .btn {
+      margin-right: 5px; }
+      .tab-sub .tab-sub-tail .btn:last-child {
+        margin-right: 0; }
+
+.tab-sub-ope {
+  padding-top: 10px; }
+
+.tab-sub-submit {
+  padding: 20px 0;
+  background-color: #e6edf5;
+  text-align: center; }
+
+.tab-sub-narrow li {
+  margin-left: 3px; }
+
+.tab-con .tab-node {
+  display: none; }
+
+.tab-con .on {
+  display: block; }
+
+.tab .opt-tab {
+  margin-bottom: 15px; }
+
+.tab-union {
+  position: relative; }
+
+/*
+ * TODO: 只有vo在用，待移除
+ * @des collapse style tab
+ * @author shjy 2014-02-28
+ */
+.tab {
+  margin-bottom: 10px; }
+
+.tab-hd {
+  height: 35px;
+  position: relative;
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: #e6edf5; }
+  .tab-hd a {
+    float: left;
+    position: relative;
+    font: bold 14px/35px "\5B8B\4F53";
+    padding: 0 15px;
+    height: 34px; }
+    .tab-hd a:link, .tab-hd a:visited,
+    .tab-hd a:link .green,
+    .tab-hd a:visited .green {
+      color: #666; }
+    .tab-hd a:hover,
+    .tab-hd a:hover .green {
+      color: #333;
+      text-decoration: none; }
+    .tab-hd a.on {
+      padding: 0 14px;
+      height: 35px;
+      bottom: 0px;
+      border: 1px solid #d8dfe6;
+      border-bottom: none;
+      background-color: #fff; }
+    .tab-hd a.on:link, .tab-hd a.on:visited {
+      color: #333; }
+      .tab-hd a.on:link .green, .tab-hd a.on:visited .green {
+        color: #290; }
+    .tab-hd a.on:hover {
+      text-decoration: none; }
+
+.tab-bd {
+  border: 1px solid #D8DFE6;
+  padding: 10px; }
+
+.pop-payment {
+  width: 1000px; }
+
+.tb-add-res tfoot td {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  font-weight: bold; }
+
+.sheet tfoot .sum {
+  position: relative;
+  float: right; }
+  .sheet tfoot .sum .form-error {
+    width: 125px;
+    right: -55px; }
+
+.payment-done {
+  position: absolute;
+  right: 250px;
+  top: 55px; }
+
+.paymnet-st {
+  margin-bottom: 10px; }
+
+.container {
+  width: 1190px;
+  margin: 0 auto; }
+  .container .pay-tit {
+    padding: 80px 0 20px;
+    border-bottom: solid 1px #ccc;
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-family: arial, "Microsoft Yahei", sans-serif; }
+  .container .bank-tit {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold; }
+  .container .bank-lst {
+    margin-right: -10px; }
+    .container .bank-lst:before, .container .bank-lst:after {
+      content: " ";
+      display: table;
+      height: 0;
+      visibility: hidden;
+      font-size: 0; }
+    .container .bank-lst:after {
+      clear: both; }
+    .container .bank-lst li {
+      float: left;
+      width: 188px;
+      margin: 0 10px 10px 0;
+      height: 58px;
+      line-height: 58px;
+      vertical-align: middle;
+      text-align: center;
+      border: solid 1px #ccc;
+      -webkit-transition: 0.2s;
+      -moz-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+      .container .bank-lst li:hover {
+        border: solid 1px #E04B43; }
+      .container .bank-lst li:last-child {
+        margin-right: 0; }
+      .container .bank-lst li a {
+        display: block;
+        text-decoration: none; }
+        .container .bank-lst li a:link, .container .bank-lst li a:visited {
+          color: #4d4d4d; }
+        .container .bank-lst li a:hover {
+          color: #e04b43;
+          text-decoration: none; }
+      .container .bank-lst li img {
+        vertical-align: top; }
+
+.form-col2-wrap .form-lst {
+  float: left;
+  width: 450px; }
+
+.form-pay-way0 .field-way {
+  display: none; }
+
+.form-pay-way0 .field-way0 {
+  display: block; }
+
+.form-pay-way1 .field-way {
+  display: none; }
+
+.form-pay-way1 .field-way1 {
+  display: block; }
+
+.form-pay-way2 .field-way {
+  display: none; }
+
+.form-pay-way2 .field-way2 {
+  display: block; }
+
+.form-pay-way3 .field-way {
+  display: none; }
+
+.form-pay-way3 .field-way3 {
+  display: block; }
+
+.pay-pop {
+  width: 500px; }
+  .pay-pop .tip-big {
+    padding-left: 110px;
+    font-size: 14px;
+    font-family: 'Microsoft YaHei'; }
+    .pay-pop .tip-big .icon-big-info {
+      background: url(../../../../../../img/back/bgt/pay_waiting.gif) no-repeat 0 0; }
+    .pay-pop .tip-big .tip-bd p, .pay-pop .tip-big .tip-bd li {
+      padding: 1px 0; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/bill/m_bill.css.map */

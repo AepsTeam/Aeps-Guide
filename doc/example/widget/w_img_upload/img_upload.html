@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_img_upload.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="img-lst clearfix">
+        <li class="upload-item">
+            <div class="upload-img-wrap">
+                <div class="sl-vam">
+                    <div class="sl-vam-outer">
+                        <div class="sl-vam-inner">
+                            <img src="../../../assets/img/back/upload/upload_img.png" alt="" data-scale="100">
+                            <input type="hidden" name="prodPicIds" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="upload-img-btn upload-img-del" href="javascript:void(0)" style="display:none">×</a>
+            <div class="upload-img-file">
+                <span class="upload-img-btn upload-img-plus">+</span>
+            </div>
+        </li>
+        <li class="upload-item">
+            <div class="upload-img-wrap">
+                <div class="sl-vam">
+                    <div class="sl-vam-outer">
+                        <div class="sl-vam-inner">
+                            <a class="js-upload-anchor" href="javascript:void(0)"><img src="../../../assets/img/back/upload/Lighthouse.jpg" alt="" data-scale="100" width="100" height="75"></a>
+                            <input type="hidden" name="prodPicIds" value="UJWNI7733A0w">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="upload-img-btn upload-img-del" href="javascript:void(0)" style="">×</a>
+            <div class="upload-img-file upload-img-hidden">
+                <span class="upload-img-btn upload-img-plus">+</span>
+            </div>
+        </li>
+    </ul>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('img_upload');
+    </script>
+  </body>
+</html>

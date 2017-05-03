@@ -2,16 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>优采企业版前端规范</title>
+    <title>优采企业版前端规范 Documentation</title>
     <meta name="keywords" content="documentation,dox" />
     <meta name="description" content="Front-End Coding Guidelines." />
     <script src="assets/prettify.js"></script>
     <script src="assets/jquery-1.8.2.min.js"></script>
-	<script src="assets/aeps.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
-	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+    <link rel="stylesheet" type="text/css" href="assets/aeps.css" />
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
@@ -30,23 +29,27 @@
           <ul class="nav navbar-nav">
           
             <li>
-              <a href="./1-HTML规范.html">1-HTML规范</a>
+              <a href="./1-HTML规范.html">HTML规范</a>
             </li>
           
             <li>
-              <a href="./2-CSS规范.html">2-CSS规范</a>
+              <a href="./2-CSS规范.html">CSS规范</a>
             </li>
           
             <li>
-              <a href="./3-图片规范.html">3-图片规范</a>
+              <a href="./3-图片规范.html">图片规范</a>
             </li>
           
             <li>
-              <a href="./4-命名规范.html">4-命名规范</a>
+              <a href="./4-命名规范.html">命名规范</a>
             </li>
           
             <li>
-              <a href="./5-项目规范.html">5-项目规范</a>
+              <a href="./5-项目规范.html">项目规范</a>
+            </li>
+          
+            <li>
+              <a href="./6-项目组件.html">项目组件</a>
             </li>
           
           
@@ -85,9 +88,11 @@
     </div>
     <div class="col-md-9">
       <section>
-        <h3>CSS库结构</h3>
-<p><img src="assets/css_mod.jpg"></p><h3>样式引入说明</h3>
-<p><code>base</code> &gt; <code>compontent</code> &gt; <code>ui</code> &gt; <code>widget</code> &gt; <code>module</code></p><h4>说明</h4>
+        <h3 id="css-">CSS库结构</h3>
+<p><img src="assets/css_mod.jpg"></p>
+<h3 id="-">样式引入说明</h3>
+<p><code>base</code> &gt; <code>compontent</code> &gt; <code>ui</code> &gt; <code>widget</code> &gt; <code>module</code></p>
+<h4 id="-">说明</h4>
 <ul>
 <li><code>base</code>:网站核心基础样式，所有应用共用，不能随意修改。  </li>
 <li><code>compontent</code>:网站结构类样式，如头部、导航、底部、分页等。</li>
@@ -95,30 +100,33 @@
 <li><code>widget</code>：网站业务组件类样式，如审批流、tab菜单等。</li>
 <li><code>module</code>：网站业务模块样式，分为<code>OSS</code>、<code>VO</code>和<code>PB</code>三大应用，分别对应<code>采购商管理平台</code>,<code>供应商管理平台</code>和<code>采购商首页</code>。一般维护，只需对module内文件进行增改</li>
 </ul>
-<h4>OSS模块</h4>
+<h4 id="oss-">OSS模块</h4>
 <ul>
 <li><code>oss_common</code>: OSS全局公共样式，不可随意添加修改，必引。</li>
 <li><code>oss_list</code>: OSS列表页公共样式，不可随意添加修改，列表页必引。</li>
 <li><code>oss_detail</code>: OSS详情页(包含新增/修改/审批页)公告样式，不可随意添加修改，详情页必引。</li>
 </ul>
-<p><strong>示例</strong></p><pre><code>&lt;!-- OSS列表页 --&gt;
+<p><strong>示例</strong></p>
+<pre><code>&lt;!-- OSS列表页 --&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/oss_common.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/oss_list.css&quot;&gt;
 
-&lt;!-- 如需其他组件单独引入 --&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/widget/w_choose_cata.css&quot;&gt;
+&lt;!-- 如需特殊处理，在module文件夹下新建对应的模块并引入 --&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/bid/m_bid.css&quot;&gt;
 </code></pre><pre><code>&lt;!-- OSS详情页页 --&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/oss_common.css&quot;&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/oss_detail.css&quot;&gt;
 
 &lt;!-- 如需单独处理，在module文件夹下新建对应的模块并引入 --&gt;
 &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;style/site/module/oss/bid/m_bid.css&quot;&gt;
-</code></pre><h4>VO模块</h4>
+</code></pre><h4 id="vo-">VO模块</h4>
 <blockquote>
-<p>TODO</p></blockquote>
-<h4>PB模块</h4>
+<p>TODO</p>
+</blockquote>
+<h4 id="pb-">PB模块</h4>
 <blockquote>
-<p>TODO</p></blockquote>
+<p>TODO</p>
+</blockquote>
 
       </section>
   
@@ -130,8 +138,7 @@
           <p class="pull-right">
             <a href="#">Back to top</a>
           </p>
-          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
-
+          <p>Powerd by doxmate. © ABIZ. @TR.3&gzd</p>
       </div>
     </footer>
     <script>
@@ -164,6 +171,26 @@
           current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
         });
       });
+
+      /*$('.iframe-wrap iframe').each(function(i,n){
+        var sunWin=n.contentWindow;
+        sunWin.onload=function(){
+          $(n).height($(n).contents().find('body').outerHeight(true));
+        }
+      });*/
+
+      $('.code-switch').click(function(){
+        var $code = $(this).parent().next('.prettyprint');
+        var _this = this;
+        $code.slideToggle(function(){
+          if($code.is(':visible')){
+            $(_this).text('收起源码');
+          }else{
+            $(_this).text('展开源码');
+          }
+        });
+      });
+
     </script>
   
   </body>

@@ -1,0 +1,44 @@
+.tb-form .tb-form-bd {
+  width: 400px; }
+
+.tb-form-view .tb-form-bd {
+  width: 305px; }
+
+.audit {
+  width: auto; }
+
+.fold-clean .fold-hd,
+.fold-clean .fold-bd {
+  background: #fff; }
+
+.quo-tit {
+  margin-bottom: 10px;
+  font-size: 14px;
+  height: 28px;
+  border-bottom: 1px dashed #e0e0e0;
+  color: #666; }
+
+.quo-num {
+  color: #666;
+  margin-bottom: 10px; }
+
+.txt-mx {
+  width: 114px; }
+
+.main-sup-quote {
+  width: 920px; }
+
+.main-quote-add {
+  width: 990px; }
+
+.fold-quote .form-lst {
+  border: 1px solid #e6e6e6; }
+
+.day-num {
+  display: inline-block;
+  vertical-align: middle; }
+
+.dispatch-lst .fold-bd {
+  border: none; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/vo/order/m_order.css.map */

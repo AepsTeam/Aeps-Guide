@@ -2,16 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>优采企业版前端规范</title>
+    <title>优采企业版前端规范 Documentation</title>
     <meta name="keywords" content="documentation,dox" />
     <meta name="description" content="Front-End Coding Guidelines." />
     <script src="assets/prettify.js"></script>
     <script src="assets/jquery-1.8.2.min.js"></script>
-	<script src="assets/aeps.js"></script>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/base.css" />
-	<link rel="stylesheet" type="text/css" href="assets/aeps.css" />
+    <link rel="stylesheet" type="text/css" href="assets/aeps.css" />
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-static-top top-navbar" role="navigation">
@@ -30,23 +29,27 @@
           <ul class="nav navbar-nav">
           
             <li>
-              <a href="./1-HTML规范.html">1-HTML规范</a>
+              <a href="./1-HTML规范.html">HTML规范</a>
             </li>
           
             <li>
-              <a href="./2-CSS规范.html">2-CSS规范</a>
+              <a href="./2-CSS规范.html">CSS规范</a>
             </li>
           
             <li>
-              <a href="./3-图片规范.html">3-图片规范</a>
+              <a href="./3-图片规范.html">图片规范</a>
             </li>
           
             <li>
-              <a href="./4-命名规范.html">4-命名规范</a>
+              <a href="./4-命名规范.html">命名规范</a>
             </li>
           
             <li>
-              <a href="./5-项目规范.html">5-项目规范</a>
+              <a href="./5-项目规范.html">项目规范</a>
+            </li>
+          
+            <li>
+              <a href="./6-项目组件.html">项目组件</a>
             </li>
           
           
@@ -97,20 +100,25 @@
     </div>
     <div class="col-md-9">
       <section>
-        <h3>图片格式</h3>
-<p>常见的图片格式有 GIF、PNG8、PNG24、JPEG、WEBP，根据图片格式的特性和场景需要选取适合的图片格式。</p><h4>GIF</h4>
+        <h3 id="-">图片格式</h3>
+<p>常见的图片格式有 GIF、PNG8、PNG24、JPEG、WEBP，根据图片格式的特性和场景需要选取适合的图片格式。</p>
+<h4 id="gif">GIF</h4>
 <blockquote>
-<p>GIF图象是基于颜色列表的（存储的数据是该点的颜色对应于颜色列表的索引值），最多只支持8位（256色）。GIF文件内部分成许多存储块，用来存储多幅图象或者是决定图象表现行为的控制块，用以实现动画和交互式应用。GIF文件还通过LZW压缩算法压缩图象数据来减少图象尺寸</p></blockquote>
-<p><strong>特性</strong> </p><ul>
+<p>GIF图象是基于颜色列表的（存储的数据是该点的颜色对应于颜色列表的索引值），最多只支持8位（256色）。GIF文件内部分成许多存储块，用来存储多幅图象或者是决定图象表现行为的控制块，用以实现动画和交互式应用。GIF文件还通过LZW压缩算法压缩图象数据来减少图象尺寸</p>
+</blockquote>
+<p><strong>特性</strong> </p>
+<ul>
 <li>优秀的压缩算法使其在一定程度上保证图像质量的同时将体积变得很小。</li>
 <li>可插入多帧，从而实现动画效果。</li>
 <li>可设置透明色以产生对象浮现于背景之上的效果。</li>
 <li>由于采用了8位压缩，最多只能处理256种颜色，故不宜应用于真彩色图片。</li>
 </ul>
-<h4>PNG</h4>
+<h4 id="png">PNG</h4>
 <blockquote>
-<p>PNG是20世纪90年代中期开始开发的图像文件存储格式，其目的是企图替代GIF和TIFF文件格式，同时增加一些GIF文件格式所不具备的特性。流式网络图形格式(Portable Network Graphic Format，PNG)名称来源于非官方的“PNG’s Not GIF”，是一种位图文件(bitmap file)存储格式，读成“ping”。PNG用来存储灰度图像时，灰度图像的深度可多到16位，存储彩色图像时，彩色图像的深度可多到48位，并且还可存储多到16位的α通道数据。PNG使用从LZ77派生的无损数据压缩算法。</p></blockquote>
-<p><strong>特性</strong></p><ul>
+<p>PNG是20世纪90年代中期开始开发的图像文件存储格式，其目的是企图替代GIF和TIFF文件格式，同时增加一些GIF文件格式所不具备的特性。流式网络图形格式(Portable Network Graphic Format，PNG)名称来源于非官方的“PNG’s Not GIF”，是一种位图文件(bitmap file)存储格式，读成“ping”。PNG用来存储灰度图像时，灰度图像的深度可多到16位，存储彩色图像时，彩色图像的深度可多到48位，并且还可存储多到16位的α通道数据。PNG使用从LZ77派生的无损数据压缩算法。</p>
+</blockquote>
+<p><strong>特性</strong></p>
+<ul>
 <li>支持256色调色板技术，文件体积小。</li>
 <li>无损压缩。</li>
 <li>最高支持48位真彩色图像以及16位灰度图像。</li>
@@ -121,30 +129,36 @@
 <li>使用CRC防止文件出错。</li>
 <li>最新的PNG标准允许在一个文件内存储多幅图像。</li>
 </ul>
-<h4>JPEG</h4>
+<h4 id="jpeg">JPEG</h4>
 <blockquote>
-<p>JPEG是一种针对照片视频而广泛使用的一种有损压缩标准方法。这个名称代表Joint Photographic Experts Group（联合图像专家小组）。此团队创立于公元1986年，1992年发布了JPEG的标准而在1994年获得了ISO 10918-1的认定</p></blockquote>
-<p><strong>特性</strong> </p><ul>
+<p>JPEG是一种针对照片视频而广泛使用的一种有损压缩标准方法。这个名称代表Joint Photographic Experts Group（联合图像专家小组）。此团队创立于公元1986年，1992年发布了JPEG的标准而在1994年获得了ISO 10918-1的认定</p>
+</blockquote>
+<p><strong>特性</strong> </p>
+<ul>
 <li>适用于储存24位元全采影像</li>
 <li>采取的压缩方式通常为有损压缩</li>
 <li>不支持透明或动画</li>
 <li>压缩比越高影像耗损越大，失真越严重</li>
 <li>压缩比在10左右肉眼无法辨出压缩图与原图的差别</li>
 </ul>
-<h3>团队约定</h3>
+<h3 id="-">团队约定</h3>
 <ul>
 <li>装饰性图片尽量少的使用，用雪碧图来拼合图标。</li>
 <li>图片必须存为WEB格式。动画图片存为<code>gif</code>格式，常用图标存为<code>png8</code>格式。</li>
 <li>banner图片存为<code>jpg</code>格式，单张banner大小尽量不超过200k，压缩比例60%~70%之间，同时避免出现明显压缩过度现象。</li>
 <li>禁止直接给大图加宽高来定义缩略图。</li>
 </ul>
-<h3>图片引入</h3>
-<p>HTML 中图片引入不需添加 width、height 属性，alt 属性应该写上</p><p><em>推荐</em></p><pre><code>&lt;img src=&quot;&quot; alt=&quot;&quot; &gt;
-</code></pre><p><em>不推荐</em></p><pre><code>&lt;img src=&quot;&quot; width=&quot;&quot; height=&quot;&quot; &gt;
-</code></pre><p>CSS 中图片引入不需要引号</p><pre><code>.selector {
+<h3 id="-">图片引入</h3>
+<p>HTML 中图片引入不需添加 width、height 属性，alt 属性应该写上</p>
+<p><em>推荐</em></p>
+<pre><code>&lt;img src=&quot;&quot; alt=&quot;&quot; &gt;
+</code></pre><p><em>不推荐</em></p>
+<pre><code>&lt;img src=&quot;&quot; width=&quot;&quot; height=&quot;&quot; &gt;
+</code></pre><p>CSS 中图片引入不需要引号</p>
+<pre><code>.selector {
     background-image: url(icon.png);
 }
-</code></pre><h3>CSS Sprites</h3>
+</code></pre><h3 id="css-sprites">CSS Sprites</h3>
 <ul>
 <li>适合使用频率高更新频率低的小图标</li>
 <li>尽量不留太多的空白</li>
@@ -162,8 +176,7 @@
           <p class="pull-right">
             <a href="#">Back to top</a>
           </p>
-          <p>Powerd by doxmate. &copy ABIZ.  @TR.3</p>
-
+          <p>Powerd by doxmate. © ABIZ. @TR.3&gzd</p>
       </div>
     </footer>
     <script>
@@ -196,6 +209,26 @@
           current.find('.glyphicon').toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
         });
       });
+
+      /*$('.iframe-wrap iframe').each(function(i,n){
+        var sunWin=n.contentWindow;
+        sunWin.onload=function(){
+          $(n).height($(n).contents().find('body').outerHeight(true));
+        }
+      });*/
+
+      $('.code-switch').click(function(){
+        var $code = $(this).parent().next('.prettyprint');
+        var _this = this;
+        $code.slideToggle(function(){
+          if($code.is(':visible')){
+            $(_this).text('收起源码');
+          }else{
+            $(_this).text('展开源码');
+          }
+        });
+      });
+
     </script>
   
   </body>

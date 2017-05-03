@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_table.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="sheet">
+      <thead>
+        <tr>
+          <th class="g-id">序号</th>
+          <th class="g-serial">物品编号</th>
+          <th class="g-tit"><span class="required">*</span>物品名称</th>
+          <th class="g-spec">规格型号</th>
+          <th class="g-unit">单位</th>
+          <th class="g-amount">采购量</th>
+          <th class="g-xs tac">操作</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="g-id">1</td>
+          <td class="g-serial celleditable">
+            <div class="celleditable-wrap">
+              <input type="text" class="celleditable-ctrl" value="">
+            </div>
+          </td>
+          <td class="g-tit celleditable">
+            <div class="celleditable-wrap">
+              <input type="text" class="celleditable-ctrl" value="">
+            </div>
+          </td>
+          <td class="g-spec">100个/箱</td>
+          <td class="g-unit">个</td>
+          <td class="g-amount celleditable">
+            <div class="celleditable-wrap">
+              <input type="text" class="celleditable-ctrl" value="">
+            </div>
+          </td>
+          <td class="g-xs tac">
+            <a href="javascript:;" class="tb-btn tb-btn--add"></a>
+            <a href="javascript:;" class="tb-btn tb-btn--remove"></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('sheet');
+    </script>
+  </body>
+</html>
+

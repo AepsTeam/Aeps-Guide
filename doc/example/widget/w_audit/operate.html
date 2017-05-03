@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_button.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_audit.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	ul,li{
+    		margin:0;
+    		padding:0;
+    		list-style:none;
+    	}
+        .audit-ope{
+            margin-top:0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="audit-ope">
+        <ul class="form-lst">
+            <li class="field">
+                <label class="field-tit">
+                </label>
+
+                <div class="field-bd">
+                    <div class="chose form-text">
+                        <label for=""><input type="radio">加入我的供应商</label>
+                        <label for=""><input type="radio">需要补充资料</label>
+                        <label for=""><input type="radio">加入黑名单</label>
+                        <label for=""><input type="radio">删除</label>
+                    </div>
+                </div>
+            </li>
+            <li class="field">
+                <label class="field-tit">
+                    <em class="required">*</em>审批意见
+                </label>
+
+                <div class="field-bd">
+                    <div class="explain">
+                        <textarea name="" id="" cols="30" rows="5" class="txt-xxl"></textarea>
+                    </div>
+                </div>
+            </li>
+            <li class="field field-ope">
+                <div class="field-bd">
+                    <button class="btn btn-big btn-main">提 交</button>
+                    <button class="btn btn-big btn-gray">取消</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('operate');
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+.preview {
+  margin-top: 1rem; }
+  .preview .row {
+    border-bottom: none;
+    margin-bottom: -0.025rem; }
+    .preview .row:first-child {
+      border-top: 1px solid #ccc; }
+    .preview .row:last-child {
+      border-bottom: 1px solid #ccc; }
+
+.row-pm:first-of-type {
+  margin-top: 0.5rem; }
+
+.row-pm .data-bd-row {
+  overflow: hidden; }
+
+.row-pm .data-hd-tail {
+  color: #dc3214; }
+
+.data-empty {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+  .data-empty .ico-empty {
+    position: relative;
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 0.2rem solid #ccc; }
+    .data-empty .ico-empty:before, .data-empty .ico-empty em, .data-empty .ico-empty:after {
+      position: absolute;
+      left: 50%;
+      margin-left: -0.8rem;
+      width: 1.6rem;
+      height: 0.2rem;
+      background: #ccc; }
+    .data-empty .ico-empty:before, .data-empty .ico-empty:after {
+      content: ""; }
+    .data-empty .ico-empty:before {
+      top: 0.6rem; }
+    .data-empty .ico-empty em {
+      top: 1.3rem; }
+    .data-empty .ico-empty:after {
+      top: 2rem; }
+  .data-empty p {
+    line-height: 1rem;
+    margin-top: 0.825rem;
+    font-size: 0.7rem;
+    color: #333; }
+
+/*# sourceMappingURL=../../../sourcemaps/mobile/module/predict_matter.css.map */

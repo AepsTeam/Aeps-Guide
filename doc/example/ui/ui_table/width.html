@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_table.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tb-fixed-wrap">
+      <table class="tb tb-border tb-fixed">
+        <thead>
+          <tr>
+              <th class="g-id" title="g-id">序号</th>
+              <th class="g-select" title="g-select"><input type="button" value="全选"></th>
+              <th class="g-serial g-clip" title="g-serial">物品编号</th>
+              <th class="g-product g-clip" title="g-product">主营产品</th>
+              <th class="g-tit g-clip" title="g-tit">物品名称</th>
+              <th class="g-date g-clip" title="g-date">日期</th>
+              <th class="g-time g-clip" title="g-time">付款时间</th>
+              <th class="g-expired-date g-clip" title="g-expired-date">交货期</th>
+              <th class="g-person g-clip" title="g-person">添加人</th>
+              <th class="g-state g-clip" title="g-state">审批状态</th>
+              <th class="g-type g-clip" title="g-type">所属类目</th>
+              <th class="g-tel g-clip" title="g-tel">联系电话</th>
+              <th class="g-area g-clip" title="g-area">所在地区</th>
+              <th class="g-spec g-clip" title="g-spec">规格型号</th>
+              <th class="g-unit g-clip" title="g-unit">单位</th>
+              <th class="g-amount g-clip" title="g-amount">数量</th>
+              <th class="g-money g-clip" title="g-money">单价</th>
+              <th class="g-brand g-clip" title="g-brand">品牌</th>
+              <th class="g-sum g-clip" title="g-sum">单价</th>
+              <th class="g-txt g-clip" title="g-txt">备注</th>
+              <th class="g-dept g-clip" title="g-dept">采购部门</th>
+              <th class="g-project g-clip" title="g-project">采购部门</th>
+              <th class="g-file g-clip" title="g-file">投标文件</th>
+              <th class="g-ope-w1 g-clip" title="g-ope-w1">操作w1</th>
+              <th class="g-ope-w2 g-clip" title="g-ope-w2">操作w2</th>
+              <th class="g-ope-w3 g-clip" title="g-ope-w3">操作w3</th>
+              <th class="g-ope-w4 g-clip" title="g-ope-w4">操作w4</th>
+              <th class="g-ope-w5 g-clip" title="g-ope-w5">操作w5</th>
+              <th class="g-ope-w6 g-clip" title="g-ope-w6">操作w6</th>
+              <th class="g-xxs g-clip" title="g-xxs">通用xxs</th>
+              <th class="g-xs g-clip" title="g-xs">通用xs</th>
+              <th class="g-s g-clip" title="g-s">通用s</th>
+              <th class="g-m g-clip" title="g-m">通用m</th>
+              <th class="g-l g-clip" title="g-l">通用l</th>
+              <th class="g-xl g-clip" title="g-xl">通用xl</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td class="g-id" title="g-id">1</td>
+              <td class="g-select" title="g-select"><a href="javascript:void(0)">选择</a></td>
+              <td class="g-serial g-clip" title="g-serial">
+                  <a class="dib" href="#">FK201703260001</a>
+              </td>
+              <td class="g-product g-clip" title="g-product">苹果</td>
+              <td class="g-tit g-clip" title="g-tit">iPhone9</td>
+              <td class="g-date g-clip" title="g-date">2019-10-22</td>
+              <td class="g-time g-clip" title="g-time">2019-10-22 12:22:50</td>
+              <td class="g-expired-date g-clip" title="g-expired-date">2019-10-22至2022-11-05</td>
+              <td class="g-person g-clip" title="g-person">张小三</td>
+              <td class="g-state g-clip" title="g-state"><span class="green">审批通过</span></td>
+              <td class="g-type g-clip" title="g-type">其它</td>
+              <td class="g-tel g-clip" title="g-tel">13912542658</td>
+              <td class="g-area g-clip" title="g-area">江苏省 南京市 浦口区星火路软件大厦</td>
+              <td class="g-spec g-clip" title="g-spec">450*300*11*18*8米</td>
+              <td class="g-unit g-clip" title="g-unit">个</td>
+              <td class="g-amount g-clip" title="g-amount">100,000,000</td>
+              <td class="g-money g-clip" title="g-money">100,000.00</td>
+              <td class="g-brand g-clip" title="g-brand">NIKE</td>
+              <td class="g-sum g-clip" title="g-sum">10,000,000.00</td>
+              <td class="g-txt g-clip" title="g-txt">我是一个小备注哈</td>
+              <td class="g-dept g-clip" title="g-dept">百卓事业部</td>
+              <td class="g-project g-clip" title="g-project">百购通</td>
+              <td class="g-file g-clip" title="g-file"><a href="">文件一</a></td>
+              <td class="g-ope-w1 g-clip" title="g-ope-w1">操作w1</td>
+              <td class="g-ope-w2 g-clip" title="g-ope-w2">操作w2</td>
+              <td class="g-ope-w3 g-clip" title="g-ope-w3">操作w3</td>
+              <td class="g-ope-w4 g-clip" title="g-ope-w4">操作w4</td>
+              <td class="g-ope-w5 g-clip" title="g-ope-w5">操作w5</td>
+              <td class="g-ope-w6 g-clip" title="g-ope-w6">操作w6</td>
+              <td class="g-xxs g-clip" title="g-xxs">通用xxs</td>
+              <td class="g-xs g-clip" title="g-xs">通用xs</td>
+              <td class="g-s g-clip" title="g-s">通用s</td>
+              <td class="g-m g-clip" title="g-m">通用m</td>
+              <td class="g-l g-clip" title="g-l">通用l</td>
+              <td class="g-xl g-clip" title="g-xl">通用xl</td>
+          </tr>
+          <tr>
+              <td class="g-id" title="g-id">g-id</td>
+              <td class="g-select" title="g-select">g-select</td>
+              <td class="g-serial g-clip" title="g-serial">g-serial</td>
+              <td class="g-product g-clip" title="g-product">g-product</td>
+              <td class="g-tit g-clip" title="g-tit">g-tit</td>
+              <td class="g-date g-clip" title="g-date">g-date</td>
+              <td class="g-time g-clip" title="g-time">g-time</td>
+              <td class="g-expired-date g-clip" title="g-expired-date">g-expired-date</td>
+              <td class="g-person g-clip" title="g-person">g-person</td>
+              <td class="g-state g-clip" title="g-state">g-state</td>
+              <td class="g-type g-clip" title="g-type">g-type</td>
+              <td class="g-tel g-clip" title="g-tel">g-tel</td>
+              <td class="g-area g-clip" title="g-area">g-area</td>
+              <td class="g-spec g-clip" title="g-spec">g-spec</td>
+              <td class="g-unit g-clip" title="g-unit">g-unit</td>
+              <td class="g-amount g-clip" title="g-amount">g-amount</td>
+              <td class="g-money g-clip" title="g-money">g-money</td>
+              <td class="g-brand g-clip" title="g-brand">g-brand</td>
+              <td class="g-sum g-clip" title="g-sum">g-sum</td>
+              <td class="g-txt g-clip" title="g-txt">g-txt</td>
+              <td class="g-dept g-clip" title="g-dept">g-dept</td>
+              <td class="g-project g-clip" title="g-project">g-project</td>
+              <td class="g-file g-clip" title="g-file">g-file</td>
+              <td class="g-ope-w1 g-clip" title="g-ope-w1">g-ope-w1</td>
+              <td class="g-ope-w2 g-clip" title="g-ope-w2">g-ope-w2</td>
+              <td class="g-ope-w3 g-clip" title="g-ope-w3">g-ope-w3</td>
+              <td class="g-ope-w4 g-clip" title="g-ope-w4">g-ope-w4</td>
+              <td class="g-ope-w5 g-clip" title="g-ope-w5">g-ope-w5</td>
+              <td class="g-ope-w6 g-clip" title="g-ope-w6">g-ope-w6</td>
+              <td class="g-xxs g-clip" title="g-xxs">g-xxs</td>
+              <td class="g-xs g-clip" title="g-xs">g-xs</td>
+              <td class="g-s g-clip" title="g-s">g-s</td>
+              <td class="g-m g-clip" title="g-m">g-m</td>
+              <td class="g-l g-clip" title="g-l">g-l</td>
+              <td class="g-xl g-clip" title="g-xl">g-xl</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('width');
+    </script>
+  </body>
+</html>
+

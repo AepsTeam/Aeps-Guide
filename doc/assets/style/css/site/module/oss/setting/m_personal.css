@@ -1,0 +1,52 @@
+/* revise
+----------------------------------------------- */
+.tab-union-wx {
+  width: 530px;
+  margin: 50px auto; }
+  .tab-union-wx .bind-fail {
+    display: none; }
+  .tab-union-wx .field {
+    margin-bottom: 5px; }
+  .tab-union-wx .tab-primary {
+    margin-bottom: -1px; }
+  .tab-union-wx .tab-union-node {
+    margin-top: 0; }
+  .tab-union-wx .flow {
+    width: 471px;
+    height: 60px; }
+  .tab-union-wx .container {
+    text-align: center; }
+  .tab-union-wx .tip-nor {
+    float: none;
+    font-size: 28px; }
+  .tab-union-wx .icon-nor {
+    float: none; }
+
+.wx {
+  width: 235px; }
+  .wx > span {
+    float: left;
+    line-height: 26px; }
+
+.btn-wx .btn-big {
+  width: 160px;
+  height: 35px; }
+
+.section-infor {
+  display: none; }
+
+.pwd-wrap {
+  margin-top: 30px; }
+
+.audit-flow-wx {
+  border: none; }
+
+.wx-map-hd {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px; }
+
+.wx-map-bd {
+  margin-bottom: 70px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/setting/m_personal.css.map */

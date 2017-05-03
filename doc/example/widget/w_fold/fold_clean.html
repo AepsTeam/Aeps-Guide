@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_table.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_fold.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="fold fold-clean">
+        <div class="fold-hd">
+            <h3>物品信息</h3>
+            <i class="icon icon-close flr"></i>
+        </div>
+        <div class="fold-bd">
+            <table class="tb tb-border tb-add-res">
+                <colgroup>
+                    <col width="6%">
+                    <!-- 序号 -->
+                    <col width="22%">
+                    <!-- 物品名称 -->
+                    <col width="12%">
+                    <!-- 规格型号 -->
+                    <col width="10%">
+                    <!-- 出库数量 -->
+                    <col width="6%">
+                    <!-- 单位 -->
+                    <col width="10%">
+                    <!-- 单价 -->
+                    <col width="10%">
+                    <!-- 金额 -->
+                    <col width="24%">
+                    <!-- 备注 -->
+                </colgroup>
+                <tbody>
+                <tr>
+                    <th>序号</th>
+                    <th><em class="required">*</em>物品名称</th>
+                    <th>规格型号</th>
+                    <th><em class="required">*</em>出库数量</th>
+                    <th>单位</th>
+                    <th><em class="required">*</em>单价(元)</th>
+                    <th>金额(元)</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <span class="res-name">苹果手机</span>
+                    </td>
+                    <td>4S</td>
+                    <td>233</td>
+                    <td>个</td>
+                    <td>1000</td>
+                    <td>0.00</td>
+                    <td>Which team is the 2014 NBA final champion ?</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="8" class="clearfix">
+                        <div class="flr">总金额(元): <span class="required fwb">0.00</span></div>
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('fold_clean');
+    </script>
+  </body>
+</html>

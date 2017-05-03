@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/ui/ui_form.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/ui/ui_button.css">
+    <link rel="stylesheet" type="text/css" href="../../assets/style/css/site/component/search.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+    </style>
+  </head>
+  <body style="padding-bottom:80px;">
+    
+    <div style="overflow:auto;">
+
+    <div style="width:1200px;padding-bottom:30px;">
+
+        <div class="sch sch-default">
+          <div class="sch-main">
+              <ul class="sch-lst">
+                  <li class="sch-item">
+                      <span class="sch-item-tit" title="关键字">关键字</span>
+                      <div class="sch-item-bd js-item-content">
+                          <input type="text" class="txt sch-input" placeholder="询价标题/询价单号/物品">
+                          <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:none">
+                              <ul class="drop-lst"></ul>
+                          </div>
+                          <i class="icon icon-delete js-remove-value" style="display: none;"></i>
+                      </div>
+                  </li>
+                  <li class="sch-item">
+                      <span class="sch-item-tit" title="询价日期">询价日期</span>
+                      <div class="sch-item-bd flt-date">
+                          <input type="text" class="txt txt-date hasDatepick" readonly="">
+                          <span> - </span>
+                          <input type="text" class="txt txt-date hasDatepick" readonly="">
+                      </div>
+                  </li>
+                  <li class="sch-item">
+                      <span class="sch-item-tit" title="询价人">询价人</span>
+                      <div class="sch-item-bd js-item-content">
+                      <input type="text" class="txt sch-input">
+                          <div class="drop-lst-wrap input-style-drop-wrap js-suggest" style="display:none">
+                              <ul class="drop-lst"></ul>
+                          </div>
+                          <i class="icon icon-delete js-remove-value" style="display: none;"></i>
+                      </div>
+                  </li>
+                  <li class="sch-item" style="display:none;">
+                      <span class="sch-item-tit" title="截止日期">截止日期</span>
+                      <div class="sch-item-bd flt-date">
+                          <input type="text" class="txt txt-date hasDatepick" readonly="">
+                          <span> - </span>
+                          <input type="text" class="txt txt-date hasDatepick"readonly="">
+                      </div>
+                  </li>
+                  <li class="sch-item" style="display:none;">
+                      <span class="sch-item-tit" title="询价部门">询价部门</span>
+                      <div class="sch-item-bd js-item-content">
+                          <input type="text" class="txt sch-input">
+                          <i class="icon icon-delete js-remove-value" style="display: none;"></i>
+                      </div>
+                  </li>
+              </ul>
+              <div class="sch-btn">
+                  <button type="submit" class="btn btn-small btn-main js-search-btn">搜索</button>
+                  <span class="sch-rst">共<strong class="red">22</strong>条</span>
+              </div>
+          </div>
+          <div class="sch-more">
+            <span class="sch-more-switch js-sch-more">
+                <b></b>
+            </span>
+          </div>
+      </div>
+    </div>
+
+</div>
+    
+    <script src="../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      var $schSwitch = $('.js-sch-more');
+      // 搜索区域展开收起
+        var $sch = $('.sch');
+        var $schFilter = $('.sch-filter');
+        $schSwitch.click(function() {
+            if ($sch.hasClass('sch-default')) {
+                $('.sch-item').show();
+                $sch.removeClass('sch-default').addClass('sch-opened');
+                $schFilter.show();
+            }
+            else {
+                $('.sch-item:nth-child(3)').nextAll().hide();
+                $sch.removeClass('sch-opened').addClass('sch-default');
+                $schFilter.hide();
+            }
+        });
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('search');
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,181 @@
+@charset "UTF-8";
+.fold-clean .form-panel {
+  position: relative; }
+
+.fold-clean .form-panel img {
+  max-width: 100%; }
+
+.rank-stage {
+  top: 30%;
+  right: 90px;
+  position: absolute;
+  z-index: 9; }
+
+button.rank-stage {
+  height: 50px;
+  padding: 0 64px; }
+
+.form-text > .crr-price {
+  font-size: 26px; }
+
+.form-text > b {
+  margin: 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  vertical-align: bottom; }
+
+.tab {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 30px; }
+
+.tab-menu {
+  padding: 6px 20px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #e6e6e6; }
+
+.tab-menu > li {
+  float: left;
+  padding: 0 20px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+  font-size: 14px; }
+
+.tab-menu > li.on {
+  font-weight: bold;
+  background: none; }
+
+.tab-menu > li:first-child {
+  border-right: 1px solid #ccc; }
+
+.tab-con {
+  padding: 0 20px;
+  background-color: #FFFFFF;
+  overflow: hidden; }
+
+.tb-fake-hd {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #e6e6e6; }
+
+.tb-fake-bd {
+  margin-bottom: -1px;
+  max-height: 210px;
+  overflow-y: scroll; }
+
+.tb-fake-bd > li {
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px dotted #ccc;
+  overflow: hidden;
+  position: relative; }
+
+.tb-fake-bd > li:hover {
+  background-color: #fafafa; }
+
+.tb-fake-hd span {
+  float: left;
+  width: 32.5%;
+  text-align: center;
+  color: #999;
+  font-weight: bold; }
+
+.tb-fake-bd > li > span {
+  float: left;
+  width: 33%;
+  text-align: center; }
+
+.tb-fake-5 .tb-fake-hd span {
+  width: 18.5%; }
+
+.tb-fake-5 .tb-fake-bd > li > span {
+  width: 19%; }
+
+/* 竞价详情页(排名) */
+.front {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  position: relative; }
+
+.front-blue {
+  background-color: #61bbed;
+  color: #fff; }
+
+.front-percent {
+  width: 70px;
+  height: 22px;
+  line-height: 22px;
+  background-color: #eff8fd;
+  border: solid 1px #dcf0fa;
+  position: absolute;
+  right: -80px;
+  color: #61bbed; }
+
+.front-percent:before,
+.front-percent:after {
+  width: 0;
+  height: 0;
+  content: "";
+  border: 6px solid transparent;
+  position: absolute; }
+
+.front-percent:after {
+  border-right: 6px solid #eff8fd;
+  top: 5px;
+  right: 68px; }
+
+.front-percent:before {
+  border-right: 6px solid #dcf0fa;
+  top: 5px;
+  right: 70px; }
+
+.tab-con-node .time {
+  color: #999; }
+
+.tab-union-node img {
+  width: 100%; }
+
+.no-data {
+  text-align: center;
+  vertical-align: middle;
+  padding: 46px 0;
+  color: #999; }
+
+.left-time b {
+  font-size: 26px;
+  font-weight: normal; }
+
+.tb-fake-5 > .tb-fake-hd > span:first-child,
+.tb-fake-5 > .tb-fake-bd > li > span:first-child {
+  text-align: left;
+  padding-left: 20px; }
+
+.form-panel-ft {
+  margin-top: 20px;
+  padding-top: 6px;
+  border-top: 1px dotted #ccc; }
+
+.field--tit-attach {
+  padding-left: 40px; }
+
+.field--tit-attach .field-tit {
+  width: 40px; }
+
+.form-text.form-rank-price {
+  line-height: 16px; }
+
+.category {
+  color: #999;
+  display: inline-block; }
+
+.category .text-clip {
+  max-width: 100px;
+  vertical-align: bottom; }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_rank.css.map */

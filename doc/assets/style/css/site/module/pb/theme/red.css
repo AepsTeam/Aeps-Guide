@@ -1,0 +1,84 @@
+/*
+ * des front theme color red
+ * @author: liuyao 2016-07-22
+*/
+.nav {
+  background-color: #ce000c; }
+  .nav .now a,
+  .nav a:hover {
+    background-color: #9e0710; }
+
+.panel-log {
+  background: url(/assets/img/pb/home/log_bg_orange.jpg) top left no-repeat #fff; }
+
+.panel-hd {
+  border-top-color: #cf000f;
+  background-image: -moz-linear-gradient(top, #fef0e7 0, #fff 100%);
+  background-image: -webkit-linear-gradient(top, #fef0e7 0, #fff 100%);
+  background-image: -o-linear-gradient(top, #fef0e7 0, #fff 100%);
+  background-image: linear-gradient(to bottom, #fef0e7 0, #fff 100%); }
+  .panel-hd .icon {
+    color: #ce000d; }
+
+.tab-menu .on {
+  background-color: #ce000d;
+  border-color: #ce000d; }
+
+.btn-log {
+  color: #fff;
+  background-color: #238fe9;
+  background-image: -moz-linear-gradient(top, #42a3f2 0, #1a86e1 100%);
+  background-image: -webkit-linear-gradient(top, #42a3f2 0, #1a86e1 100%);
+  background-image: -o-linear-gradient(top, #42a3f2 0, #1a86e1 100%);
+  background-image: linear-gradient(to bottom, #42a3f2 0, #1a86e1 100%); }
+  .btn-log:link, .btn-log:visited {
+    color: #fff; }
+  .btn-log:hover {
+    background-color: #1682dc;
+    background-image: -moz-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: -webkit-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: -o-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: linear-gradient(to bottom, #2a97f0 0, #1778ca 100%);
+    color: #fff;
+    text-decoration: none; }
+  .btn-log:active {
+    background-image: -moz-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: -webkit-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: -o-linear-gradient(top, #2a97f0 0, #1778ca 100%);
+    background-image: linear-gradient(to bottom, #2a97f0 0, #1778ca 100%); }
+
+.side-cata-hd .icon {
+  color: #ce000d; }
+
+/* vo theme
+---------------------------------------------*/
+.theme-vo {
+  background: #fff2eb; }
+  .theme-vo .header {
+    height: 60px;
+    background-color: #ce000d;
+    background-image: none; }
+  .theme-vo .login-info .split {
+    color: #ff9ba1; }
+  .theme-vo .wrap {
+    background: url(/assets/img/pb/theme/red/vo_cnt_bg.jpg) center top no-repeat; }
+  .theme-vo .menu .menu-hd .menu-ico {
+    color: #eb3b46; }
+  .theme-vo .menu .menu-bd a:hover b {
+    border-color: #f8c9cc;
+    background: #fcf1f2; }
+    .theme-vo .menu .menu-bd a:hover b:before, .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #f8c9cc; }
+    .theme-vo .menu .menu-bd a:hover b:after {
+      border-left-color: #fcf1f2; }
+  .theme-vo .menu .menu-bd .now b {
+    border-color: #f8c9cc;
+    background: #fcf1f2; }
+    .theme-vo .menu .menu-bd .now b:before, .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #f8c9cc; }
+    .theme-vo .menu .menu-bd .now b:after {
+      border-left-color: #fcf1f2; }
+  .theme-vo .msg-panel th {
+    border-top: 1px solid #ce000d; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/pb/theme/red.css.map */

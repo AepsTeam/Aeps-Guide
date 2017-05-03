@@ -1,0 +1,126 @@
+.down-opt {
+  margin-bottom: 20px; }
+
+.down-opt dt {
+  font-weight: bold;
+  margin-bottom: 5px; }
+
+.down-opt dd {
+  overflow: hidden;
+  *zoom: 1; }
+
+.down-opt .dow-opt-txt {
+  float: left;
+  margin: 7px 0 0 10px;
+  line-height: 20px; }
+
+.tb .hover:hover {
+  cursor: move; }
+
+.tb .hover td {
+  background-color: #faf7c8; }
+
+.tb .move {
+  border-top: 2px solid #f0e190; }
+
+.tb .disabled {
+  background: none;
+  border: none; }
+
+.tb .disabled:hover {
+  text-decoration: none; }
+
+.add-new .btn {
+  margin-right: 5px; }
+
+/* global setting */
+.visual-l {
+  float: left;
+  width: 600px; }
+
+.visual-l .poptip-warn {
+  bottom: 30px;
+  left: -15px; }
+
+.visual-l .poptip-warn p {
+  line-height: 1.5; }
+
+.visual-l .choose-group {
+  line-height: 18px; }
+
+.visual-l .choose-group label {
+  display: inline-block;
+  width: 120px; }
+
+.visual-r {
+  float: right;
+  width: 450px; }
+
+.sketch {
+  margin-top: 34px;
+  padding: 10px 30px 30px;
+  background-color: #fff;
+  position: relative; }
+
+.sketch:before,
+.sketch:after {
+  display: inline-block;
+  content: " ";
+  width: 100px;
+  height: 50px;
+  position: absolute; }
+
+.sketch:before {
+  right: -53px;
+  bottom: -59px;
+  z-index: -1;
+  box-shadow: 7px 10px 24px #ccc;
+  -webkit-transform: translate(-51px, -47px) skew(0deg, 28deg) rotate(-20deg); }
+
+.node-set label {
+  display: inline-block;
+  width: 108px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  margin-right: 15px;
+  border: 1px solid #d5e2eb;
+  background-color: #FFF; }
+
+.node-set label input {
+  margin-right: 10px; }
+
+.node-set .selected {
+  background-color: #f8fef2;
+  border-color: #abdea3; }
+
+.node-set .select-disabled {
+  border-color: #ccc;
+  background-color: #f1f1f1;
+  color: #999; }
+
+.tb-preview {
+  width: 450px; }
+
+.tb-preview .preview {
+  font-size: 14px;
+  color: #e04b43; }
+
+.tb-setting th,
+.tb-setting td {
+  padding: 10px 20px; }
+
+.tb-setting .setting-lst {
+  padding: 5px 0 0; }
+
+.tb-setting .setting-lst li {
+  margin-bottom: 10px; }
+
+.tb-setting .setting-lst .disabled {
+  color: #999; }
+
+.pay-agreement-cell {
+  height: 30px;
+  line-height: 30px; }
+
+/*# sourceMappingURL=../../../../../sourcemaps/site/module/oss/setting/m_agreement.css.map */

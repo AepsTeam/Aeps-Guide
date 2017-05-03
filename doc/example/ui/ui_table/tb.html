@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_table.css">
+    <style>
+      html{
+        font-size:12px;
+      }
+      body{
+        color:#4d4d4d;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="tb tb-border tb-fixed">
+      <thead>
+        <tr>
+            <th class="g-id">序号</th>
+            <th class="g-serial g-clip" title="收货单号">收货单号</th>
+            <th class="g-state g-clip" title="单据类型" >单据类型</th>
+            <th class="g-time g-clip" title="收货日期">收货日期</th>
+            <th class="g-state g-clip" title="审批状态">审批状态</th>
+            <th class="g-tit g-clip" title="供应商名称">供应商名称</th>
+            <th class="g-serial g-clip" title="添加人">添加人</th>
+            <th class="g-time g-clip" title="添加日期">添加日期</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td class="g-id">1</td>
+            <td class="g-serial g-clip">
+                <a class="dib" href="#" title="尚未提交，暂无单号">暂无</a>
+            </td>
+            <td class="g-state g-clip">
+                <span class="gray">本地收货单</span>
+            </td>
+            <td class="g-time g-clip" title="2017-03-21">
+                2017-03-21
+            </td>
+            <td class="g-state g-clip">
+                <span class="orange">审批中</span>
+            </td>
+            <td class="g-tit g-clip" title="11">
+                <i class=""></i>
+                11
+            </td>
+            <td class="g-serial g-clip" title="admin0lala">
+                admin0lala
+            </td>
+            <td class="g-time g-clip" title="2017-03-21">
+                2017-03-21
+            </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('tb');
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_imprt_step.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <ul class="imprt-step">
+        <li>
+            <span class="step-num">1</span>
+            <div class="step-cnt">
+                <img src="../../../assets/img/back/icon_excel.png" alt="物品批量导入模板" class="excel">
+                <p>物品批量导入模板.xls</p>
+                <p>
+                    <a href="#" class="btn btn-small btn-gray">下载模板</a>
+                </p>
+            </div>
+        </li>
+        <li>
+            <span class="step-num">2</span>
+            <div class="step-cnt">
+                <p class="notice">向Excel模板中添加数据，<span class="red">注意：不能改变模板中的栏目及格式！</span></p>
+            </div>
+        </li>
+        <li>
+            <span class="step-num">3</span>
+            <div class="step-cnt" id="uploadAttach">
+                <p>上传添加好数据的Excel文件</p>
+                <div class="upload-btn mr10">
+                    <span class="btn btn-small btn-gray">上传</span>
+                </div>
+                <input type="hidden" name="tempAttId" value="">
+            </div>
+        </li>
+    </ul>
+    <script src="../../../assets/jquery-1.8.2.min.js"></script>
+    <script>
+      ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+      })('imprt_step');
+    </script>
+  </body>
+</html>

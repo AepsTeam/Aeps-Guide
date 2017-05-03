@@ -1,0 +1,73 @@
+/*
+ *des img upload module
+ *update shjy 2014.02.24
+ */
+.img-lst {
+  padding: 6px 0 30px; }
+
+.upload-item {
+  float: left;
+  position: relative;
+  margin-right: 26px; }
+  .upload-item:last-child {
+    margin-right: 0; }
+
+.upload-item .upload-img-wrap {
+  border: 6px solid #ecdeb9;
+  overflow: hidden; }
+
+.upload-item .upload-img-wrap {
+  width: 100px;
+  height: 100px; }
+
+.upload-item .upload-img-wrap .sl-vam {
+  width: 100px;
+  height: 100px; }
+
+.upload-item .upload-img-btn {
+  background-color: #e6c983;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  border: 5px solid #fff; }
+
+.upload-item .upload-img-btn:link,
+.upload-item .upload-img-btn:visited {
+  color: #fff; }
+
+.upload-img-file:hover .upload-img-btn, .upload-img-btn:hover {
+  background-color: #f05048;
+  text-decoration: none; }
+
+.upload-item .upload-img-file {
+  position: absolute;
+  overflow: hidden;
+  height: 38px;
+  width: 38px;
+  bottom: -14px;
+  right: -14px;
+  cursor: pointer; }
+
+.upload-item .upload-img-plus {
+  display: block;
+  height: 28px;
+  width: 28px;
+  font: bold 26px/25px tahoma; }
+
+.upload-item .upload-img-del {
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  top: -8px;
+  right: -8px;
+  font: bold 14px/15px tahoma; }
+
+.upload-item .upload-img-hidden {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 10;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+/*# sourceMappingURL=../../../sourcemaps/site/widget/w_img_upload.css.map */

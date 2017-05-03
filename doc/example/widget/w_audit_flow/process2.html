@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/common.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/base/atom.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/ui/ui_icon.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_audit.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_audit_flow.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/style/css/site/widget/w_tab.css">
+    <style type="text/css">
+	    body{
+	    	font-size:12px;
+	    }
+    	ul,li{
+    		margin:0;
+    		padding:0;
+    		list-style:none;
+    	}
+        .audit-ope{
+            margin-top:0;
+        }
+    </style>
+  </head>
+  <body style="height:261px">
+    <div class="audit-check">
+        <div class="audit-flow" style="display: block;">
+            <div class="audit-flow-hd">
+                <h3>审批过程</h3>
+            </div>
+            <div class="audit-flow-bd">
+                <div class="flow-wrap">
+                    <ul class="flow clearfix" style="width: 300px;">
+                        <li class="flow-node over first">
+                            <i class="icon icon-audit-pass"></i>
+                            <p class="node-txt-over" title="admin">admin</p>
+                            <p class="node-time">2015-11-27 14:43</p>
+                            <p class="green">[制单]</p>
+                        </li>
+                        <li class="flow-node ver">
+                            <i class="icon icon-audit-over"></i>
+                            <p class="node-txt-over" title=""></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="poptip-static poptip-info">
+                    <div class="msg">
+                    </div>
+                    <span class="poptip-close">×</span>
+                    <span class="arrow arrow-top">
+                        <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+                <div class="poptip-static poptip-info poptip--multi">
+                    <div class="msg">
+                    </div>
+                    <span class="poptip-close">×</span>
+                    <span class="arrow arrow-top">
+                        <span class="arrow arrow-in"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="audit-check-tail">
+            <a class="audit-switch green on" href="javascript:void(0)">审批通过 <b></b></a>
+            <span class="split">|</span>
+            已关闭
+        </div>
+    </div>
+<script src="../../../assets/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    ;(function(id){
+        window.onload=function(){
+          var oIframe=parent.document.getElementById(id);
+          oIframe.style.height = $('body').outerHeight(true) + 'px';
+        }
+    })('process2');
+    //查看审批流
+    $('.js-audit-switch').click(function(){
+        $(this).toggleClass('on');
+        $(this).parents('.audit-check').find($('.audit-flow')).slideToggle();
+    })
+</script>
+  </body>
+</html>
